@@ -10,11 +10,12 @@ import HoursList, { type HourEntry } from "@/components/cards/HoursList";
 
 export default async function Location({
   position,
+  hours,
 }: {
   position: [number, number];
+  hours: HourEntry[];
 }) {
   const t = await getTranslations("location");
-  const hours = t.raw("hours") as HourEntry[];
   return (
     <Section id="location" screenLabel="09 Location">
       <Container>

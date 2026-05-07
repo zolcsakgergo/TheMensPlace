@@ -14,6 +14,7 @@ import Footer from "@/components/sections/Footer";
 import { getSiteSettings, type SanityImage } from "@/sanity/lib/queries";
 import { getTranslations } from "next-intl/server";
 import type { Barber } from "@/components/cards/BarberCard";
+import type { HourEntry } from "@/components/cards/HoursList";
 
 // Aleea Tărnavei 2, A · 440207 Satu Mare, Romania
 // Refine via Google Maps right-click → copy lat/lng if needed.
@@ -30,14 +31,16 @@ type TeamFallback = { name: string; role: string; bio: string };
 
 /** Use Sanity content when present, otherwise fall back to translations. */
 async function loadContent() {
-  const [tTeam, tGallery] = await Promise.all([
+  const [tTeam, tGallery, tLocation] = await Promise.all([
     getTranslations("team"),
     getTranslations("gallery"),
+    getTranslations("location"),
   ]);
   const settings = await getSiteSettings();
 
   const teamFallback = tTeam.raw("items") as TeamFallback[];
   const galleryFallback = tGallery.raw("items") as GalleryFallback[];
+  const hoursFallback = tLocation.raw("hours") as HourEntry[];
 
   const team: Barber[] =
     settings?.team && settings.team.length > 0
@@ -58,11 +61,20 @@ async function loadContent() {
         }))
       : galleryFallback.map((g) => ({ ...g, image: undefined }));
 
-  return { settings, team, gallery };
+  const hours: HourEntry[] =
+    settings?.hours && settings.hours.length > 0
+      ? settings.hours.map((h) => ({
+          day: h.day,
+          time: h.time,
+          closed: !!h.closed,
+        }))
+      : hoursFallback;
+
+  return { settings, team, gallery, hours };
 }
 
 export default async function Page() {
-  const { settings, team, gallery } = await loadContent();
+  const { settings, team, gallery, hours } = await loadContent();
 
   return (
     <>
@@ -79,7 +91,7 @@ export default async function Page() {
       <GallerySection items={gallery} />
       <Testimonials />
       <Booking />
-      <Location position={SHOP_COORDS} />
+      <Location position={SHOP_COORDS} hours={hours} />
       <Footer />
       <Reveal />
     </>

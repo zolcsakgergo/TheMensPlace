@@ -11,6 +11,7 @@ export type SiteSettings = {
   heroVideo?: SanityFile;
   team?: { name: string; role?: string; bio?: string; image?: SanityImage }[];
   gallery?: { image: SanityImage; label?: string; size?: "normal" | "tall" | "wide" }[];
+  hours?: { day: string; time: string; closed?: boolean }[];
 };
 
 const siteSettingsQuery = /* groq */ `*[_type == "siteSettings"][0]{
@@ -19,7 +20,8 @@ const siteSettingsQuery = /* groq */ `*[_type == "siteSettings"][0]{
   locationImage,
   heroVideo{asset->{url, mimeType}},
   team[]{name, role, bio, image},
-  gallery[]{label, size, image}
+  gallery[]{label, size, image},
+  hours[]{day, time, closed}
 }`;
 
 export async function getSiteSettings(): Promise<SiteSettings | null> {
