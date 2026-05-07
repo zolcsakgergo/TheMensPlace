@@ -18,7 +18,7 @@ import type { HourEntry } from "@/components/cards/HoursList";
 
 // Aleea Tărnavei 2, A · 440207 Satu Mare, Romania
 // Refine via Google Maps right-click → copy lat/lng if needed.
-const SHOP_COORDS: [number, number] = [47.7836, 22.8755];
+const SHOP_COORDS: [number, number] = [47.78066190377713, 22.870052625965467];
 
 type GalleryItem = {
   label: string;
