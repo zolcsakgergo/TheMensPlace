@@ -66,7 +66,7 @@ export const Ornament = () => (
   <div className="flex items-center justify-center gap-[18px] text-gold my-7">
     <span className="w-20 h-px bg-ornament-line" />
     <span className="w-1.5 h-1.5 bg-gold rotate-45" />
-    <span className="text-[14px] tracking-[8px] text-gold leading-none">✦</span>
+    <span className="inline-flex items-center justify-center w-[14px] h-[14px] text-[14px] text-gold leading-none">✦</span>
     <span className="w-1.5 h-1.5 bg-gold rotate-45" />
     <span className="w-20 h-px bg-ornament-line" />
   </div>

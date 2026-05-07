@@ -47,7 +47,7 @@
     "titleLine2Pre": "și",
     "titleEm": "răbdarea",
     "p": "Nu ne grăbim. Fiecare tăietură e gândită, fiecare contur e desenat, fiecare client pleacă mai bine decât a venit.",
-    "signature": "— Levente N., fondator",
+    "signature": "— Levente, fondator",
     "fallbackLabel": "Video · loop barber la scaun",
     "fallbackDim": "15-30s · muted · autoplay"
   },
@@ -187,12 +187,13 @@
     "titleEm": "și programul.",
     "scheduleHeading": "Program",
     "addressHeading": "Adresă",
-    "addressLine1": "Strada Lipscani, nr. 42",
-    "addressLine2": "Sector 3",
-    "addressCity": "București · România",
+    "addressLine1": "Aleea Tărnavei 2, A, 440207 Satu Mare",
+    "addressCity": "Satu Mare · România",
     "mapLabel": "Hartă",
-    "mapDim": "Pin: Lipscani 42",
+    "mapDim": "Pin: Aleea Tărnavei 2/A",
     "mapAlt": "Hartă locație",
+    "mapPopupTitle": "The Men's Place",
+    "mapPopupAddress": "Aleea Tărnavei 2/A · Satu Mare",
     "closed": "Închis",
     "hours": [
       { "day": "Luni", "time": "11:00 — 19:00", "closed": false },
@@ -211,14 +212,14 @@
     "followHeading": "Urmărește",
     "phone": "0700 000 000",
     "email": "hello@mensplace.ro",
-    "addressShort": "Lipscani 42, București",
+    "addressShort": "Aleea Tărnavei 2, A, 440207 Satu Mare",
     "social": {
       "instagram": "Instagram",
       "facebook": "Facebook",
       "tiktok": "TikTok"
     },
     "copyright": "© MMXXVI · The Men's Place",
-    "madeWith": "Făcut cu răbdare în București"
+    "madeWith": "Făcut cu răbdare în Satu Mare"
   },
   "metadata": {
     "title": "The Men's Place — Frizerie de onoare",

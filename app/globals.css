@@ -126,3 +126,79 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ── Leaflet — design-system overrides ─────────────────────── */
+.leaflet-container {
+  background: var(--bg-3);
+  font-family: var(--font-sans);
+}
+.leaflet-container a {
+  color: var(--gold);
+}
+.tmp-gold-pin {
+  background: transparent;
+  border: 0;
+}
+/* Zoom controls */
+.leaflet-bar,
+.leaflet-bar a {
+  background: rgba(10, 8, 7, 0.85) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--color-rule-strong) !important;
+  border-radius: 0 !important;
+  font-family: var(--font-mono) !important;
+}
+.leaflet-bar a:hover {
+  background: var(--bg) !important;
+  color: var(--gold) !important;
+}
+.leaflet-bar a + a {
+  border-top: 1px solid var(--color-rule) !important;
+}
+/* Attribution pill */
+.leaflet-control-attribution {
+  background: rgba(10, 8, 7, 0.7) !important;
+  color: var(--color-ink-mute) !important;
+  font-family: var(--font-mono) !important;
+  font-size: 9px !important;
+  letter-spacing: 0.1em !important;
+  padding: 4px 8px !important;
+  border: 1px solid var(--color-rule) !important;
+}
+.leaflet-control-attribution a {
+  color: var(--color-ink-dim) !important;
+}
+/* Popup */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: var(--bg-2) !important;
+  color: var(--color-ink) !important;
+  border: 1px solid var(--color-rule-strong) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6) !important;
+}
+.leaflet-popup-content {
+  margin: 16px 22px !important;
+  line-height: 1.5 !important;
+}
+.tmp-popup-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  color: var(--color-ink);
+  margin-bottom: 4px;
+}
+.tmp-popup-addr {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.leaflet-popup-close-button {
+  color: var(--gold) !important;
+  font-size: 18px !important;
+  padding: 6px 8px 0 0 !important;
+}
+.leaflet-popup-close-button:hover {
+  color: var(--color-ink) !important;
+}

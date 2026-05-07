@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import VideoReveal from "@/components/VideoReveal";
 import Reveal from "@/components/Reveal";
 import Gallery from "@/components/Gallery";
+import LocationMap from "@/components/LocationMap";
 import {
   Brand,
   Container,
@@ -29,6 +30,10 @@ type TestimonialMsg = { text: string; name: string; initial: string };
 type HourMsg = { day: string; time: string; closed: boolean };
 
 const sectionPad = "py-[140px] max-[980px]:py-20 relative";
+
+// Aleea Tărnavei 2, A · 440207 Satu Mare, Romania
+// Approximate coordinates — refine via maps if needed.
+const SHOP_COORDS: [number, number] = [47.780726788895315, 22.870031168294556];
 
 const btnBase =
   "group inline-flex items-center gap-3 font-mono text-[12px] tracking-[0.22em] uppercase px-8 py-[18px] no-underline cursor-pointer border transition-all duration-200";
@@ -158,7 +163,7 @@ export default async function Page() {
             .flatMap(() => marqueeItems)
             .map((label, i) => (
               <span key={i}>
-                <span className="text-gold">✦ </span>
+                <span className="text-gold">✦</span>
                 {label}
               </span>
             ))}
@@ -410,8 +415,6 @@ export default async function Page() {
               </h3>
               <div className="font-serif italic text-[19px] text-ink leading-[1.5]">
                 {tLocation("addressLine1")}
-                <br />
-                {tLocation("addressLine2")}
                 <span className="block font-mono not-italic text-[11px] tracking-[0.22em] uppercase text-gold mt-3">
                   {tLocation("addressCity")}
                 </span>
@@ -419,11 +422,11 @@ export default async function Page() {
             </div>
             <div className="aspect-[3/4] relative border border-rule-strong bg-bg-3 overflow-hidden">
               <Frame />
-              <CmsImage
-                image={settings?.locationImage}
-                label={tLocation("mapLabel")}
-                dim={tLocation("mapDim")}
-                alt={tLocation("mapAlt")}
+              <LocationMap
+                position={SHOP_COORDS}
+                zoom={16}
+                popupTitle={tLocation("mapPopupTitle")}
+                popupAddress={tLocation("mapPopupAddress")}
               />
             </div>
           </div>

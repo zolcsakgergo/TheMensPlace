@@ -57,10 +57,10 @@ export default function VideoReveal({ videoSrc, videoMimeType }: Props) {
 
         {/* Text content — outside the clip so it renders above the frame */}
         <div className="absolute inset-0 z-[2] flex flex-col items-center justify-center text-center px-12">
-          <div className="font-mono text-[11px] tracking-[0.32em] uppercase text-gold inline-flex items-center gap-3.5 mb-8">
-            <span className="inline-block w-7 h-px bg-gold/70" />
+          <div className="font-mono text-[13px] tracking-[0.32em] uppercase text-gold inline-flex items-center gap-3.5 mb-8 [text-shadow:0_1px_3px_rgb(0_0_0/0.65)]">
+            <span className="inline-block w-9 h-px bg-gold/80" />
             <span>{t("eyebrow")}</span>
-            <span className="inline-block w-7 h-px bg-gold/70" />
+            <span className="inline-block w-9 h-px bg-gold/80" />
           </div>
           <h2 className="font-serif font-normal leading-none tracking-[-0.01em] text-[clamp(48px,7vw,96px)] max-w-[900px] mb-7">
             {t("titleLine1")}
@@ -68,10 +68,10 @@ export default function VideoReveal({ videoSrc, videoMimeType }: Props) {
             {t("titleLine2Pre")}{" "}
             <em className="italic text-gold">{t("titleEm")}</em>.
           </h2>
-          <p className="font-serif italic text-[19px] text-ink-dim max-w-[560px] leading-[1.7]">
+          <p className="font-serif italic text-[19px] text-ink max-w-[560px] leading-[1.7] [text-shadow:_0_1px_3px_rgb(0_0_0_/_0.65)]">
             {t("p")}
           </p>
-          <div className="mt-14 font-serif italic text-gold text-[22px]">
+          <div className="mt-14 font-serif italic text-gold text-[28px] [text-shadow:0_1px_3px_rgb(0_0_0/0.65)]">
             {t("signature")}
           </div>
         </div>
