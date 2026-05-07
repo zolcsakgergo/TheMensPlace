@@ -481,14 +481,7 @@ export default async function Page() {
                     {tFooter("phone")}
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={`mailto:${tFooter("email")}`}
-                    className="text-ink-dim text-[14px] no-underline hover:text-gold transition-colors"
-                  >
-                    {tFooter("email")}
-                  </a>
-                </li>
+
                 <li>
                   <a
                     href="#location"
@@ -504,13 +497,26 @@ export default async function Page() {
                 {tFooter("followHeading")}
               </h4>
               <ul className="list-none m-0 p-0 space-y-3">
-                {(["instagram", "facebook", "tiktok"] as const).map((s) => (
-                  <li key={s}>
+                {(
+                  [
+                    {
+                      key: "instagram",
+                      href: "https://www.instagram.com/levente.ninacs/",
+                    },
+                    {
+                      key: "facebook",
+                      href: "https://www.facebook.com/NinacsLevente22/",
+                    },
+                  ] as const
+                ).map(({ key, href }) => (
+                  <li key={key}>
                     <a
-                      href="#"
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-ink-dim text-[14px] no-underline hover:text-gold transition-colors"
                     >
-                      {tFooter(`social.${s}`)}
+                      {tFooter(`social.${key}`)}
                     </a>
                   </li>
                 ))}
