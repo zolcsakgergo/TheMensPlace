@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0a0807;
+    --bg-2: #11100e;
+    --bg-3: #1a1714;
+    --ink: #f4ede0;
+    --ink-dim: #b8ac96;
+    --ink-mute: #6b6358;
+    --rule: rgba(212, 175, 100, 0.18);
+    --rule-strong: rgba(212, 175, 100, 0.45);
+    --gold: #d4af64;
+    --gold-deep: #a8853f;
+    --gold-glow: rgba(212, 175, 100, 0.25);
+  }
+  [data-gold="champagne"] {
+    --gold: #e6d3a3;
+    --gold-deep: #b8a273;
+    --gold-glow: rgba(230, 211, 163, 0.22);
+  }
+  [data-gold="antique"] {
+    --gold: #b8924a;
+    --gold-deep: #8a6a32;
+    --gold-glow: rgba(184, 146, 74, 0.22);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: theme("fontFamily.sans");
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Reveal-on-scroll */
+  .reveal {
+    @apply opacity-0 translate-y-[30px] transition-[opacity,transform] duration-700 ease-out;
+  }
+  .reveal.in {
+    @apply opacity-100 translate-y-0;
+  }
+}

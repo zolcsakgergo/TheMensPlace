@@ -1,0 +1,226 @@
+{
+  "nav": {
+    "services": "Servicii",
+    "about": "Povestea",
+    "team": "Echipa",
+    "gallery": "Galerie",
+    "location": "Locație",
+    "cta": "Programează"
+  },
+  "brand": {
+    "name": "The Men's Place"
+  },
+  "hero": {
+    "est": "Est. MMXIV · Satu Mare",
+    "titleLine1": "Meșteșug",
+    "titleLine2Pre": "făcut cu",
+    "titleEm": "răbdare",
+    "titleSmall": "Nu doar un tuns, ci un sfert de oră de liniște.",
+    "lede": "Nouă ani la același scaun. Tuns clasic, bărbierit cu prosop fierbinte și o conversație care nu se grăbește nicăieri. Whisky-ul e din partea casei, după ora cinci.",
+    "ctaPrimary": "Ocupă scaunul",
+    "ctaGhost": "Vezi ritualurile",
+    "meta": {
+      "yearsValue": "9",
+      "yearsLabel": "Ani de meserie",
+      "clientsValue": "12k+",
+      "clientsLabel": "Domni serviți",
+      "ratingValue": "4.9",
+      "ratingLabel": "Pe Google · 480 recenzii"
+    },
+    "photoLabel": "Foto · Hero",
+    "photoDim": "Recomandat: portret barber la scaun · 3:4",
+    "photoAlt": "Portret barber"
+  },
+  "marquee": {
+    "items": [
+      "Tuns Clasic",
+      "Bărbierit cu Briciul",
+      "Aranjat Barbă",
+      "Hot Towel",
+      "Styling",
+      "Whisky after Five"
+    ]
+  },
+  "video": {
+    "eyebrow": "Meșteșug · de aproape",
+    "titleLine1": "Foarfeca, briciul,",
+    "titleLine2Pre": "și",
+    "titleEm": "răbdarea",
+    "p": "Nu ne grăbim. Fiecare tăietură e gândită, fiecare contur e desenat, fiecare client pleacă mai bine decât a venit.",
+    "signature": "— Levente N., fondator",
+    "fallbackLabel": "Video · loop barber la scaun",
+    "fallbackDim": "15-30s · muted · autoplay"
+  },
+  "services": {
+    "eyebrow": "Servicii & Ritualuri",
+    "titleLine1": "Nouă moduri de",
+    "titleEm": "a te simți domn.",
+    "p": "Prețuri cinstite, timpi realiști, fără surprize. Toate serviciile includ curățare facială și produse premium.",
+    "numPrefix": "№",
+    "lei": "LEI",
+    "featuredBadge": "semnătura casei",
+    "items": [
+  { 
+    "n": "I", 
+    "title": "Tuns Semnătură", 
+    "duration": "30 min", 
+    "price": "80", 
+    "desc": "Tuns din foarfecă și mașină, spălat revigorant, curățare facială și styling personalizat." 
+  },
+  { 
+    "n": "II", 
+    "title": "Ritual Complet (Tuns & Barbă)", 
+    "duration": "40 min", 
+    "price": "100", 
+    "desc": "Pachetul esențial pentru domni. Include tuns, aranjat barbă, curățare facială și finisare cu produse premium." 
+  },
+  { 
+    "n": "III", 
+    "title": "Tradiție în Familie (Tată & Fiu)", 
+    "duration": "60 min", 
+    "price": "140 – 160", 
+    "desc": "O experiență împărtășită pe scaune alăturate. Tuns complet și lecții de stil pentru generația următoare." 
+  },
+  { 
+    "n": "IV", 
+    "title": "Contur & Mentenanță", 
+    "duration": "15 min", 
+    "price": "60", 
+    "desc": "Tuns rapid din mașină (minim 3 mm). Pentru momentele când ai nevoie de un refresh curat și esențial." 
+  },
+  { 
+    "n": "V", 
+    "title": "Mentenanță & Barbă", 
+    "duration": "30 min", 
+    "price": "90", 
+    "desc": "Tuns scurt din mașină combinat cu aranjat de barbă și produse de hidratare." 
+  },
+  { 
+    "n": "VI", 
+    "title": "Micul Domn", 
+    "duration": "30 min", 
+    "price": "60 – 70", 
+    "desc": "Pentru cei mai tineri clienți ai noștri. Răbdare, atenție și un stil pe măsură." 
+  },
+  { 
+    "n": "VII", 
+    "title": "Arhitectură Barbă", 
+    "duration": "20 min", 
+    "price": "50", 
+    "desc": "Sculptarea formei, contur cu briciul, hidratare și curățare facială." 
+  },
+  { 
+    "n": "VIII", 
+    "title": "Refresh & Styling", 
+    "duration": "15 min", 
+    "price": "50", 
+    "desc": "Spălat, uscat și aranjat profesional. Ideal înainte de un eveniment sau o întâlnire importantă." 
+  },
+  { 
+    "n": "IX", 
+    "title": "Răsfățul Casei (Full Experience)", 
+    "featured": true, 
+    "duration": "60 min", 
+    "price": "140", 
+    "desc": "Cel mai înalt standard: Masaj capilar 10 min, tuns, ritual de barbă cu prosop fierbinte și produse de îngrijire de top." 
+  }
+]
+  },
+  "about": {
+    "eyebrow": "Povestea noastră",
+    "titleLine1": "O frizerie ca pe vremuri,",
+    "titleEm": "fără compromisuri moderne.",
+    "p1": "The Men's Place s-a deschis în 2014, într-o casă veche de pe strada Lipscani, cu trei scaune, două brice nemțești și o ambiție: să readucă ritualul bărbieritului în viața bărbatului contemporan.",
+    "pull": "„Un tuns bun nu e o tranzacție — e o pauză. Un sfert de oră în care nimeni nu-ți cere nimic.”",
+    "p2": "Astăzi suntem o echipă de trei maeștri, lucrăm cu produse selecționate (Proraso, Layrite, Reuzel) și păstrăm aceeași filosofie: timp pentru fiecare client, fără excepție.",
+    "photoLabel": "Foto · interior",
+    "photoDim": "Recomandat: scaun vintage + oglindă",
+    "photoAlt": "Interior frizerie"
+  },
+  "team": {
+    "eyebrow": "Maeștrii casei",
+    "titleLine1": "Mâinile",
+    "titleEm": "care contează.",
+    "photoLabel": "Portret",
+    "photoDim": "4:5 · alb-negru recomandat",
+    "items": [
+      { "name": "Andrei Voiculescu", "role": "Master Barber · Fondator", "bio": "14 ani la scaun. Tuns clasic, foarfecă peste pieptene și o pasiune pentru bărbieritul cu briciul." },
+      { "name": "Ștefan Marin", "role": "Senior Barber", "bio": "Specialist în fade-uri precise și styling editorial. Format la Londra, întors acasă." },
+      { "name": "Cătălin Petre", "role": "Barber & Beard Artist", "bio": "Artizanul bărbii. Forme arhitecturale, hot towel, oils și o mână fermă." }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Din atelier",
+    "titleLine1": "Lucrul",
+    "titleEm": "în detaliu.",
+    "items": [
+      { "label": "Tuns clasic", "size": "tall" },
+      { "label": "Detaliu briciu", "size": "normal" },
+      { "label": "Atelier", "size": "wide" },
+      { "label": "Bărbierit", "size": "normal" },
+      { "label": "Produse", "size": "normal" },
+      { "label": "Scaun vintage", "size": "normal" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Cuvinte de la clienți",
+    "titleLine1": "Ce spun",
+    "titleEm": "domnii noștri.",
+    "items": [
+      { "text": "Am intrat obosit, am ieșit ca un domn. Andrei e un meșter adevărat — fiecare detaliu contează.", "name": "Mihai R.", "initial": "M" },
+      { "text": "Cel mai bun pachet premium din oraș. Atmosfera, mirosul de produse, muzica — totul e gândit.", "name": "Bogdan T.", "initial": "B" },
+      { "text": "Vin de patru ani, n-am încercat alt loc. Tunsoarea ține trei săptămâni perfect, asta spune totul.", "name": "Răzvan I.", "initial": "R" }
+    ]
+  },
+  "booking": {
+    "eyebrow": "Rezervare",
+    "titleLine1": "Scaunul tău",
+    "titleEm": "te așteaptă.",
+    "p": "Programări în aceeași zi pentru tunsorile simple. Pentru pachetele premium, recomandăm 48 de ore în avans.",
+    "ctaPrimary": "Sună acum · 0700 000 000",
+    "ctaGhost": "Rezervare online"
+  },
+  "location": {
+    "eyebrow": "Vino la noi",
+    "titleLine1": "Locația",
+    "titleEm": "și programul.",
+    "scheduleHeading": "Program",
+    "addressHeading": "Adresă",
+    "addressLine1": "Strada Lipscani, nr. 42",
+    "addressLine2": "Sector 3",
+    "addressCity": "București · România",
+    "mapLabel": "Hartă",
+    "mapDim": "Pin: Lipscani 42",
+    "mapAlt": "Hartă locație",
+    "closed": "Închis",
+    "hours": [
+      { "day": "Luni", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Marți", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Miercuri", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Joi", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Vineri", "time": "10:00 — 21:00", "closed": false },
+      { "day": "Sâmbătă", "time": "09:00 — 18:00", "closed": false },
+      { "day": "Duminică", "time": "Închis", "closed": true }
+    ]
+  },
+  "footer": {
+    "tagline": "O frizerie clasică pentru domnii care apreciază meșteșugul, timpul bine petrecut și un tuns făcut cum trebuie.",
+    "navHeading": "Navigare",
+    "contactHeading": "Contact",
+    "followHeading": "Urmărește",
+    "phone": "0700 000 000",
+    "email": "hello@mensplace.ro",
+    "addressShort": "Lipscani 42, București",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "tiktok": "TikTok"
+    },
+    "copyright": "© MMXXVI · The Men's Place",
+    "madeWith": "Făcut cu răbdare în București"
+  },
+  "metadata": {
+    "title": "The Men's Place — Frizerie de onoare",
+    "description": "O frizerie clasică pentru domnii care apreciază meșteșugul, timpul bine petrecut și un tuns făcut cum trebuie."
+  }
+}
