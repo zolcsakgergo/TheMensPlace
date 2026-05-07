@@ -24,8 +24,8 @@
       "yearsLabel": "Ani de meserie",
       "clientsValue": "12k+",
       "clientsLabel": "Domni serviți",
-      "ratingValue": "4.9",
-      "ratingLabel": "Pe Google · 480 recenzii"
+      "ratingValue": "5.0",
+      "ratingLabel": "Pe Mero · 1142 recenzii"
     },
     "photoLabel": "Foto · Hero",
     "photoDim": "Recomandat: portret barber la scaun · 3:4",
@@ -60,71 +60,71 @@
     "lei": "LEI",
     "featuredBadge": "semnătura casei",
     "items": [
-  { 
-    "n": "I", 
-    "title": "Tuns Semnătură", 
-    "duration": "30 min", 
-    "price": "80", 
-    "desc": "Tuns din foarfecă și mașină, spălat revigorant, curățare facială și styling personalizat." 
-  },
-  { 
-    "n": "II", 
-    "title": "Ritual Complet (Tuns & Barbă)", 
-    "duration": "40 min", 
-    "price": "100", 
-    "desc": "Pachetul esențial pentru domni. Include tuns, aranjat barbă, curățare facială și finisare cu produse premium." 
-  },
-  { 
-    "n": "III", 
-    "title": "Tradiție în Familie (Tată & Fiu)", 
-    "duration": "60 min", 
-    "price": "140 – 160", 
-    "desc": "O experiență împărtășită pe scaune alăturate. Tuns complet și lecții de stil pentru generația următoare." 
-  },
-  { 
-    "n": "IV", 
-    "title": "Contur & Mentenanță", 
-    "duration": "15 min", 
-    "price": "60", 
-    "desc": "Tuns rapid din mașină (minim 3 mm). Pentru momentele când ai nevoie de un refresh curat și esențial." 
-  },
-  { 
-    "n": "V", 
-    "title": "Mentenanță & Barbă", 
-    "duration": "30 min", 
-    "price": "90", 
-    "desc": "Tuns scurt din mașină combinat cu aranjat de barbă și produse de hidratare." 
-  },
-  { 
-    "n": "VI", 
-    "title": "Micul Domn", 
-    "duration": "30 min", 
-    "price": "60 – 70", 
-    "desc": "Pentru cei mai tineri clienți ai noștri. Răbdare, atenție și un stil pe măsură." 
-  },
-  { 
-    "n": "VII", 
-    "title": "Arhitectură Barbă", 
-    "duration": "20 min", 
-    "price": "50", 
-    "desc": "Sculptarea formei, contur cu briciul, hidratare și curățare facială." 
-  },
-  { 
-    "n": "VIII", 
-    "title": "Refresh & Styling", 
-    "duration": "15 min", 
-    "price": "50", 
-    "desc": "Spălat, uscat și aranjat profesional. Ideal înainte de un eveniment sau o întâlnire importantă." 
-  },
-  { 
-    "n": "IX", 
-    "title": "Răsfățul Casei (Full Experience)", 
-    "featured": true, 
-    "duration": "60 min", 
-    "price": "140", 
-    "desc": "Cel mai înalt standard: Masaj capilar 10 min, tuns, ritual de barbă cu prosop fierbinte și produse de îngrijire de top." 
-  }
-]
+      {
+        "n": "I",
+        "title": "Tuns Semnătură",
+        "duration": "30 min",
+        "price": "80",
+        "desc": "Tuns din foarfecă și mașină, spălat revigorant, curățare facială și styling personalizat."
+      },
+      {
+        "n": "II",
+        "title": "Ritual Complet (Tuns & Barbă)",
+        "duration": "40 min",
+        "price": "100",
+        "desc": "Pachetul esențial pentru domni. Include tuns, aranjat barbă, curățare facială și finisare cu produse premium."
+      },
+      {
+        "n": "III",
+        "title": "Tradiție în Familie (Tată & Fiu)",
+        "duration": "60 min",
+        "price": "140 – 160",
+        "desc": "O experiență împărtășită pe scaune alăturate. Tuns complet și lecții de stil pentru generația următoare."
+      },
+      {
+        "n": "IV",
+        "title": "Contur & Mentenanță",
+        "duration": "15 min",
+        "price": "60",
+        "desc": "Tuns rapid din mașină (minim 3 mm). Pentru momentele când ai nevoie de un refresh curat și esențial."
+      },
+      {
+        "n": "V",
+        "title": "Mentenanță & Barbă",
+        "duration": "30 min",
+        "price": "90",
+        "desc": "Tuns scurt din mașină combinat cu aranjat de barbă și produse de hidratare."
+      },
+      {
+        "n": "VI",
+        "title": "Micul Domn",
+        "duration": "30 min",
+        "price": "60 – 70",
+        "desc": "Pentru cei mai tineri clienți ai noștri. Răbdare, atenție și un stil pe măsură."
+      },
+      {
+        "n": "VII",
+        "title": "Arhitectură Barbă",
+        "duration": "20 min",
+        "price": "50",
+        "desc": "Sculptarea formei, contur cu briciul, hidratare și curățare facială."
+      },
+      {
+        "n": "VIII",
+        "title": "Refresh & Styling",
+        "duration": "15 min",
+        "price": "50",
+        "desc": "Spălat, uscat și aranjat profesional. Ideal înainte de un eveniment sau o întâlnire importantă."
+      },
+      {
+        "n": "IX",
+        "title": "Răsfățul Casei (Full Experience)",
+        "featured": true,
+        "duration": "60 min",
+        "price": "140",
+        "desc": "Cel mai înalt standard: Masaj capilar 10 min, tuns, ritual de barbă cu prosop fierbinte și produse de îngrijire de top."
+      }
+    ]
   },
   "about": {
     "eyebrow": "Povestea noastră",
@@ -143,8 +143,12 @@
     "photoLabel": "Portret",
     "photoDim": "4:5 · alb-negru recomandat",
     "items": [
-      { "name": "Levente Ninacs", "role": "Master Barber · Fondator", "bio": "16 ani la scaun. Tuns clasic, foarfecă peste pieptene și o pasiune pentru bărbieritul cu briciul." }
-        ] 
+      {
+        "name": "Levente Ninacs",
+        "role": "Master Barber · Fondator",
+        "bio": "16 ani la scaun. Tuns clasic, foarfecă peste pieptene și o pasiune pentru bărbieritul cu briciul."
+      }
+    ]
   },
   "gallery": {
     "eyebrow": "Din atelier",
@@ -168,9 +172,21 @@
     "titleLine1": "Ce spun",
     "titleEm": "domnii noștri.",
     "items": [
-      { "text": "Am intrat obosit, am ieșit ca un domn. Levi e un meșter adevărat — fiecare detaliu contează.", "name": "Gergő Z.", "initial": "G" },
-      { "text": "Cel mai bun pachet premium din oraș. Atmosfera, mirosul de produse, muzica — totul e gândit.", "name": "Dávid B.", "initial": "D" },
-      { "text": "Vin de patru ani, n-am încercat alt loc. Tunsoarea ține trei săptămâni perfect, asta spune totul.", "name": "Răzvan I.", "initial": "R" }
+      {
+        "text": "Am intrat obosit, am ieșit ca un domn. Levi e un meșter adevărat — fiecare detaliu contează.",
+        "name": "Gergő Z.",
+        "initial": "G"
+      },
+      {
+        "text": "Cel mai bun pachet premium din oraș. Atmosfera, mirosul de produse, muzica — totul e gândit.",
+        "name": "Dávid B.",
+        "initial": "D"
+      },
+      {
+        "text": "Vin de patru ani, n-am încercat alt loc. Tunsoarea ține trei săptămâni perfect, asta spune totul.",
+        "name": "Răzvan I.",
+        "initial": "R"
+      }
     ]
   },
   "booking": {

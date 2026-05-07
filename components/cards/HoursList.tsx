@@ -2,11 +2,11 @@ export type HourEntry = { day: string; time: string; closed?: boolean };
 
 export default function HoursList({ hours }: { hours: HourEntry[] }) {
   return (
-    <ul className="list-none m-0 p-0 mb-10">
+    <ul className="m-0 mb-10 list-none p-0">
       {hours.map((h) => (
         <li
           key={h.day}
-          className="flex justify-between items-baseline py-3.5 border-b border-rule last:border-0 text-[15.5px]"
+          className="border-rule flex items-baseline justify-between border-b py-3.5 text-[15.5px] last:border-0"
         >
           <span className="font-serif text-[19px]">{h.day}</span>
           <span

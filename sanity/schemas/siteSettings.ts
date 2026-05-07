@@ -40,10 +40,20 @@ export const siteSettings = defineType({
           type: "object",
           name: "barber",
           fields: [
-            defineField({ name: "name", title: "Name", type: "string", validation: (r) => r.required() }),
+            defineField({
+              name: "name",
+              title: "Name",
+              type: "string",
+              validation: (r) => r.required(),
+            }),
             defineField({ name: "role", title: "Role", type: "string" }),
             defineField({ name: "bio", title: "Bio", type: "text", rows: 3 }),
-            defineField({ name: "image", title: "Portrait", type: "image", options: { hotspot: true } }),
+            defineField({
+              name: "image",
+              title: "Portrait",
+              type: "image",
+              options: { hotspot: true },
+            }),
           ],
           preview: {
             select: { title: "name", subtitle: "role", media: "image" },
@@ -101,7 +111,13 @@ export const siteSettings = defineType({
           type: "object",
           name: "galleryItem",
           fields: [
-            defineField({ name: "image", title: "Image", type: "image", options: { hotspot: true }, validation: (r) => r.required() }),
+            defineField({
+              name: "image",
+              title: "Image",
+              type: "image",
+              options: { hotspot: true },
+              validation: (r) => r.required(),
+            }),
             defineField({ name: "label", title: "Label", type: "string" }),
             defineField({
               name: "size",

@@ -11,8 +11,8 @@ const Inner = dynamic(() => import("./LocationMapInner"), {
 });
 
 const Placeholder = () => (
-  <div className="absolute inset-0 bg-stripes flex items-center justify-center">
-    <div className="font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim border border-dashed border-ink-mute bg-bg px-3.5 py-2">
+  <div className="bg-stripes absolute inset-0 flex items-center justify-center">
+    <div className="text-ink-dim border-ink-mute bg-bg border border-dashed px-3.5 py-2 font-mono text-[10px] tracking-[0.22em] uppercase">
       Hartă · se încarcă
     </div>
   </div>

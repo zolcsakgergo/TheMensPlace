@@ -27,9 +27,13 @@ const siteSettingsQuery = /* groq */ `*[_type == "siteSettings"][0]{
 export async function getSiteSettings(): Promise<SiteSettings | null> {
   if (!client) return null;
   try {
-    return await client.fetch<SiteSettings>(siteSettingsQuery, {}, {
-      next: { revalidate: 60 },
-    });
+    return await client.fetch<SiteSettings>(
+      siteSettingsQuery,
+      {},
+      {
+        next: { revalidate: 60 },
+      },
+    );
   } catch {
     return null;
   }

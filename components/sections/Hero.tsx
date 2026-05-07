@@ -15,29 +15,26 @@ export default async function Hero({ heroImage }: { heroImage?: SanityImage }) {
   const t = await getTranslations("hero");
   return (
     <section
-      className="min-h-screen pt-40 pb-24 flex items-center relative overflow-hidden bg-bg"
+      className="bg-bg relative flex min-h-screen items-center overflow-hidden pt-40 pb-24"
       data-screen-label="01 Hero"
     >
-      <div className="absolute inset-0 bg-hero-glow pointer-events-none" />
+      <div className="bg-hero-glow pointer-events-none absolute inset-0" />
       <Container className="relative z-1">
-        <div className="grid grid-cols-[1.1fr_0.9fr] gap-20 items-center max-[980px]:grid-cols-1 max-[980px]:gap-10">
+        <div className="grid grid-cols-[1.1fr_0.9fr] items-center gap-20 max-[980px]:grid-cols-1 max-[980px]:gap-10">
           <div>
-            <div className="font-mono text-[11px] tracking-[0.4em] text-gold mb-8">
-              {t("est")}
-            </div>
-            <h1 className="font-serif font-normal text-[clamp(64px,8vw,124px)] leading-[0.95] tracking-[-0.02em] mb-8">
+            <div className="text-gold mb-8 font-mono text-[11px] tracking-[0.4em]">{t("est")}</div>
+            <h1 className="mb-8 font-serif text-[clamp(64px,8vw,124px)] leading-[0.95] font-normal tracking-[-0.02em]">
               {t("titleLine1")}
               <br />
-              {t("titleLine2Pre")}{" "}
-              <em className="italic text-gold">{t("titleEm")}</em>.
-              <span className="block text-[0.4em] tracking-[0.02em] text-ink-dim italic mt-2">
+              {t("titleLine2Pre")} <em className="text-gold italic">{t("titleEm")}</em>.
+              <span className="text-ink-dim mt-2 block text-[0.4em] tracking-[0.02em] italic">
                 {t("titleSmall")}
               </span>
             </h1>
-            <p className="text-ink-dim text-[18px] max-w-[460px] leading-[1.7] mb-10">
+            <p className="text-ink-dim mb-10 max-w-[460px] text-[18px] leading-[1.7]">
               {t("lede")}
             </p>
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-wrap items-center gap-4">
               <Button asChild>
                 <a href="#booking">
                   {t("ctaPrimary")}
@@ -51,20 +48,20 @@ export default async function Hero({ heroImage }: { heroImage?: SanityImage }) {
                 <a href="#services">{t("ctaGhost")}</a>
               </Button>
             </div>
-            <div className="grid grid-cols-3 gap-8 mt-20 pt-10 border-t border-rule">
+            <div className="border-rule mt-20 grid grid-cols-3 gap-8 border-t pt-10">
               {META_KEYS.map(([v, l]) => (
                 <div key={v}>
-                  <div className="font-serif italic text-gold text-[38px] leading-none">
+                  <div className="text-gold font-serif text-[38px] leading-none italic">
                     {t(`meta.${v}`)}
                   </div>
-                  <div className="font-mono text-[10px] tracking-[0.22em] uppercase text-ink-dim mt-1.5">
+                  <div className="text-ink-dim mt-1.5 font-mono text-[10px] tracking-[0.22em] uppercase">
                     {t(`meta.${l}`)}
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="relative aspect-3/4 border border-rule-strong bg-bg-2 overflow-hidden">
+          <div className="border-rule-strong bg-bg-2 relative aspect-3/4 overflow-hidden border">
             <Frame />
             <CmsImage
               image={heroImage}

@@ -21,7 +21,7 @@ export default async function Services() {
           titleEm={t("titleEm")}
           description={t("p")}
         />
-        <div className="grid grid-cols-2 max-[980px]:grid-cols-1 border-t border-l border-rule">
+        <div className="border-rule grid grid-cols-2 border-t border-l max-[980px]:grid-cols-1">
           {ordered.map((s) =>
             s.featured ? (
               <PremiumServiceCard key={s.n} service={s} />

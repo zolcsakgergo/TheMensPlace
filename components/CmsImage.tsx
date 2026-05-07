@@ -15,7 +15,7 @@ export default function CmsImage({ image, alt, label, dim, width = 1200 }: Props
   // eslint-disable-next-line @next/next/no-img-element
   return (
     <img
-      className="absolute inset-0 w-full h-full object-cover block"
+      className="absolute inset-0 block h-full w-full object-cover"
       src={urlFor(image).width(width).url()}
       alt={alt || label}
     />

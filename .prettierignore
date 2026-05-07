@@ -1,0 +1,17 @@
+node_modules
+.next
+.next/dev
+out
+dist
+build
+.vercel
+public
+*.min.js
+*.min.css
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+coverage
+.env
+.env.local
+.env.*.local

@@ -4,23 +4,21 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "group inline-flex items-center gap-3 font-mono uppercase no-underline cursor-pointer border transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed",
+  "group inline-flex cursor-pointer items-center gap-3 border font-mono uppercase no-underline transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-30",
   {
     variants: {
       variant: {
         primary:
           "bg-gold text-bg border-gold hover:bg-gold-deep hover:border-gold-deep hover:-translate-y-0.5",
-        ghost:
-          "bg-transparent text-ink border-rule-strong hover:border-gold hover:text-gold",
+        ghost: "text-ink border-rule-strong hover:border-gold hover:text-gold bg-transparent",
         outline:
-          "bg-transparent text-ink border-rule-strong hover:border-gold hover:text-gold disabled:hover:border-rule-strong disabled:hover:text-ink bg-bg/0",
-        icon:
-          "border-rule-strong text-ink hover:border-gold hover:text-gold bg-bg/60",
+          "text-ink border-rule-strong hover:border-gold hover:text-gold disabled:hover:border-rule-strong disabled:hover:text-ink bg-bg/0 bg-transparent",
+        icon: "border-rule-strong text-ink hover:border-gold hover:text-gold bg-bg/60",
       },
       size: {
-        default: "px-8 py-[18px] text-[12px] tracking-[0.22em] gap-3",
-        sm: "px-5 py-3 text-[11px] tracking-[0.22em] gap-2.5",
-        icon: "w-12 h-12 p-0 justify-center",
+        default: "gap-3 px-8 py-[18px] text-[12px] tracking-[0.22em]",
+        sm: "gap-2.5 px-5 py-3 text-[11px] tracking-[0.22em]",
+        icon: "h-12 w-12 justify-center p-0",
       },
     },
     defaultVariants: {
@@ -31,8 +29,7 @@ const buttonVariants = cva(
 );
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 

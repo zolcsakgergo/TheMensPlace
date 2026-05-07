@@ -14,7 +14,7 @@ export default function BarberCard({ barber }: { barber: Barber }) {
   const t = useTranslations("team");
   return (
     <div className="group flex flex-col">
-      <div className="aspect-[4/5] relative bg-bg-2 border border-rule overflow-hidden mb-6 transition-colors duration-300 group-hover:border-gold">
+      <div className="bg-bg-2 border-rule group-hover:border-gold relative mb-6 aspect-[4/5] overflow-hidden border transition-colors duration-300">
         <Frame />
         <CmsImage
           image={barber.image}
@@ -24,7 +24,7 @@ export default function BarberCard({ barber }: { barber: Barber }) {
         />
       </div>
       <h3 className="font-serif text-[28px] tracking-[-0.005em]">{barber.name}</h3>
-      <div className="font-mono text-[10px] tracking-[0.22em] uppercase text-gold mt-1.5 mb-3.5">
+      <div className="text-gold mt-1.5 mb-3.5 font-mono text-[10px] tracking-[0.22em] uppercase">
         {barber.role}
       </div>
       <p className="text-ink-dim text-[14.5px] leading-[1.65]">{barber.bio}</p>

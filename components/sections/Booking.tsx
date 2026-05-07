@@ -13,17 +13,15 @@ export default async function Booking() {
       id="booking"
       tone="bg-2"
       screenLabel="08 Booking"
-      className="text-center border-y border-rule"
+      className="border-rule border-y text-center"
     >
-      <span aria-hidden className="absolute inset-x-0 top-2 h-px bg-gold/40" />
-      <span aria-hidden className="absolute inset-x-0 bottom-2 h-px bg-gold/40" />
+      <span aria-hidden className="bg-gold/40 absolute inset-x-0 top-2 h-px" />
+      <span aria-hidden className="bg-gold/40 absolute inset-x-0 bottom-2 h-px" />
       <Container>
         <Eyebrow>{t("eyebrow")}</Eyebrow>
         <SectionTitle line1={t("titleLine1")} em={t("titleEm")} size="lg" className="my-6" />
-        <p className="text-ink-dim text-[18px] max-w-[520px] mx-auto mb-10">
-          {t("p")}
-        </p>
-        <div className="flex flex-wrap gap-4 items-center justify-center">
+        <p className="text-ink-dim mx-auto mb-10 max-w-[520px] text-[18px]">{t("p")}</p>
+        <div className="flex flex-wrap items-center justify-center gap-4">
           <Button asChild>
             <a href={PHONE_TEL}>
               {t("ctaPrimary")}

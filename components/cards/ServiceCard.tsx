@@ -12,20 +12,20 @@ export type Service = {
 export default function ServiceCard({ service }: { service: Service }) {
   const t = useTranslations("services");
   return (
-    <article className="group relative px-9 py-10 border-r border-b border-rule transition-colors duration-200 hover:bg-bg-2">
-      <div className="flex justify-between items-start gap-6 mb-[18px]">
-        <div className="font-mono text-[11px] tracking-[0.18em] text-ink-mute pt-2 transition-colors group-hover:text-gold">
+    <article className="group border-rule hover:bg-bg-2 relative border-r border-b px-9 py-10 transition-colors duration-200">
+      <div className="mb-[18px] flex items-start justify-between gap-6">
+        <div className="text-ink-mute group-hover:text-gold pt-2 font-mono text-[11px] tracking-[0.18em] transition-colors">
           {t("numPrefix")} {service.n}
         </div>
-        <h3 className="font-serif text-[30px] leading-tight flex-1">{service.title}</h3>
+        <h3 className="flex-1 font-serif text-[30px] leading-tight">{service.title}</h3>
       </div>
-      <div className="flex items-baseline gap-5 mb-[18px] pb-[18px] border-b border-dashed border-rule">
-        <span className="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-dim">
+      <div className="border-rule mb-[18px] flex items-baseline gap-5 border-b border-dashed pb-[18px]">
+        <span className="text-ink-dim font-mono text-[11px] tracking-[0.2em] uppercase">
           {service.duration}
         </span>
-        <span className="ml-auto font-serif italic text-[26px] text-gold">
+        <span className="text-gold ml-auto font-serif text-[26px] italic">
           {service.price}
-          <span className="font-mono not-italic text-[11px] tracking-[0.2em] ml-1 text-gold-deep">
+          <span className="text-gold-deep ml-1 font-mono text-[11px] tracking-[0.2em] not-italic">
             {t("lei")}
           </span>
         </span>

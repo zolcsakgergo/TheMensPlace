@@ -48,7 +48,7 @@ export default function LocationMapInner({
       scrollWheelZoom={false}
       zoomControl={true}
       attributionControl={true}
-      className="absolute inset-0 w-full h-full"
+      className="absolute inset-0 h-full w-full"
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'

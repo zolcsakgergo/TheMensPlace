@@ -13,14 +13,8 @@ export default async function Team({ team }: { team: Barber[] }) {
   return (
     <Section id="team" screenLabel="05 Team">
       <Container>
-        <SectionHead
-          eyebrow={t("eyebrow")}
-          titleLine1={t("titleLine1")}
-          titleEm={t("titleEm")}
-        />
-        <div
-          className={`grid gap-9 max-[980px]:grid-cols-1 ${teamGridLayout(team.length)}`}
-        >
+        <SectionHead eyebrow={t("eyebrow")} titleLine1={t("titleLine1")} titleEm={t("titleEm")} />
+        <div className={`grid gap-9 max-[980px]:grid-cols-1 ${teamGridLayout(team.length)}`}>
           {team.map((b) => (
             <BarberCard key={b.name} barber={b} />
           ))}

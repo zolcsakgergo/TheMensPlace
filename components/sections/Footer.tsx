@@ -7,34 +7,30 @@ const SOCIALS = [
   { key: "facebook", href: "https://www.facebook.com/NinacsLevente22/" },
 ] as const;
 
-const linkCls =
-  "text-ink-dim text-[14px] no-underline hover:text-gold transition-colors";
+const linkCls = "text-ink-dim text-[14px] no-underline hover:text-gold transition-colors";
 
 const ColumnHeading = ({ children }: { children: React.ReactNode }) => (
-  <h4 className="font-mono text-[11px] font-medium tracking-[0.22em] uppercase text-gold mb-5">
+  <h4 className="text-gold mb-5 font-mono text-[11px] font-medium tracking-[0.22em] uppercase">
     {children}
   </h4>
 );
 
 export default async function Footer() {
-  const [tFooter, tNav] = await Promise.all([
-    getTranslations("footer"),
-    getTranslations("nav"),
-  ]);
+  const [tFooter, tNav] = await Promise.all([getTranslations("footer"), getTranslations("nav")]);
   return (
-    <footer className="bg-bg-2 border-t border-gold pt-20 pb-10" data-screen-label="10 Footer">
+    <footer className="bg-bg-2 border-gold border-t pt-20 pb-10" data-screen-label="10 Footer">
       <Container>
-        <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] gap-14 mb-14 max-[980px]:grid-cols-2 max-[980px]:gap-8">
+        <div className="mb-14 grid grid-cols-[1.5fr_1fr_1fr_1fr] gap-14 max-[980px]:grid-cols-2 max-[980px]:gap-8">
           <div>
             <Brand size="lg" />
-            <p className="text-ink-dim text-[14px] leading-[1.7] mt-4.5 max-w-[320px]">
+            <p className="text-ink-dim mt-4.5 max-w-[320px] text-[14px] leading-[1.7]">
               {tFooter("tagline")}
             </p>
           </div>
 
           <div>
             <ColumnHeading>{tFooter("navHeading")}</ColumnHeading>
-            <ul className="list-none m-0 p-0 space-y-3">
+            <ul className="m-0 list-none space-y-3 p-0">
               {NAV_KEYS.map((k) => (
                 <li key={k}>
                   <a href={`#${k}`} className={linkCls}>
@@ -47,7 +43,7 @@ export default async function Footer() {
 
           <div>
             <ColumnHeading>{tFooter("contactHeading")}</ColumnHeading>
-            <ul className="list-none m-0 p-0 space-y-3">
+            <ul className="m-0 list-none space-y-3 p-0">
               <li>
                 <a href="tel:+40745319957" className={linkCls}>
                   {tFooter("phone")}
@@ -63,15 +59,10 @@ export default async function Footer() {
 
           <div>
             <ColumnHeading>{tFooter("followHeading")}</ColumnHeading>
-            <ul className="list-none m-0 p-0 space-y-3">
+            <ul className="m-0 list-none space-y-3 p-0">
               {SOCIALS.map(({ key, href }) => (
                 <li key={key}>
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={linkCls}
-                  >
+                  <a href={href} target="_blank" rel="noopener noreferrer" className={linkCls}>
                     {tFooter(`social.${key}`)}
                   </a>
                 </li>
@@ -80,7 +71,7 @@ export default async function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center pt-8 border-t border-rule font-mono text-[10px] tracking-[0.22em] uppercase text-ink-mute">
+        <div className="border-rule text-ink-mute flex items-center justify-between border-t pt-8 font-mono text-[10px] tracking-[0.22em] uppercase">
           <span>{tFooter("copyright")}</span>
           <span>{tFooter("madeWith")}</span>
         </div>

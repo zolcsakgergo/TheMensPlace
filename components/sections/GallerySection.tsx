@@ -9,20 +9,12 @@ type GalleryItem = {
   image?: SanityImage;
 };
 
-export default async function GallerySection({
-  items,
-}: {
-  items: GalleryItem[];
-}) {
+export default async function GallerySection({ items }: { items: GalleryItem[] }) {
   const t = await getTranslations("gallery");
   return (
     <Section id="gallery" tone="bg-2" screenLabel="06 Gallery">
       <Container>
-        <SectionHead
-          eyebrow={t("eyebrow")}
-          titleLine1={t("titleLine1")}
-          titleEm={t("titleEm")}
-        />
+        <SectionHead eyebrow={t("eyebrow")} titleLine1={t("titleLine1")} titleEm={t("titleEm")} />
         <Gallery items={items} />
       </Container>
     </Section>
