@@ -3,6 +3,7 @@ import { MdArrowForward } from "react-icons/md";
 import Nav from "@/components/Nav";
 import VideoReveal from "@/components/VideoReveal";
 import Reveal from "@/components/Reveal";
+import Gallery from "@/components/Gallery";
 import {
   Brand,
   Container,
@@ -35,16 +36,6 @@ const btnPrimary =
   `${btnBase} bg-gold text-bg border-gold hover:bg-gold-deep hover:border-gold-deep hover:-translate-y-0.5`;
 const btnGhost =
   `${btnBase} bg-transparent text-ink border-rule-strong hover:border-gold hover:text-gold`;
-
-const galleryItemBase =
-  "relative bg-bg-3 border border-rule overflow-hidden";
-
-const sizeClass = (s?: string) =>
-  s === "tall"
-    ? "row-span-2"
-    : s === "wide"
-      ? "col-span-2"
-      : "";
 
 export default async function Page() {
   const [tNav, tHero, tMarq, tServices, tAbout, tTeam, tGallery, tTest, tBooking, tLocation, tFooter] =
@@ -305,16 +296,7 @@ export default async function Page() {
             <Ornament />
             <SectionTitle line1={tGallery("titleLine1")} em={tGallery("titleEm")} />
           </div>
-          <div
-            className="grid grid-cols-4 gap-3 max-[980px]:grid-cols-2"
-            style={{ gridTemplateRows: "220px 220px" }}
-          >
-            {gallery.map((it, i) => (
-              <div key={i} className={`${galleryItemBase} ${sizeClass(it.size)}`}>
-                <CmsImage image={it.image} label={it.label || `Foto ${i + 1}`} alt={it.label} />
-              </div>
-            ))}
-          </div>
+          <Gallery items={gallery} />
         </Container>
       </section>
 

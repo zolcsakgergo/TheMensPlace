@@ -150,6 +150,10 @@
     "eyebrow": "Din atelier",
     "titleLine1": "Lucrul",
     "titleEm": "în detaliu.",
+    "prev": "Înapoi",
+    "next": "Înainte",
+    "close": "Închide",
+    "pageOf": "{current} / {total}",
     "items": [
       { "label": "Tuns clasic", "size": "tall" },
       { "label": "Detaliu briciu", "size": "normal" },

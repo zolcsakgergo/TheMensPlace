@@ -76,6 +76,15 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 :root {
   --bg: #0a0807;
   --bg-2: #11100e;
