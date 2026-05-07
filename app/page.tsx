@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { MdArrowForward } from "react-icons/md";
 import Nav from "@/components/Nav";
 import VideoReveal from "@/components/VideoReveal";
 import Reveal from "@/components/Reveal";
@@ -29,7 +30,7 @@ type HourMsg = { day: string; time: string; closed: boolean };
 const sectionPad = "py-[140px] max-[980px]:py-20 relative";
 
 const btnBase =
-  "inline-flex items-center gap-3 font-mono text-[12px] tracking-[0.22em] uppercase px-8 py-[18px] no-underline cursor-pointer border transition-all duration-200";
+  "group inline-flex items-center gap-3 font-mono text-[12px] tracking-[0.22em] uppercase px-8 py-[18px] no-underline cursor-pointer border transition-all duration-200";
 const btnPrimary =
   `${btnBase} bg-gold text-bg border-gold hover:bg-gold-deep hover:border-gold-deep hover:-translate-y-0.5`;
 const btnGhost =
@@ -119,8 +120,11 @@ export default async function Page() {
               </p>
               <div className="flex flex-wrap gap-4 items-center">
                 <a href="#booking" className={btnPrimary}>
-                  {tHero("ctaPrimary")}{" "}
-                  <span className="transition-transform duration-200">→</span>
+                  {tHero("ctaPrimary")}
+                  <MdArrowForward
+                    aria-hidden
+                    className="text-[1.1em] transition-transform duration-200 group-hover:translate-x-1"
+                  />
                 </a>
                 <a href="#services" className={btnGhost}>
                   {tHero("ctaGhost")}
@@ -249,7 +253,6 @@ export default async function Page() {
               <div className="font-serif italic text-[22px] text-ink border-l-2 border-gold pl-6 my-8 leading-[1.5]">
                 {tAbout("pull")}
               </div>
-              <p className="text-ink-dim text-[16.5px] leading-[1.8] mb-5">{tAbout("p2")}</p>
             </div>
           </div>
         </Container>
@@ -263,7 +266,15 @@ export default async function Page() {
             <Ornament />
             <SectionTitle line1={tTeam("titleLine1")} em={tTeam("titleEm")} />
           </div>
-          <div className="grid grid-cols-3 gap-9 max-[980px]:grid-cols-1">
+          <div
+            className={`grid gap-9 max-[980px]:grid-cols-1 ${
+              team.length === 1
+                ? "grid-cols-1 max-w-md mx-auto"
+                : team.length === 2
+                  ? "grid-cols-2 max-w-3xl mx-auto"
+                  : "grid-cols-3"
+            }`}
+          >
             {team.map((b) => (
               <div key={b.name} className="group flex flex-col">
                 <div className="aspect-[4/5] relative bg-bg-2 border border-rule overflow-hidden mb-6 transition-colors duration-300 group-hover:border-gold">
@@ -364,9 +375,18 @@ export default async function Page() {
           </p>
           <div className="flex flex-wrap gap-4 items-center justify-center">
             <a href="tel:+40700000000" className={btnPrimary}>
-              {tBooking("ctaPrimary")} <span>→</span>
+              {tBooking("ctaPrimary")}
+              <MdArrowForward
+                aria-hidden
+                className="text-[1.1em] transition-transform duration-200 group-hover:translate-x-1"
+              />
             </a>
-            <a href="#" className={btnGhost}>
+            <a
+              href="https://mero.ro/p/the-mens-place"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={btnGhost}
+            >
               {tBooking("ctaGhost")}
             </a>
           </div>
