@@ -1,15 +1,88 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { BUSINESS, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("metadata");
+  const title = t("title");
+  const description = t("description");
+
   return {
-    title: t("title"),
-    description: t("description"),
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: title,
+      template: `%s · ${BUSINESS.name}`,
+    },
+    description,
+    applicationName: BUSINESS.name,
+    keywords: [
+      "frizerie Satu Mare",
+      "barbershop Satu Mare",
+      "tuns bărbați Satu Mare",
+      "bărbierit Satu Mare",
+      "aranjat barbă Satu Mare",
+      "frizer Satu Mare",
+      "The Men's Place",
+      "Levente Ninacs",
+      "Aleea Tărnavei",
+    ],
+    authors: [{ name: BUSINESS.name, url: SITE_URL }],
+    creator: BUSINESS.name,
+    publisher: BUSINESS.name,
+    alternates: {
+      canonical: "/",
+      languages: { "ro-RO": "/" },
+    },
+    openGraph: {
+      type: "website",
+      locale: "ro_RO",
+      url: SITE_URL,
+      siteName: BUSINESS.name,
+      title,
+      description,
+      images: [
+        {
+          url: "/logo.png",
+          width: 1200,
+          height: 630,
+          alt: `${BUSINESS.name} — ${BUSINESS.city}`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/logo.png"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    icons: {
+      icon: "/icon.png",
+      apple: "/icon.png",
+    },
+    category: "barber",
+    formatDetection: { telephone: true, email: true, address: true },
   };
 }
+
+export const viewport: Viewport = {
+  themeColor: "#0a0807",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale();

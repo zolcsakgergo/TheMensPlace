@@ -11,6 +11,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import Booking from "@/components/sections/Booking";
 import Location from "@/components/sections/Location";
 import Footer from "@/components/sections/Footer";
+import JsonLd from "@/components/JsonLd";
 import { getSiteSettings, type SanityImage } from "@/sanity/lib/queries";
 import { getTranslations } from "next-intl/server";
 import type { Barber } from "@/components/cards/BarberCard";
@@ -78,6 +79,7 @@ export default async function Page() {
 
   return (
     <>
+      <JsonLd hours={hours} />
       <Nav />
       <Hero heroImage={settings?.heroImage} />
       <MarqueeBar />
