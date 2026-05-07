@@ -1,50 +1,119 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0807;
+  --color-bg-2: #11100e;
+  --color-bg-3: #1a1714;
+  --color-ink: #f4ede0;
+  --color-ink-dim: #b8ac96;
+  --color-ink-mute: #6b6358;
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-rule: rgba(212, 175, 100, 0.18);
+  --color-rule-strong: rgba(212, 175, 100, 0.45);
+
+  --font-serif: "Playfair Display", "Bodoni Moda", Georgia, serif;
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --background-image-stripes: repeating-linear-gradient(
+    45deg,
+    var(--bg-3) 0,
+    var(--bg-3) 14px,
+    var(--bg-2) 14px,
+    var(--bg-2) 28px
+  );
+  --background-image-hero-glow: radial-gradient(
+      ellipse at 20% 30%,
+      var(--gold-glow),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 70%,
+      rgba(168, 133, 63, 0.15),
+      transparent 50%
+    );
+  --background-image-video-overlay: linear-gradient(
+    180deg,
+    rgba(10, 8, 7, 0.85) 0%,
+    rgba(10, 8, 7, 0.35) 30%,
+    rgba(10, 8, 7, 0.35) 70%,
+    rgba(10, 8, 7, 0.95) 100%
+  );
+  --background-image-video-fallback: radial-gradient(
+      ellipse at center,
+      #2a2520 0%,
+      #0a0807 70%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #1a1714 0,
+      #1a1714 2px,
+      #11100e 2px,
+      #11100e 4px
+    );
+  --background-image-ornament-line: linear-gradient(
+    90deg,
+    transparent,
+    var(--gold),
+    transparent
+  );
+  --background-image-featured-tint: linear-gradient(
+    180deg,
+    rgba(212, 175, 100, 0.06),
+    transparent
+  );
+
+  --animate-marquee: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+:root {
+  --bg: #0a0807;
+  --bg-2: #11100e;
+  --bg-3: #1a1714;
+  --gold: #d4af64;
+  --gold-deep: #a8853f;
+  --gold-glow: rgba(212, 175, 100, 0.25);
+}
+[data-gold="champagne"] {
+  --gold: #e6d3a3;
+  --gold-deep: #b8a273;
+  --gold-glow: rgba(230, 211, 163, 0.22);
+}
+[data-gold="antique"] {
+  --gold: #b8924a;
+  --gold-deep: #8a6a32;
+  --gold-glow: rgba(184, 146, 74, 0.22);
+}
 
 @layer base {
-  :root {
-    --bg: #0a0807;
-    --bg-2: #11100e;
-    --bg-3: #1a1714;
-    --ink: #f4ede0;
-    --ink-dim: #b8ac96;
-    --ink-mute: #6b6358;
-    --rule: rgba(212, 175, 100, 0.18);
-    --rule-strong: rgba(212, 175, 100, 0.45);
-    --gold: #d4af64;
-    --gold-deep: #a8853f;
-    --gold-glow: rgba(212, 175, 100, 0.25);
-  }
-  [data-gold="champagne"] {
-    --gold: #e6d3a3;
-    --gold-deep: #b8a273;
-    --gold-glow: rgba(230, 211, 163, 0.22);
-  }
-  [data-gold="antique"] {
-    --gold: #b8924a;
-    --gold-deep: #8a6a32;
-    --gold-glow: rgba(184, 146, 74, 0.22);
-  }
-
   html {
     scroll-behavior: smooth;
   }
   body {
     background: var(--bg);
-    color: var(--ink);
-    font-family: theme("fontFamily.sans");
+    color: var(--color-ink);
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 }
 
-@layer components {
-  /* Reveal-on-scroll */
-  .reveal {
-    @apply opacity-0 translate-y-[30px] transition-[opacity,transform] duration-700 ease-out;
-  }
-  .reveal.in {
-    @apply opacity-100 translate-y-0;
-  }
+@utility reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
 }
