@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
+import FloatingBook from "@/components/FloatingBook";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -102,6 +103,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <FloatingBook />
         </NextIntlClientProvider>
         <Analytics />
       </body>

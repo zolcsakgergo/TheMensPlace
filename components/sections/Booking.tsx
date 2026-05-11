@@ -23,8 +23,8 @@ export default async function Booking() {
         <p className="text-ink-dim mx-auto mb-10 max-w-[520px] text-[18px]">{t("p")}</p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Button asChild>
-            <a href={PHONE_TEL}>
-              {t("ctaPrimary")}
+            <a href={MERO_URL} target="_blank" rel="noopener noreferrer">
+              {t("ctaGhost")}
               <MdArrowForward
                 aria-hidden
                 className="text-[1.1em] transition-transform duration-200 group-hover:translate-x-1"
@@ -32,9 +32,7 @@ export default async function Booking() {
             </a>
           </Button>
           <Button asChild variant="ghost">
-            <a href={MERO_URL} target="_blank" rel="noopener noreferrer">
-              {t("ctaGhost")}
-            </a>
+            <a href={PHONE_TEL}>{t("ctaPrimary")}</a>
           </Button>
         </div>
       </Container>

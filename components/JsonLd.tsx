@@ -1,6 +1,13 @@
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import type { HourEntry } from "./cards/HoursList";
 
+export type ServiceItem = {
+  title: string;
+  duration?: string;
+  price: string;
+  desc?: string;
+};
+
 const FAQ = [
   {
     q: "Unde se află The Men's Place?",
@@ -50,7 +57,41 @@ function parseTimeRange(time: string): { opens: string; closes: string } | null 
   return { opens, closes };
 }
 
-export default function JsonLd({ hours }: { hours: HourEntry[] }) {
+function buildOffer(item: ServiceItem) {
+  const parts = item.price.split(/[—–-]/).map((s) => s.trim());
+  const base = {
+    "@type": "Offer",
+    priceCurrency: "RON",
+    availability: "https://schema.org/InStock",
+    itemOffered: {
+      "@type": "Service",
+      name: item.title,
+      ...(item.desc ? { description: item.desc } : {}),
+      ...(item.duration ? { serviceOutput: item.duration } : {}),
+      provider: { "@id": `${SITE_URL}/#salon` },
+    },
+  };
+  if (parts.length === 2 && /^\d+$/.test(parts[0]) && /^\d+$/.test(parts[1])) {
+    return {
+      ...base,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "RON",
+        minPrice: parts[0],
+        maxPrice: parts[1],
+      },
+    };
+  }
+  return { ...base, price: parts[0] };
+}
+
+export default function JsonLd({
+  hours,
+  services,
+}: {
+  hours: HourEntry[];
+  services: ServiceItem[];
+}) {
   const openingHoursSpecification = hours
     .filter((h) => !h.closed)
     .map((h) => {
@@ -68,7 +109,7 @@ export default function JsonLd({ hours }: { hours: HourEntry[] }) {
 
   const data = {
     "@context": "https://schema.org",
-    "@type": "HairSalon",
+    "@type": "BarberShop",
     "@id": `${SITE_URL}/#salon`,
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
@@ -78,6 +119,7 @@ export default function JsonLd({ hours }: { hours: HourEntry[] }) {
     logo: `${SITE_URL}/logo.png`,
     telephone: BUSINESS.phone,
     priceRange: BUSINESS.priceRange,
+    knowsLanguage: ["ro", "hu"],
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.street,
@@ -93,10 +135,21 @@ export default function JsonLd({ hours }: { hours: HourEntry[] }) {
     },
     areaServed: { "@type": "City", name: BUSINESS.city },
     openingHoursSpecification,
+    makesOffer: services.map(buildOffer),
     sameAs: BUSINESS.social,
     hasMap: `https://www.google.com/maps/search/?api=1&query=${BUSINESS.geo.latitude},${BUSINESS.geo.longitude}`,
     paymentAccepted: "Cash, Card",
     currenciesAccepted: "RON",
+  };
+
+  const websiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: BUSINESS.name,
+    url: SITE_URL,
+    inLanguage: "ro-RO",
+    publisher: { "@id": `${SITE_URL}/#salon` },
   };
 
   const faqData = {
@@ -119,6 +172,11 @@ export default function JsonLd({ hours }: { hours: HourEntry[] }) {
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
       />
       <script
         type="application/ld+json"

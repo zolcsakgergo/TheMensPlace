@@ -5,7 +5,9 @@
     "team": "Echipa",
     "gallery": "Galerie",
     "location": "Locație",
-    "cta": "Programează"
+    "cta": "Programează",
+    "menuOpen": "Deschide meniul",
+    "menuClose": "Închide meniul"
   },
   "brand": {
     "name": "The Men's Place"
@@ -195,7 +197,8 @@
     "titleEm": "te așteaptă.",
     "p": "Scaunul se ocupă repede. Folosește aplicația Mero pentru a vedea disponibilitatea și rezervă-ți timpul tău de răsfăț.",
     "ctaPrimary": "Sună acum · 0745319957",
-    "ctaGhost": "Rezervare online prin Mero"
+    "ctaGhost": "Rezervare online prin Mero",
+    "floating": "Programează"
   },
   "location": {
     "eyebrow": "Vino la noi",

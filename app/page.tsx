@@ -11,7 +11,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import Booking from "@/components/sections/Booking";
 import Location from "@/components/sections/Location";
 import Footer from "@/components/sections/Footer";
-import JsonLd from "@/components/JsonLd";
+import JsonLd, { type ServiceItem } from "@/components/JsonLd";
 import { getSiteSettings, type SanityImage } from "@/sanity/lib/queries";
 import { getTranslations } from "next-intl/server";
 import type { Barber } from "@/components/cards/BarberCard";
@@ -32,16 +32,18 @@ type TeamFallback = { name: string; role: string; bio: string };
 
 /** Use Sanity content when present, otherwise fall back to translations. */
 async function loadContent() {
-  const [tTeam, tGallery, tLocation] = await Promise.all([
+  const [tTeam, tGallery, tLocation, tServices] = await Promise.all([
     getTranslations("team"),
     getTranslations("gallery"),
     getTranslations("location"),
+    getTranslations("services"),
   ]);
   const settings = await getSiteSettings();
 
   const teamFallback = tTeam.raw("items") as TeamFallback[];
   const galleryFallback = tGallery.raw("items") as GalleryFallback[];
   const hoursFallback = tLocation.raw("hours") as HourEntry[];
+  const services = tServices.raw("items") as ServiceItem[];
 
   const team: Barber[] =
     settings?.team && settings.team.length > 0
@@ -71,15 +73,15 @@ async function loadContent() {
         }))
       : hoursFallback;
 
-  return { settings, team, gallery, hours };
+  return { settings, team, gallery, hours, services };
 }
 
 export default async function Page() {
-  const { settings, team, gallery, hours } = await loadContent();
+  const { settings, team, gallery, hours, services } = await loadContent();
 
   return (
     <>
-      <JsonLd hours={hours} />
+      <JsonLd hours={hours} services={services} />
       <Nav />
       <Hero heroImage={settings?.heroImage} />
       <MarqueeBar />
