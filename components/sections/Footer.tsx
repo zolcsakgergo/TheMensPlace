@@ -71,8 +71,16 @@ export default async function Footer() {
           </div>
         </div>
 
-        <div className="border-rule text-ink-mute flex items-center justify-between border-t pt-8 font-mono text-[10px] tracking-[0.22em] uppercase">
+        <div className="border-rule text-ink-mute flex flex-wrap items-center justify-between gap-4 border-t pt-8 font-mono text-[10px] tracking-[0.22em] uppercase">
           <span>{tFooter("copyright")}</span>
+          <div className="flex gap-6">
+            <a href="/confidentialitate" className="hover:text-gold transition-colors">
+              {tFooter("privacy")}
+            </a>
+            <a href="/mentiuni-legale" className="hover:text-gold transition-colors">
+              {tFooter("legal")}
+            </a>
+          </div>
           <span>{tFooter("madeWith")}</span>
         </div>
       </Container>
