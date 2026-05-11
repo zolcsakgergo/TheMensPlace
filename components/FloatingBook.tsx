@@ -1,10 +1,19 @@
-import { getTranslations } from "next-intl/server";
+"use client";
+import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { MdCalendarMonth } from "react-icons/md";
 
 const MERO_URL = "https://mero.ro/p/the-mens-place";
+const HIDDEN_PATHS = ["/confidentialitate", "/mentiuni-legale"];
 
-export default async function FloatingBook() {
-  const t = await getTranslations("booking");
+export default function FloatingBook() {
+  const pathname = usePathname();
+  const t = useTranslations("booking");
+
+  if (HIDDEN_PATHS.some((p) => pathname === p || pathname.startsWith(`${p}/`))) {
+    return null;
+  }
+
   return (
     <a
       href={MERO_URL}

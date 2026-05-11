@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   alternates: { canonical: "/mentiuni-legale" },
 };
 
+const LAST_UPDATED = "12 mai 2026";
+
 const linkCls = "text-gold underline-offset-4 hover:underline";
 
 const Row = ({ label, children }: { label: string; children: React.ReactNode }) => (
@@ -25,10 +27,13 @@ export default function LegalPage() {
     <>
       <Nav />
       <main className="pt-32">
-        <Section tone="bg" className="!py-20">
-          <Container className="max-w-[760px]">
+        <Section tone="bg" className="py-20!">
+          <Container className="max-w-190">
             <Eyebrow>Legal</Eyebrow>
             <SectionTitle line1="Mențiuni" em="legale" className="mb-10" />
+            <p className="text-ink-mute mb-6 font-mono text-[11px] tracking-[0.22em] uppercase">
+              Ultima actualizare · {LAST_UPDATED}
+            </p>
             <p className="text-ink-dim mb-12 text-[16px] leading-[1.7]">
               Informații obligatorii conform Legii nr. 365/2002 privind comerțul electronic.
             </p>
