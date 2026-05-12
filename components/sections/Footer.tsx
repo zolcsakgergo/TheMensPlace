@@ -2,9 +2,24 @@ import { getTranslations } from "next-intl/server";
 import { Brand, Container } from "@/components/Primitives";
 
 const NAV_KEYS = ["services", "about", "team", "gallery"] as const;
+
+const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden {...props}>
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+  </svg>
+);
+
+const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden {...props}>
+    <path d="M14.5 8.5h2.25V5.5h-2.25c-1.8 0-3.25 1.45-3.25 3.25V11H9v3h2.25v6.5h3V14H17l.5-3h-3.25V9c0-.28.22-.5.5-.5Z" />
+  </svg>
+);
+
 const SOCIALS = [
-  { key: "instagram", href: "https://www.instagram.com/levente.ninacs/" },
-  { key: "facebook", href: "https://www.facebook.com/NinacsLevente22/" },
+  { key: "instagram", href: "https://www.instagram.com/levente.ninacs/", Icon: InstagramIcon },
+  { key: "facebook", href: "https://www.facebook.com/NinacsLevente22/", Icon: FacebookIcon },
 ] as const;
 
 const linkCls = "text-ink-dim text-[14px] no-underline hover:text-gold transition-colors";
@@ -60,10 +75,16 @@ export default async function Footer() {
           <div>
             <ColumnHeading>{tFooter("followHeading")}</ColumnHeading>
             <ul className="m-0 list-none space-y-3 p-0">
-              {SOCIALS.map(({ key, href }) => (
+              {SOCIALS.map(({ key, href, Icon }) => (
                 <li key={key}>
-                  <a href={href} target="_blank" rel="noopener noreferrer" className={linkCls}>
-                    {tFooter(`social.${key}`)}
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${linkCls} inline-flex items-center gap-2.5`}
+                  >
+                    <Icon className="text-gold h-5 w-5 shrink-0" />
+                    <span>{tFooter(`social.${key}`)}</span>
                   </a>
                 </li>
               ))}
