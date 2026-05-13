@@ -4,6 +4,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
 import FloatingBook from "@/components/FloatingBook";
+import ScrollToTop from "@/components/ScrollToTop";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
@@ -151,6 +152,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           {children}
           <FloatingBook />
+          <ScrollToTop />
         </NextIntlClientProvider>
         <Analytics />
       </body>

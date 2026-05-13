@@ -17,7 +17,7 @@
     "titleLine1": "Craft",
     "titleLine2Pre": "made with",
     "titleEm": "patience",
-    "titleSmall": "Not just a haircut — a quarter of an hour of quiet.",
+    "titleSmall": "Not just a haircut, half an hour of quiet.",
     "lede": "Fresh fades. Clean lines. Quiet confidence. We don't just cut your hair, we upgrade your style. Walk in ordinary, walk out unforgettable.",
     "ctaPrimary": "Take a seat",
     "ctaGhost": "See the rituals",
@@ -134,7 +134,7 @@
     "titleLine1": "A sanctuary for gentlemen,",
     "titleEm": "where character meets tradition.",
     "p1": "The Men's Place opened in 2016 as an intimate workshop with just two chairs and a clear vision: absolute quality before volume. We chose not to rush time, but to turn every visit into a ritual of craft, giving today's man the distinction of times past.",
-    "pull": "“A good haircut isn't a transaction — it's a pause. A quarter of an hour when no one asks anything of you.”",
+    "pull": "“A good haircut isn't a transaction, it's a pause. Half an hour when no one asks anything of you.”",
     "photoLabel": "Photo · interior",
     "photoDim": "Recommended: vintage chair + mirror",
     "photoAlt": "Barbershop interior"
@@ -176,17 +176,17 @@
     "titleEm": "gentlemen say.",
     "items": [
       {
-        "text": "I walked in tired and walked out a gentleman. Levi is a true craftsman — every detail counts.",
+        "text": "I walked in tired and walked out a gentleman. Levi is a true craftsman, every detail counts.",
         "name": "Gergő Z.",
         "initial": "G"
       },
       {
-        "text": "The best premium package in town. The atmosphere, the scent of the products, the music — everything is considered.",
+        "text": "The best premium package in town. The atmosphere, the scent of the products, the music, everything is considered.",
         "name": "Dávid B.",
         "initial": "D"
       },
       {
-        "text": "I've been coming for four years and haven't tried anywhere else. The cut holds perfectly for three weeks — that says it all.",
+        "text": "I've been coming for four years and haven't tried anywhere else. The cut holds perfectly for three weeks, that says it all.",
         "name": "Răzvan I.",
         "initial": "R"
       }
@@ -243,7 +243,7 @@
   },
   "metadata": {
     "title": "The Men's Place · Classic barbershop in Satu Mare",
-    "description": "A barbershop of honour in Satu Mare — men's cuts, straight-razor shaves, beard trims and rituals for gentlemen. Online booking via Mero. Aleea Tărnavei 2/A."
+    "description": "A barbershop of honour in Satu Mare, men's cuts, straight-razor shaves, beard trims and rituals for gentlemen. Online booking via Mero. Aleea Tărnavei 2/A."
   },
   "privacy": {
     "metaTitle": "Privacy Policy",
@@ -260,18 +260,18 @@
     "s2": {
       "h": "2. What data we collect",
       "p1": "Our site does not request personal data directly. There are no contact forms, accounts or shopping carts. Bookings are made exclusively through the external Mero platform.",
-      "p2": "This site <b>does not use cookies</b> — no tracking, analytics or advertising cookies. We do not use other local storage technologies (localStorage, pixels, fingerprinting) for profiling.",
+      "p2": "This site <b>does not use cookies</b>, no tracking, analytics or advertising cookies. We do not use other local storage technologies (localStorage, pixels, fingerprinting) for profiling.",
       "p3": "We do, however, indirectly process:",
       "li1": "<b>Anonymised traffic data</b> via Vercel Analytics: page visited, country, device type, browser, referrer. The IP address is anonymised before storage; no cookies are set.",
       "li2": "<b>Strictly necessary technical data</b> (server logs) to deliver the site and prevent abuse."
     },
     "s3": {
       "h": "3. Data concerning minors",
-      "body": "Our services include packages for children (“The Young Gentleman”, “Family Tradition — Father & Son”). Bookings for minors are made exclusively by parents or legal guardians. We do not knowingly collect personal data from children under 16 through this site (Art. 8 GDPR). If you become aware that a minor has provided us with such data, please contact us so we can delete it."
+      "body": "Our services include packages for children (“The Young Gentleman”, “Family Tradition, Father & Son”). Bookings for minors are made exclusively by parents or legal guardians. We do not knowingly collect personal data from children under 16 through this site (Art. 8 GDPR). If you become aware that a minor has provided us with such data, please contact us so we can delete it."
     },
     "s4": {
       "h": "4. Legal basis and purpose",
-      "body": "We process this data on the basis of our legitimate interest (Art. 6(1)(f) of EU Regulation 2016/679 — GDPR), in order to understand how the site is used and to improve it. We do not use the data for profiling, behavioural advertising or automated decision-making."
+      "body": "We process this data on the basis of our legitimate interest (Art. 6(1)(f) of EU Regulation 2016/679, GDPR), in order to understand how the site is used and to improve it. We do not use the data for profiling, behavioural advertising or automated decision-making."
     },
     "s5": {
       "h": "5. Bookings via Mero",
@@ -283,7 +283,7 @@
     },
     "s7": {
       "h": "7. Security",
-      "body": "The site is served exclusively over HTTPS (TLS) and runs on Vercel's secure infrastructure, with automatically managed certificates and network-level DDoS protection. We do not process or store payment data on this domain — transactions for services are settled physically at the salon. We apply appropriate technical and organisational measures to prevent unauthorised access, alteration or disclosure of the data processed."
+      "body": "The site is served exclusively over HTTPS (TLS) and runs on Vercel's secure infrastructure, with automatically managed certificates and network-level DDoS protection. We do not process or store payment data on this domain, transactions for services are settled physically at the salon. We apply appropriate technical and organisational measures to prevent unauthorised access, alteration or disclosure of the data processed."
     },
     "s8": {
       "h": "8. Retention period",

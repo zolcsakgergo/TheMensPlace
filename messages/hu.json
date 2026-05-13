@@ -133,7 +133,7 @@
     "eyebrow": "A történetünk",
     "titleLine1": "Egy úri menedék,",
     "titleEm": "ahol a karakter találkozik a hagyománnyal.",
-    "p1": "A The Men's Place 2016-ban nyílt meg egy intim, mindössze két székes műhelyként, tiszta vízióval: a minőség mindig a mennyiség előtt. Nem siettetjük az időt — minden látogatást a mesterség rituáléjává alakítunk, visszaadva a mai férfinak a régi idők eleganciáját.",
+    "p1": "A The Men's Place 2016-ban nyílt meg egy intim, mindössze két székes műhelyként, tiszta vízióval: a minőség mindig a mennyiség előtt. Nem siettetjük az időt, minden látogatást a mesterség rituáléjává alakítunk, visszaadva a mai férfinak a régi idők eleganciáját.",
     "pull": "„Egy jó hajvágás nem tranzakció, hanem szünet. Egy fél óra, amikor senki sem kér tőled semmit.”",
     "photoLabel": "Fotó · belső tér",
     "photoDim": "Ajánlott: vintage szék + tükör",
@@ -149,7 +149,7 @@
       {
         "name": "Ninacs Levente",
         "role": "Master Barber · Alapító",
-        "bio": "10 év mesterség. A klasszikus hajvágás szigorától a modern stílus precizitásáig — a szakállat arc-architektúrává formáljuk. Mind olló, szenvedély és tökéletes figyelem a részletek iránt."
+        "bio": "10 év mesterség. A klasszikus hajvágás szigorától a modern stílus precizitásáig, a szakállat arc-architektúrává formáljuk. Mind olló, szenvedély és tökéletes figyelem a részletek iránt."
       }
     ]
   },
@@ -176,17 +176,17 @@
     "titleEm": "az úriembereink.",
     "items": [
       {
-        "text": "Fáradtan léptem be, úriemberként távoztam. Levi igazi mester — minden részlet számít.",
+        "text": "Fáradtan léptem be, úriemberként távoztam. Levi igazi mester, minden részlet számít.",
         "name": "Gergő Z.",
         "initial": "G"
       },
       {
-        "text": "A város legjobb prémium csomagja. A hangulat, a termékek illata, a zene — minden átgondolt.",
+        "text": "A város legjobb prémium csomagja. A hangulat, a termékek illata, a zene, minden átgondolt.",
         "name": "Dávid B.",
         "initial": "D"
       },
       {
-        "text": "Négy éve járok ide, mást meg sem próbáltam. A frizura három hétig tökéletes — ez mindent elmond.",
+        "text": "Négy éve járok ide, mást meg sem próbáltam. A frizura három hétig tökéletes, ez mindent elmond.",
         "name": "Răzvan I.",
         "initial": "R"
       }
@@ -243,7 +243,7 @@
   },
   "metadata": {
     "title": "The Men's Place · Klasszikus borbélyműhely Szatmárnémetiben",
-    "description": "Klasszikus borbélyműhely Szatmárnémetiben — férfi hajvágás, borotválás, szakállformázás és rituálék úriembereknek. Online foglalás Meron. Aleea Tărnavei 2/A."
+    "description": "Klasszikus borbélyműhely Szatmárnémetiben, férfi hajvágás, borotválás, szakállformázás és rituálék úriembereknek. Online foglalás Meron. Aleea Tărnavei 2/A."
   },
   "privacy": {
     "metaTitle": "Adatvédelmi szabályzat",
@@ -260,18 +260,18 @@
     "s2": {
       "h": "2. Milyen adatokat gyűjtünk",
       "p1": "Oldalunk nem kér közvetlenül személyes adatokat. Nincs kapcsolatfelvételi űrlap, fiók vagy bevásárlókosár. A foglalások kizárólag a külső Mero platformon keresztül történnek.",
-      "p2": "Ez az oldal <b>nem használ sütiket</b> — sem nyomon követésre, sem analitikára, sem reklámra. Nem alkalmazunk más helyi tárolási technológiát sem (localStorage, pixelek, fingerprinting) profilalkotási céllal.",
+      "p2": "Ez az oldal <b>nem használ sütiket</b>, sem nyomon követésre, sem analitikára, sem reklámra. Nem alkalmazunk más helyi tárolási technológiát sem (localStorage, pixelek, fingerprinting) profilalkotási céllal.",
       "p3": "Közvetve azonban a következőket kezeljük:",
       "li1": "<b>Anonim forgalmi adatok</b> a Vercel Analyticsen keresztül: meglátogatott oldal, ország, eszköz típusa, böngésző, hivatkozó. Az IP-cím anonimizált a tárolás előtt; nem állítunk be sütiket.",
       "li2": "<b>Szigorúan szükséges technikai adatok</b> (szervernaplók) az oldal kiszolgálásához és a visszaélések megelőzéséhez."
     },
     "s3": {
       "h": "3. Kiskorúak adatai",
-      "body": "Szolgáltatásaink között gyerekeknek szóló csomagok is szerepelnek („A kis úriember”, „Családi hagyomány — Apa & Fia”). A kiskorúak foglalásait kizárólag szülő vagy törvényes gyám kezdeményezheti. Nem gyűjtünk szándékosan személyes adatokat 16 év alatti gyermekektől ezen az oldalon keresztül (GDPR 8. cikk). Ha tudomásukra jut, hogy egy kiskorú adatokat adott meg számunkra, kérjük, vegyék fel velünk a kapcsolatot a törlés érdekében."
+      "body": "Szolgáltatásaink között gyerekeknek szóló csomagok is szerepelnek („A kis úriember”, „Családi hagyomány, Apa & Fia”). A kiskorúak foglalásait kizárólag szülő vagy törvényes gyám kezdeményezheti. Nem gyűjtünk szándékosan személyes adatokat 16 év alatti gyermekektől ezen az oldalon keresztül (GDPR 8. cikk). Ha tudomásukra jut, hogy egy kiskorú adatokat adott meg számunkra, kérjük, vegyék fel velünk a kapcsolatot a törlés érdekében."
     },
     "s4": {
       "h": "4. Jogalap és cél",
-      "body": "Az adatokat jogos érdekünk alapján kezeljük (az EU 2016/679 rendelet — GDPR — 6. cikk (1) bekezdés f) pontja), hogy megértsük, hogyan használják az oldalt, és fejleszthessük azt. Az adatokat nem használjuk profilalkotásra, viselkedés alapú reklámra vagy automatizált döntéshozatalra."
+      "body": "Az adatokat jogos érdekünk alapján kezeljük (az EU 2016/679 rendelet, GDPR, 6. cikk (1) bekezdés f) pontja), hogy megértsük, hogyan használják az oldalt, és fejleszthessük azt. Az adatokat nem használjuk profilalkotásra, viselkedés alapú reklámra vagy automatizált döntéshozatalra."
     },
     "s5": {
       "h": "5. Foglalás a Meron keresztül",
@@ -283,7 +283,7 @@
     },
     "s7": {
       "h": "7. Biztonság",
-      "body": "Az oldal kizárólag HTTPS (TLS) protokollon keresztül érhető el, és a Vercel biztonságos infrastruktúráján fut, automatikusan kezelt tanúsítványokkal és hálózati szintű DDoS-védelemmel. Ezen a tartományon nem dolgozunk fel és nem tárolunk fizetési adatokat — a szolgáltatások ellenértékét fizikailag a szalonban egyenlítik ki. Megfelelő technikai és szervezeti intézkedéseket alkalmazunk a jogosulatlan hozzáférés, módosítás vagy nyilvánosságra hozatal megelőzésére."
+      "body": "Az oldal kizárólag HTTPS (TLS) protokollon keresztül érhető el, és a Vercel biztonságos infrastruktúráján fut, automatikusan kezelt tanúsítványokkal és hálózati szintű DDoS-védelemmel. Ezen a tartományon nem dolgozunk fel és nem tárolunk fizetési adatokat, a szolgáltatások ellenértékét fizikailag a szalonban egyenlítik ki. Megfelelő technikai és szervezeti intézkedéseket alkalmazunk a jogosulatlan hozzáférés, módosítás vagy nyilvánosságra hozatal megelőzésére."
     },
     "s8": {
       "h": "8. Megőrzési idő",

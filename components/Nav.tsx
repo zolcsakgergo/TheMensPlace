@@ -4,14 +4,23 @@ import { useTranslations } from "next-intl";
 import { MdClose, MdMenu } from "react-icons/md";
 import { Brand } from "./Primitives";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const linkCls =
   "font-mono text-[11px] tracking-[0.22em] uppercase text-ink-dim hover:text-gold transition-colors no-underline";
 
 export default function Nav() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const onBrandClick = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -41,7 +50,14 @@ export default function Nav() {
           scrolled ? "bg-bg/90 px-12 py-[14px]" : "bg-bg/60 px-12 py-[22px]"
         }`}
       >
-        <Brand />
+        <Link
+          href="/"
+          onClick={onBrandClick}
+          aria-label="The Men's Place"
+          className="no-underline"
+        >
+          <Brand />
+        </Link>
         <ul className="m-0 flex list-none gap-9 p-0 max-[980px]:hidden">
           {items.map((it) => (
             <li key={it.href}>

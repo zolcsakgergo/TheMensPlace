@@ -17,7 +17,7 @@
     "titleLine1": "Meșteșug",
     "titleLine2Pre": "făcut cu",
     "titleEm": "răbdare",
-    "titleSmall": "Nu doar un tuns, ci un sfert de oră de liniște.",
+    "titleSmall": "Nu doar un tuns, ci o jumătate de oră de liniște.",
     "lede": "Fade-uri fresh. Linii geometrice. Încredere curată. Nu doar tund, îți dau un upgrade de stil. Intri obișnuit, ieși de neuitat.",
     "ctaPrimary": "Ocupă scaunul",
     "ctaGhost": "Vezi ritualurile",
@@ -133,7 +133,7 @@
     "eyebrow": "Povestea noastră",
     "titleLine1": "Un sanctuar al domnilor,",
     "titleEm": "unde caracterul întâlnește tradiția.",
-    "p1": "The Men's Place s-a deschis în 2016 ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",    "pull": "„Un tuns bun nu e o tranzacție, e o pauză. Un sfert de oră în care nimeni nu-ți cere nimic.”",
+    "p1": "The Men's Place s-a deschis în 2016 ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",    "pull": "„Un tuns bun nu e o tranzacție, e o pauză. O jumătate de oră în care nimeni nu-ți cere nimic.”",
     "photoLabel": "Foto · interior",
     "photoDim": "Recomandat: scaun vintage + oglindă",
     "photoAlt": "Interior frizerie"
@@ -175,12 +175,12 @@
     "titleEm": "domnii noștri.",
     "items": [
       {
-        "text": "Am intrat obosit, am ieșit ca un domn. Levi e un meșter adevărat — fiecare detaliu contează.",
+        "text": "Am intrat obosit, am ieșit ca un domn. Levi e un meșter adevărat, fiecare detaliu contează.",
         "name": "Gergő Z.",
         "initial": "G"
       },
       {
-        "text": "Cel mai bun pachet premium din oraș. Atmosfera, mirosul de produse, muzica — totul e gândit.",
+        "text": "Cel mai bun pachet premium din oraș. Atmosfera, mirosul de produse, muzica, totul e gândit.",
         "name": "Dávid B.",
         "initial": "D"
       },
@@ -242,7 +242,7 @@
   },
   "metadata": {
     "title": "The Men's Place · Frizerie clasică în Satu Mare",
-    "description": "Frizerie de onoare în Satu Mare — tuns bărbați, bărbierit cu briciul, aranjat barbă și ritualuri pentru domni. Programări online prin Mero. Aleea Tărnavei 2/A."
+    "description": "Frizerie de onoare în Satu Mare, tuns bărbați, bărbierit cu briciul, aranjat barbă și ritualuri pentru domni. Programări online prin Mero. Aleea Tărnavei 2/A."
   },
   "privacy": {
     "metaTitle": "Politica de confidențialitate",
@@ -259,18 +259,18 @@
     "s2": {
       "h": "2. Ce date colectăm",
       "p1": "Site-ul nostru nu solicită direct date personale. Nu există formulare de contact, conturi sau coșuri de cumpărături. Programările se efectuează exclusiv prin platforma externă Mero.",
-      "p2": "Acest site <b>nu folosește cookie-uri</b> — nici de urmărire, nici de analiză, nici de publicitate. Nu sunt folosite alte tehnologii de stocare locală (localStorage, pixel-uri, fingerprinting) în scop de profilare.",
+      "p2": "Acest site <b>nu folosește cookie-uri</b>, nici de urmărire, nici de analiză, nici de publicitate. Nu sunt folosite alte tehnologii de stocare locală (localStorage, pixel-uri, fingerprinting) în scop de profilare.",
       "p3": "Procesăm însă, indirect:",
       "li1": "<b>Date de trafic anonimizate</b> prin Vercel Analytics: pagină vizitată, țară, tip de dispozitiv, browser, referrer. IP-ul este anonimizat înainte de stocare; nu se setează cookie-uri.",
       "li2": "<b>Date tehnice strict necesare</b> (jurnale de server) pentru livrarea site-ului și prevenirea abuzurilor."
     },
     "s3": {
       "h": "3. Date despre minori",
-      "body": "Serviciile noastre includ pachete pentru copii („Micul Domn”, „Tradiție în Familie — Tată & Fiu”). Programările pentru minori se fac exclusiv de către părinți sau tutori legali. Nu colectăm intenționat date cu caracter personal de la copii sub 16 ani prin acest site (art. 8 GDPR). Dacă luați cunoștință că un minor ne-a furnizat astfel de date, vă rugăm să ne contactați pentru a le șterge."
+      "body": "Serviciile noastre includ pachete pentru copii („Micul Domn”, „Tradiție în Familie, Tată & Fiu”). Programările pentru minori se fac exclusiv de către părinți sau tutori legali. Nu colectăm intenționat date cu caracter personal de la copii sub 16 ani prin acest site (art. 8 GDPR). Dacă luați cunoștință că un minor ne-a furnizat astfel de date, vă rugăm să ne contactați pentru a le șterge."
     },
     "s4": {
       "h": "4. Temei legal și scop",
-      "body": "Prelucrăm aceste date în temeiul interesului nostru legitim (art. 6 alin. 1 lit. f din Regulamentul UE 2016/679 — GDPR), pentru a înțelege cum este folosit site-ul și a-l îmbunătăți. Nu folosim datele pentru profilare, publicitate comportamentală sau decizii automate."
+      "body": "Prelucrăm aceste date în temeiul interesului nostru legitim (art. 6 alin. 1 lit. f din Regulamentul UE 2016/679, GDPR), pentru a înțelege cum este folosit site-ul și a-l îmbunătăți. Nu folosim datele pentru profilare, publicitate comportamentală sau decizii automate."
     },
     "s5": {
       "h": "5. Programări prin Mero",
@@ -282,7 +282,7 @@
     },
     "s7": {
       "h": "7. Securitate",
-      "body": "Site-ul este servit exclusiv prin HTTPS (TLS) și rulează pe infrastructura securizată a Vercel, cu certificate gestionate automat și protecție DDoS la nivel de rețea. Nu procesăm și nu stocăm date de plată pe acest domeniu — tranzacțiile pentru servicii se efectuează fizic, la sediul salonului. Aplicăm măsuri tehnice și organizatorice adecvate pentru a preveni accesul neautorizat, modificarea sau divulgarea datelor procesate."
+      "body": "Site-ul este servit exclusiv prin HTTPS (TLS) și rulează pe infrastructura securizată a Vercel, cu certificate gestionate automat și protecție DDoS la nivel de rețea. Nu procesăm și nu stocăm date de plată pe acest domeniu, tranzacțiile pentru servicii se efectuează fizic, la sediul salonului. Aplicăm măsuri tehnice și organizatorice adecvate pentru a preveni accesul neautorizat, modificarea sau divulgarea datelor procesate."
     },
     "s8": {
       "h": "8. Perioada de stocare",
