@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { BUSINESS, SITE_URL } from "@/lib/site";
+import { routing, type Locale } from "@/i18n/routing";
+import { getPathname } from "@/i18n/navigation";
 
 type ServiceMsg = {
   n: string;
@@ -11,73 +13,93 @@ type ServiceMsg = {
 };
 type HourMsg = { day: string; time: string; closed?: boolean };
 
-/**
- * /llms.txt — emerging convention for AI assistants (ChatGPT browse,
- * Perplexity, Claude, etc.) to fetch a curated, structured summary of the
- * site. Markdown body, plain-text response.
- *
- * https://llmstxt.org/
- */
-export async function GET() {
-  const [tServices, tLocation, tMetadata, tAbout] = await Promise.all([
-    getTranslations("services"),
-    getTranslations("location"),
-    getTranslations("metadata"),
-    getTranslations("about"),
+const LOCALE_NAME: Record<Locale, string> = {
+  ro: "Română",
+  hu: "Magyar",
+  en: "English",
+};
+
+async function localeBlock(locale: Locale) {
+  const [tServices, tLocation, tMetadata, tAbout, tFaq] = await Promise.all([
+    getTranslations({ locale, namespace: "services" }),
+    getTranslations({ locale, namespace: "location" }),
+    getTranslations({ locale, namespace: "metadata" }),
+    getTranslations({ locale, namespace: "about" }),
+    getTranslations({ locale, namespace: "faq" }),
   ]);
 
   const services = tServices.raw("items") as ServiceMsg[];
   const hours = tLocation.raw("hours") as HourMsg[];
+  const faq = tFaq.raw("items") as { q: string; a: string }[];
 
-  const body = `# ${BUSINESS.name}
+  const home = `${SITE_URL}${getPathname({ locale, href: "/" })}`;
+  const privacy = `${SITE_URL}${getPathname({ locale, href: "/confidentialitate" })}`;
+  const legal = `${SITE_URL}${getPathname({ locale, href: "/mentiuni-legale" })}`;
 
-> ${tMetadata("description")}
+  return `## ${LOCALE_NAME[locale]} · ${tMetadata("title")}
 
-## Despre / About
+${tMetadata("description")}
+
+- Home: ${home}
+- Privacy: ${privacy}
+- Legal notice: ${legal}
+
+### About
 
 ${tAbout("p1")}
 
-A classic men's barber shop in ${BUSINESS.city}, Romania, founded by Levente Ninacs.
-Specializes in classic haircuts, straight-razor shaves, beard grooming, and
-premium grooming rituals. Bilingual service (Romanian + Hungarian region).
+### Hours
+
+${hours.map((h) => `- ${h.day}: ${h.closed ? "closed" : h.time}`).join("\n")}
+
+### Services (RON)
+
+${services
+  .map(
+    (s) =>
+      `- ${s.title} — ${s.duration} · ${s.price} RON${s.featured ? " *(signature)*" : ""}\n  ${s.desc}`,
+  )
+  .join("\n\n")}
+
+### FAQ
+
+${faq.map((f) => `**${f.q}**\n${f.a}`).join("\n\n")}
+`;
+}
+
+export async function GET() {
+  const blocks = await Promise.all(routing.locales.map((l) => localeBlock(l)));
+
+  const body = `# ${BUSINESS.name}
+
+> Classic men's barbershop in ${BUSINESS.city}, Romania. Trilingual site (Romanian, Hungarian, English).
 
 ## Contact
 
 - **Phone**: ${BUSINESS.phoneDisplay} (${BUSINESS.phone})
 - **Address**: ${BUSINESS.street}, ${BUSINESS.postalCode} ${BUSINESS.city}, ${BUSINESS.countryName}
 - **Coordinates**: ${BUSINESS.geo.latitude}, ${BUSINESS.geo.longitude}
-- **Website**: ${SITE_URL}
 - **Online booking**: https://mero.ro/p/the-mens-place
+- **Instagram**: https://www.instagram.com/levente.ninacs/
+- **Facebook**: https://www.facebook.com/NinacsLevente22/
 
-## Program / Opening hours
+## Available languages
 
-${hours.map((h) => `- **${h.day}**: ${h.closed ? "Închis (closed)" : h.time}`).join("\n")}
-
-## Servicii / Services (prices in RON)
-
-${services
+${routing.locales
   .map(
-    (s) =>
-      `- **${s.title}** — ${s.duration} · ${s.price} RON${s.featured ? " *(signature)*" : ""}\n  ${s.desc}`,
+    (l) =>
+      `- ${LOCALE_NAME[l]} (${l}): ${SITE_URL}${getPathname({ locale: l, href: "/" })}`,
   )
-  .join("\n\n")}
-
-## Profile sociale / Social
-
-- Instagram: https://www.instagram.com/levente.ninacs/
-- Facebook: https://www.facebook.com/NinacsLevente22/
-- Mero (booking): https://mero.ro/p/the-mens-place
-
-## Cuvinte cheie / Keywords
-
-frizerie Satu Mare, barbershop Satu Mare, tuns bărbați Satu Mare,
-bărbierit cu briciul, aranjat barbă, frizer Satu Mare, The Men's Place,
-Levente Ninacs, Aleea Tărnavei, Satu Mare grooming.
+  .join("\n")}
 
 ---
 
-Source of truth: structured data (JSON-LD HairSalon) is embedded in
-${SITE_URL}/. Hours and services are kept in sync with the live site.
+${blocks.join("\n---\n\n")}
+---
+
+Source of truth: structured data (JSON-LD BarberShop + FAQPage + WebPage) is
+embedded on every locale's home page. Sitemap with hreflang alternates:
+${SITE_URL}/sitemap.xml
 `;
 
   return new Response(body, {

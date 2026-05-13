@@ -44,6 +44,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
   const title = t("title");
   const description = t("description");
+  const keywords = t.raw("keywords") as string[];
 
   const languages = Object.fromEntries(
     routing.locales.map((l) => [HREFLANG[l], localePath(l)]),
@@ -58,17 +59,7 @@ export async function generateMetadata({
     },
     description,
     applicationName: BUSINESS.name,
-    keywords: [
-      "frizerie Satu Mare",
-      "barbershop Satu Mare",
-      "tuns bărbați Satu Mare",
-      "bărbierit Satu Mare",
-      "aranjat barbă Satu Mare",
-      "frizer Satu Mare",
-      "The Men's Place",
-      "Levente Ninacs",
-      "Aleea Tărnavei",
-    ],
+    keywords,
     authors: [{ name: BUSINESS.name, url: SITE_URL }],
     creator: BUSINESS.name,
     publisher: BUSINESS.name,

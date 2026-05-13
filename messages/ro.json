@@ -242,7 +242,52 @@
   },
   "metadata": {
     "title": "The Men's Place · Frizerie clasică în Satu Mare",
-    "description": "Frizerie de onoare în Satu Mare, tuns bărbați, bărbierit cu briciul, aranjat barbă și ritualuri pentru domni. Programări online prin Mero. Aleea Tărnavei 2/A."
+    "description": "Frizerie de onoare în Satu Mare, tuns bărbați, bărbierit cu briciul, aranjat barbă și ritualuri pentru domni. Programări online prin Mero. Aleea Tărnavei 2/A.",
+    "keywords": [
+      "frizerie Satu Mare",
+      "barbershop Satu Mare",
+      "tuns bărbați Satu Mare",
+      "bărbierit cu briciul Satu Mare",
+      "aranjat barbă Satu Mare",
+      "frizer Satu Mare",
+      "salon bărbați Satu Mare",
+      "tuns clasic Satu Mare",
+      "fade Satu Mare",
+      "skin fade Satu Mare",
+      "tuns tată fiu Satu Mare",
+      "The Men's Place",
+      "Levente Ninacs",
+      "Aleea Tărnavei",
+      "frizerie premium Satu Mare"
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Unde se află The Men's Place?",
+        "a": "Aleea Tărnavei 2/A, 440207 Satu Mare, România."
+      },
+      {
+        "q": "Cum pot face o programare?",
+        "a": "Online prin Mero la https://mero.ro/p/the-mens-place sau telefonic la 0745 319 957."
+      },
+      {
+        "q": "Ce servicii oferiți?",
+        "a": "Tuns clasic, bărbierit cu briciul, aranjat barbă, tuns băieți, pachet tată-fiu și pachetul premium cu masaj capilar și ritual complet."
+      },
+      {
+        "q": "Care este programul?",
+        "a": "Luni, marți, miercuri 11:00–19:00. Joi, vineri 10:00–20:00. Sâmbătă, duminică închis."
+      },
+      {
+        "q": "Cât costă un tuns?",
+        "a": "Prețurile încep de la 50 RON pentru aranjat și ajung la 140 RON pentru pachetul premium. Tuns simplu de la 60 RON."
+      },
+      {
+        "q": "Acceptați plata cu cardul?",
+        "a": "Da, acceptăm plata cu cardul și numerar."
+      }
+    ]
   },
   "privacy": {
     "metaTitle": "Politica de confidențialitate",

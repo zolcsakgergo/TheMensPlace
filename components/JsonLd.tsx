@@ -1,4 +1,6 @@
+import { getTranslations } from "next-intl/server";
 import { BUSINESS, SITE_URL } from "@/lib/site";
+import { routing, type Locale } from "@/i18n/routing";
 import type { HourEntry } from "./cards/HoursList";
 
 export type ServiceItem = {
@@ -8,35 +10,17 @@ export type ServiceItem = {
   desc?: string;
 };
 
-const FAQ = [
-  {
-    q: "Unde se află The Men's Place?",
-    a: `${BUSINESS.street}, ${BUSINESS.postalCode} ${BUSINESS.city}, ${BUSINESS.countryName}.`,
-  },
-  {
-    q: "Cum pot face o programare?",
-    a: "Online prin Mero la https://mero.ro/p/the-mens-place sau telefonic la 0745 319 957.",
-  },
-  {
-    q: "Ce servicii oferiți?",
-    a: "Tuns clasic, bărbierit cu briciul, aranjat barbă, tuns băieți, pachet tată-fiu și pachetul premium cu masaj capilar și ritual complet.",
-  },
-  {
-    q: "Care este programul?",
-    a: "Luni–Miercuri 11:00–19:00, Joi–Vineri 10:00–20:00, Sâmbătă–Duminică închis.",
-  },
-  {
-    q: "Cât costă un tuns?",
-    a: "Prețurile încep de la 50 RON pentru aranjat și ajung la 140 RON pentru pachetul premium. Tuns simplu de la 60 RON.",
-  },
-  {
-    q: "Acceptați plata cu cardul?",
-    a: "Da, acceptăm plata cu cardul și numerar.",
-  },
-];
+type FaqItem = { q: string; a: string };
 
-// Romanian → schema.org day name (English).
+const HREFLANG: Record<Locale, string> = {
+  ro: "ro-RO",
+  hu: "hu-HU",
+  en: "en",
+};
+
+// Day names (RO / HU / EN) → schema.org day name (English).
 const DAY_MAP: Record<string, string> = {
+  // RO
   Luni: "Monday",
   Marți: "Tuesday",
   "Marţi": "Tuesday",
@@ -46,9 +30,24 @@ const DAY_MAP: Record<string, string> = {
   Sâmbătă: "Saturday",
   "Sambata": "Saturday",
   Duminică: "Sunday",
+  // HU
+  Hétfő: "Monday",
+  Kedd: "Tuesday",
+  Szerda: "Wednesday",
+  Csütörtök: "Thursday",
+  Péntek: "Friday",
+  Szombat: "Saturday",
+  Vasárnap: "Sunday",
+  // EN
+  Monday: "Monday",
+  Tuesday: "Tuesday",
+  Wednesday: "Wednesday",
+  Thursday: "Thursday",
+  Friday: "Friday",
+  Saturday: "Saturday",
+  Sunday: "Sunday",
 };
 
-// Accepts "10:00 — 20:00" (em dash, en dash, or hyphen).
 function parseTimeRange(time: string): { opens: string; closes: string } | null {
   const parts = time.split(/[—–-]/).map((s) => s.trim());
   if (parts.length !== 2) return null;
@@ -57,7 +56,7 @@ function parseTimeRange(time: string): { opens: string; closes: string } | null 
   return { opens, closes };
 }
 
-function buildOffer(item: ServiceItem) {
+function buildOffer(item: ServiceItem, locale: Locale) {
   const parts = item.price.split(/[—–-]/).map((s) => s.trim());
   const base = {
     "@type": "Offer",
@@ -68,6 +67,7 @@ function buildOffer(item: ServiceItem) {
       name: item.title,
       ...(item.desc ? { description: item.desc } : {}),
       ...(item.duration ? { serviceOutput: item.duration } : {}),
+      inLanguage: HREFLANG[locale],
       provider: { "@id": `${SITE_URL}/#salon` },
     },
   };
@@ -85,13 +85,23 @@ function buildOffer(item: ServiceItem) {
   return { ...base, price: parts[0] };
 }
 
-export default function JsonLd({
+export default async function JsonLd({
+  locale,
   hours,
   services,
 }: {
+  locale: Locale;
   hours: HourEntry[];
   services: ServiceItem[];
 }) {
+  const [tMeta, tFaq] = await Promise.all([
+    getTranslations({ locale, namespace: "metadata" }),
+    getTranslations({ locale, namespace: "faq" }),
+  ]);
+
+  const description = tMeta("description");
+  const faqItems = tFaq.raw("items") as FaqItem[];
+
   const openingHoursSpecification = hours
     .filter((h) => !h.closed)
     .map((h) => {
@@ -107,19 +117,23 @@ export default function JsonLd({
     })
     .filter(Boolean);
 
+  const inLanguageList = routing.locales.map((l) => HREFLANG[l]);
+  const localePathname = locale === routing.defaultLocale ? "/" : `/${locale}`;
+  const pageUrl = `${SITE_URL}${localePathname}`;
+
   const data = {
     "@context": "https://schema.org",
     "@type": "BarberShop",
     "@id": `${SITE_URL}/#salon`,
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
-    description: BUSINESS.description,
+    description,
     url: SITE_URL,
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
     telephone: BUSINESS.phone,
     priceRange: BUSINESS.priceRange,
-    knowsLanguage: ["ro", "hu"],
+    knowsLanguage: ["ro", "hu", "en"],
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.street,
@@ -135,7 +149,7 @@ export default function JsonLd({
     },
     areaServed: { "@type": "City", name: BUSINESS.city },
     openingHoursSpecification,
-    makesOffer: services.map(buildOffer),
+    makesOffer: services.map((s) => buildOffer(s, locale)),
     sameAs: BUSINESS.social,
     hasMap: `https://www.google.com/maps/search/?api=1&query=${BUSINESS.geo.latitude},${BUSINESS.geo.longitude}`,
     paymentAccepted: "Cash, Card",
@@ -148,15 +162,29 @@ export default function JsonLd({
     "@id": `${SITE_URL}/#website`,
     name: BUSINESS.name,
     url: SITE_URL,
-    inLanguage: "ro-RO",
+    inLanguage: inLanguageList,
     publisher: { "@id": `${SITE_URL}/#salon` },
+  };
+
+  const webPageData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name: tMeta("title"),
+    description,
+    inLanguage: HREFLANG[locale],
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#salon` },
+    primaryImageOfPage: `${SITE_URL}/logo.png`,
   };
 
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": `${SITE_URL}/#faq`,
-    mainEntity: FAQ.map((entry) => ({
+    "@id": `${pageUrl}#faq`,
+    inLanguage: HREFLANG[locale],
+    mainEntity: faqItems.map((entry) => ({
       "@type": "Question",
       name: entry.q,
       acceptedAnswer: {
@@ -177,6 +205,11 @@ export default function JsonLd({
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageData) }}
       />
       <script
         type="application/ld+json"

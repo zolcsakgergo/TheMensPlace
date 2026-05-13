@@ -86,7 +86,7 @@ export default async function Page({
 
   return (
     <>
-      <JsonLd hours={hours} services={services} />
+      <JsonLd locale={locale as "ro" | "hu" | "en"} hours={hours} services={services} />
       <Nav />
       <Hero heroImage={settings?.heroImage} />
       <MarqueeBar />

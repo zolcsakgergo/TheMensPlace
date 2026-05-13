@@ -243,7 +243,52 @@
   },
   "metadata": {
     "title": "The Men's Place · Classic barbershop in Satu Mare",
-    "description": "A barbershop of honour in Satu Mare, men's cuts, straight-razor shaves, beard trims and rituals for gentlemen. Online booking via Mero. Aleea Tărnavei 2/A."
+    "description": "A barbershop of honour in Satu Mare, men's cuts, straight-razor shaves, beard trims and rituals for gentlemen. Online booking via Mero. Aleea Tărnavei 2/A.",
+    "keywords": [
+      "barbershop Satu Mare",
+      "barber Satu Mare",
+      "men's haircut Satu Mare",
+      "men's barber Satu Mare",
+      "straight razor shave Satu Mare",
+      "beard trim Satu Mare",
+      "beard grooming Satu Mare",
+      "classic haircut Satu Mare",
+      "fade haircut Satu Mare",
+      "skin fade Satu Mare",
+      "father son haircut Satu Mare",
+      "The Men's Place",
+      "Levente Ninacs",
+      "Aleea Tărnavei",
+      "premium barbershop Satu Mare"
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "q": "Where is The Men's Place located?",
+        "a": "Aleea Tărnavei 2/A, 440207 Satu Mare, Romania."
+      },
+      {
+        "q": "How can I book an appointment?",
+        "a": "Online via Mero at https://mero.ro/p/the-mens-place, or by phone at +40 745 319 957."
+      },
+      {
+        "q": "What services do you offer?",
+        "a": "Classic cuts, straight-razor shaves, beard grooming, kids' cuts, father-and-son package, and a premium package with scalp massage and full grooming ritual."
+      },
+      {
+        "q": "What are your opening hours?",
+        "a": "Monday to Wednesday 11:00–19:00. Thursday and Friday 10:00–20:00. Saturday and Sunday closed."
+      },
+      {
+        "q": "How much does a haircut cost?",
+        "a": "Prices start at 50 RON for a refresh and go up to 140 RON for the premium package. A simple cut from 60 RON."
+      },
+      {
+        "q": "Do you accept card payments?",
+        "a": "Yes, we accept both card and cash payments."
+      }
+    ]
   },
   "privacy": {
     "metaTitle": "Privacy Policy",
