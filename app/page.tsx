@@ -45,14 +45,20 @@ async function loadContent() {
   const hoursFallback = tLocation.raw("hours") as HourEntry[];
   const services = tServices.raw("items") as ServiceItem[];
 
+  const translatedFor = (name: string, i: number) =>
+    teamFallback.find((t) => t.name === name) || teamFallback[i];
+
   const team: Barber[] =
     settings?.team && settings.team.length > 0
-      ? settings.team.map((t) => ({
-          name: t.name,
-          role: t.role || "",
-          bio: t.bio || "",
-          image: t.image,
-        }))
+      ? settings.team.map((t, i) => {
+          const tr = translatedFor(t.name, i);
+          return {
+            name: t.name,
+            role: tr?.role || "",
+            bio: tr?.bio || "",
+            image: t.image,
+          };
+        })
       : teamFallback.map((t) => ({ ...t, image: undefined }));
 
   const gallery: GalleryItem[] =
@@ -64,14 +70,7 @@ async function loadContent() {
         }))
       : galleryFallback.map((g) => ({ ...g, image: undefined }));
 
-  const hours: HourEntry[] =
-    settings?.hours && settings.hours.length > 0
-      ? settings.hours.map((h) => ({
-          day: h.day,
-          time: h.time,
-          closed: !!h.closed,
-        }))
-      : hoursFallback;
+  const hours: HourEntry[] = hoursFallback;
 
   return { settings, team, gallery, hours, services };
 }

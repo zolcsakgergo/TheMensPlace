@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { MdClose, MdMenu } from "react-icons/md";
 import { Brand } from "./Primitives";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const linkCls =
   "font-mono text-[11px] tracking-[0.22em] uppercase text-ink-dim hover:text-gold transition-colors no-underline";
@@ -50,12 +51,15 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-        <a
-          href="#booking"
-          className="text-bg bg-gold border-gold hover:text-gold border px-5 py-2.5 font-mono text-[11px] tracking-[0.22em] uppercase no-underline transition-all hover:bg-transparent max-[980px]:hidden"
-        >
-          {t("cta")}
-        </a>
+        <div className="flex items-center gap-4 max-[980px]:hidden">
+          <LocaleSwitcher />
+          <a
+            href="#booking"
+            className="text-bg bg-gold border-gold hover:text-gold border px-5 py-2.5 font-mono text-[11px] tracking-[0.22em] uppercase no-underline transition-all hover:bg-transparent"
+          >
+            {t("cta")}
+          </a>
+        </div>
         <button
           type="button"
           aria-label={open ? t("menuClose") : t("menuOpen")}
@@ -101,6 +105,8 @@ export default function Nav() {
         >
           {t("cta")}
         </a>
+        <LocaleSwitcher />
+
       </div>
     </>
   );

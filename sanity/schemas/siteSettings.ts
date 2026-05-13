@@ -46,8 +46,6 @@ export const siteSettings = defineType({
               type: "string",
               validation: (r) => r.required(),
             }),
-            defineField({ name: "role", title: "Role", type: "string" }),
-            defineField({ name: "bio", title: "Bio", type: "text", rows: 3 }),
             defineField({
               name: "image",
               title: "Portrait",
@@ -57,47 +55,6 @@ export const siteSettings = defineType({
           ],
           preview: {
             select: { title: "name", subtitle: "role", media: "image" },
-          },
-        },
-      ],
-    }),
-    defineField({
-      name: "hours",
-      title: "Program (Opening hours)",
-      description:
-        "Schedule for the location panel. Leave empty to use the defaults from the translation file.",
-      type: "array",
-      of: [
-        {
-          type: "object",
-          name: "hourEntry",
-          fields: [
-            defineField({
-              name: "day",
-              title: "Day",
-              type: "string",
-              validation: (r) => r.required(),
-            }),
-            defineField({
-              name: "time",
-              title: "Hours",
-              description: 'e.g. "10:00 — 20:00" or "Închis"',
-              type: "string",
-              validation: (r) => r.required(),
-            }),
-            defineField({
-              name: "closed",
-              title: "Closed?",
-              type: "boolean",
-              initialValue: false,
-            }),
-          ],
-          preview: {
-            select: { title: "day", subtitle: "time", closed: "closed" },
-            prepare: ({ title, subtitle, closed }) => ({
-              title,
-              subtitle: closed ? `${subtitle} · închis` : subtitle,
-            }),
           },
         },
       ],

@@ -23,7 +23,7 @@ const FAQ = [
   },
   {
     q: "Care este programul?",
-    a: "Luni–Marți 11:00–19:00, Miercuri–Joi 10:00–20:00, Vineri 10:00–21:00, Sâmbătă 09:00–18:00, Duminică închis.",
+    a: "Luni–Miercuri 11:00–19:00, Joi–Vineri 10:00–20:00, Sâmbătă–Duminică închis.",
   },
   {
     q: "Cât costă un tuns?",

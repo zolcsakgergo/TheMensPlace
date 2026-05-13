@@ -1,0 +1,248 @@
+{
+  "nav": {
+    "services": "Szolgáltatások",
+    "about": "Történet",
+    "team": "Csapat",
+    "gallery": "Galéria",
+    "location": "Helyszín",
+    "cta": "Foglalás",
+    "menuOpen": "Menü megnyitása",
+    "menuClose": "Menü bezárása"
+  },
+  "brand": {
+    "name": "The Men's Place"
+  },
+  "hero": {
+    "est": "Est. MMXIV · Szatmárnémeti",
+    "titleLine1": "Mesterség",
+    "titleLine2Pre": "türelemmel",
+    "titleEm": "kifinomítva",
+    "titleSmall": "Nem csak egy hajvágás, hanem egy fél óra nyugalom.",
+    "lede": "Friss fade-ek. Tiszta vonalak. Magabiztos megjelenés. Nem csak vágunk, stílust adunk. Belépsz hétköznapian, kilépsz emlékezetesen.",
+    "ctaPrimary": "Foglalj széket",
+    "ctaGhost": "Nézd meg a rituálékat",
+    "meta": {
+      "yearsValue": "10",
+      "yearsLabel": "Év szakmában",
+      "clientsValue": "12k+",
+      "clientsLabel": "Kiszolgált úriember",
+      "ratingValue": "5.0",
+      "ratingLabel": "Mero · 1151 értékelés"
+    },
+    "photoLabel": "Fotó · Hero",
+    "photoDim": "Ajánlott: borbély portré a széken · 3:4",
+    "photoAlt": "Borbély portré"
+  },
+  "marquee": {
+    "items": [
+      "Klasszikus hajvágás",
+      "Fade / Skin Fade",
+      "Szakállformázás",
+      "Kontúr & Frissítés",
+      "Hajkezelés / Masszázs",
+      "Teljes csomag (Haj + Szakáll)",
+      "Stílustanácsadás"
+    ]
+  },
+  "video": {
+    "eyebrow": "Mesterség · közelről",
+    "titleLine1": "Az olló, a borotva,",
+    "titleLine2Pre": "és a",
+    "titleEm": "türelem",
+    "p": "Nem sietünk. Minden vágás átgondolt, minden kontúr megrajzolt, minden vendég jobban távozik, mint ahogy érkezett.",
+    "signature": "— Levente, alapító",
+    "fallbackLabel": "Videó · borbély loop a széken",
+    "fallbackDim": "15-30s · némítva · autoplay"
+  },
+  "services": {
+    "eyebrow": "Szolgáltatások & Rituálék",
+    "titleLine1": "Kilencféleképp",
+    "titleEm": "úriembernek lenni.",
+    "p": "Tisztességes árak, valós időtartam, meglepetések nélkül. Minden szolgáltatás tartalmaz arctisztítást és prémium termékeket.",
+    "numPrefix": "№",
+    "lei": "LEJ",
+    "featuredBadge": "a ház védjegye",
+    "items": [
+      {
+        "n": "I",
+        "title": "Signature hajvágás",
+        "duration": "30 perc",
+        "price": "80",
+        "desc": "Olló és gép kombináció, frissítő mosás, arctisztítás és személyre szabott styling."
+      },
+      {
+        "n": "II",
+        "title": "Teljes rituálé (Haj & Szakáll)",
+        "duration": "40 perc",
+        "price": "100",
+        "desc": "Az úriemberek alapcsomagja. Hajvágás, szakállformázás, arctisztítás és prémium befejezés."
+      },
+      {
+        "n": "III",
+        "title": "Családi hagyomány (Apa & Fia)",
+        "duration": "60 perc",
+        "price": "140 – 160",
+        "desc": "Közös élmény egymás melletti székeken. Teljes hajvágás és stílusleckék a következő generációnak."
+      },
+      {
+        "n": "IV",
+        "title": "Egyszerű hajvágás (Refresh)",
+        "duration": "15 perc",
+        "price": "60",
+        "desc": "Gépi hajvágás (minimum 3 mm). Amikor csak egy tiszta, lényegre törő frissítésre van szükséged."
+      },
+      {
+        "n": "V",
+        "title": "Egyszerű hajvágás & Szakáll",
+        "duration": "30 perc",
+        "price": "90",
+        "desc": "Rövid gépi hajvágás szakállformázással és hidratáló termékekkel."
+      },
+      {
+        "n": "VI",
+        "title": "A kis úriember",
+        "duration": "30 perc",
+        "price": "60 – 70",
+        "desc": "Legfiatalabb vendégeinknek. Türelem, figyelem és személyre szabott stílus."
+      },
+      {
+        "n": "VII",
+        "title": "Szakáll-architektúra",
+        "duration": "20 perc",
+        "price": "50",
+        "desc": "Forma kialakítása, borotva-kontúr, hidratálás és arctisztítás."
+      },
+      {
+        "n": "VIII",
+        "title": "Frissítés & Styling",
+        "duration": "15 perc",
+        "price": "50",
+        "desc": "Mosás, szárítás és professzionális beállítás. Tökéletes egy fontos esemény vagy találkozó előtt."
+      },
+      {
+        "n": "IX",
+        "title": "A ház kényeztetése (Full Experience)",
+        "featured": true,
+        "duration": "60 perc",
+        "price": "140",
+        "desc": "Mesterség kompromisszumok nélkül: revitalizáló fejmasszázs, precíziós vágás és szakállformázás, prémium ápolószerekkel."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "A történetünk",
+    "titleLine1": "Egy úri menedék,",
+    "titleEm": "ahol a karakter találkozik a hagyománnyal.",
+    "p1": "A The Men's Place 2016-ban nyílt meg egy intim, mindössze két székes műhelyként, tiszta vízióval: a minőség mindig a mennyiség előtt. Nem siettetjük az időt — minden látogatást a mesterség rituáléjává alakítunk, visszaadva a mai férfinak a régi idők eleganciáját.",
+    "pull": "„Egy jó hajvágás nem tranzakció, hanem szünet. Egy fél óra, amikor senki sem kér tőled semmit.”",
+    "photoLabel": "Fotó · belső tér",
+    "photoDim": "Ajánlott: vintage szék + tükör",
+    "photoAlt": "Borbélyműhely belső tere"
+  },
+  "team": {
+    "eyebrow": "A ház mesterei",
+    "titleLine1": "A kezek,",
+    "titleEm": "amik számítanak.",
+    "photoLabel": "Portré",
+    "photoDim": "4:5 · fekete-fehér ajánlott",
+    "items": [
+      {
+        "name": "Ninacs Levente",
+        "role": "Master Barber · Alapító",
+        "bio": "10 év mesterség. A klasszikus hajvágás szigorától a modern stílus precizitásáig — a szakállat arc-architektúrává formáljuk. Mind olló, szenvedély és tökéletes figyelem a részletek iránt."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A műhelyből",
+    "titleLine1": "A munka",
+    "titleEm": "részleteiben.",
+    "prev": "Vissza",
+    "next": "Tovább",
+    "close": "Bezárás",
+    "pageOf": "{current} / {total}",
+    "items": [
+      { "label": "Klasszikus hajvágás", "size": "tall" },
+      { "label": "Borotva részlet", "size": "normal" },
+      { "label": "Műhely", "size": "wide" },
+      { "label": "Borotválás", "size": "normal" },
+      { "label": "Termékek", "size": "normal" },
+      { "label": "Vintage szék", "size": "normal" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Vendégeink szavai",
+    "titleLine1": "Mit mondanak",
+    "titleEm": "az úriembereink.",
+    "items": [
+      {
+        "text": "Fáradtan léptem be, úriemberként távoztam. Levi igazi mester — minden részlet számít.",
+        "name": "Gergő Z.",
+        "initial": "G"
+      },
+      {
+        "text": "A város legjobb prémium csomagja. A hangulat, a termékek illata, a zene — minden átgondolt.",
+        "name": "Dávid B.",
+        "initial": "D"
+      },
+      {
+        "text": "Négy éve járok ide, mást meg sem próbáltam. A frizura három hétig tökéletes — ez mindent elmond.",
+        "name": "Răzvan I.",
+        "initial": "R"
+      }
+    ]
+  },
+  "booking": {
+    "eyebrow": "Foglalás",
+    "titleLine1": "A széked",
+    "titleEm": "vár rád.",
+    "p": "A szék gyorsan elkel. Használd a Mero alkalmazást, hogy lásd a szabad időpontokat, és foglald le a magad pillanatát.",
+    "ctaPrimary": "Hívj most · 0745319957",
+    "ctaGhost": "Online foglalás Meron",
+    "floating": "Foglalás"
+  },
+  "location": {
+    "eyebrow": "Látogass meg",
+    "titleLine1": "A helyszín",
+    "titleEm": "és a nyitvatartás.",
+    "scheduleHeading": "Nyitvatartás",
+    "addressHeading": "Cím",
+    "addressLine1": "Aleea Tărnavei 2, A, 440207 Szatmárnémeti",
+    "addressCity": "Szatmárnémeti · Románia",
+    "mapLabel": "Térkép",
+    "mapDim": "Pin: Aleea Tărnavei 2/A",
+    "mapAlt": "Helyszín térképen",
+    "mapPopupTitle": "The Men's Place",
+    "mapPopupAddress": "Aleea Tărnavei 2/A · Szatmárnémeti",
+    "closed": "Zárva",
+    "hours": [
+      { "day": "Hétfő", "time": "11:00 — 19:00", "closed": false },
+      { "day": "Kedd", "time": "11:00 — 19:00", "closed": false },
+      { "day": "Szerda", "time": "11:00 — 19:00", "closed": false },
+      { "day": "Csütörtök", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Péntek", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Szombat", "time": "Zárva", "closed": true },
+      { "day": "Vasárnap", "time": "Zárva", "closed": true }
+    ]
+  },
+  "footer": {
+    "tagline": "Klasszikus borbélyműhely azoknak az úriembereknek, akik értékelik a mesterséget, a jól eltöltött időt és a rendesen elvégzett hajvágást.",
+    "navHeading": "Navigáció",
+    "contactHeading": "Kapcsolat",
+    "followHeading": "Kövess minket",
+    "phone": "0745 319 957",
+    "addressShort": "Aleea Tărnavei 2, A, 440207 Szatmárnémeti",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook"
+    },
+    "copyright": "© MMXXVI · The Men's Place",
+    "madeWith": "Türelemmel készült Szatmárnémetiben",
+    "privacy": "Adatvédelem",
+    "legal": "Jogi nyilatkozat"
+  },
+  "metadata": {
+    "title": "The Men's Place · Klasszikus borbélyműhely Szatmárnémetiben",
+    "description": "Klasszikus borbélyműhely Szatmárnémetiben — férfi hajvágás, borotválás, szakállformázás és rituálék úriembereknek. Online foglalás Meron. Aleea Tărnavei 2/A."
+  }
+}

@@ -217,10 +217,10 @@
     "hours": [
       { "day": "Luni", "time": "11:00 — 19:00", "closed": false },
       { "day": "Marți", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Miercuri", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Miercuri", "time": "11:00 — 19:00", "closed": false },
       { "day": "Joi", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Vineri", "time": "10:00 — 21:00", "closed": false },
-      { "day": "Sâmbătă", "time": "09:00 — 18:00", "closed": false },
+      { "day": "Vineri", "time": "10:00 — 20:00", "closed": false },
+      { "day": "Sâmbătă", "time": "Închis", "closed": true },
       { "day": "Duminică", "time": "Închis", "closed": true }
     ]
   },
