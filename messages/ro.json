@@ -243,5 +243,89 @@
   "metadata": {
     "title": "The Men's Place · Frizerie clasică în Satu Mare",
     "description": "Frizerie de onoare în Satu Mare — tuns bărbați, bărbierit cu briciul, aranjat barbă și ritualuri pentru domni. Programări online prin Mero. Aleea Tărnavei 2/A."
+  },
+  "privacy": {
+    "metaTitle": "Politica de confidențialitate",
+    "metaDescription": "Cum procesează The Men's Place datele vizitatorilor site-ului în conformitate cu GDPR.",
+    "eyebrow": "Legal",
+    "titleLine1": "Politica de",
+    "titleEm": "confidențialitate",
+    "lastUpdatedLabel": "Ultima actualizare",
+    "lastUpdated": "12 mai 2026",
+    "s1": {
+      "h": "1. Operatorul de date",
+      "body": "{name}, cu sediul în {street}, {postal} {city}, {country}, telefon <phone>{phoneDisplay}</phone>, este operatorul datelor cu caracter personal colectate prin acest site."
+    },
+    "s2": {
+      "h": "2. Ce date colectăm",
+      "p1": "Site-ul nostru nu solicită direct date personale. Nu există formulare de contact, conturi sau coșuri de cumpărături. Programările se efectuează exclusiv prin platforma externă Mero.",
+      "p2": "Acest site <b>nu folosește cookie-uri</b> — nici de urmărire, nici de analiză, nici de publicitate. Nu sunt folosite alte tehnologii de stocare locală (localStorage, pixel-uri, fingerprinting) în scop de profilare.",
+      "p3": "Procesăm însă, indirect:",
+      "li1": "<b>Date de trafic anonimizate</b> prin Vercel Analytics: pagină vizitată, țară, tip de dispozitiv, browser, referrer. IP-ul este anonimizat înainte de stocare; nu se setează cookie-uri.",
+      "li2": "<b>Date tehnice strict necesare</b> (jurnale de server) pentru livrarea site-ului și prevenirea abuzurilor."
+    },
+    "s3": {
+      "h": "3. Date despre minori",
+      "body": "Serviciile noastre includ pachete pentru copii („Micul Domn”, „Tradiție în Familie — Tată & Fiu”). Programările pentru minori se fac exclusiv de către părinți sau tutori legali. Nu colectăm intenționat date cu caracter personal de la copii sub 16 ani prin acest site (art. 8 GDPR). Dacă luați cunoștință că un minor ne-a furnizat astfel de date, vă rugăm să ne contactați pentru a le șterge."
+    },
+    "s4": {
+      "h": "4. Temei legal și scop",
+      "body": "Prelucrăm aceste date în temeiul interesului nostru legitim (art. 6 alin. 1 lit. f din Regulamentul UE 2016/679 — GDPR), pentru a înțelege cum este folosit site-ul și a-l îmbunătăți. Nu folosim datele pentru profilare, publicitate comportamentală sau decizii automate."
+    },
+    "s5": {
+      "h": "5. Programări prin Mero",
+      "body": "Când accesați butonul „Programează” sunteți redirecționat către <mero>mero.ro</mero>. Mero devine operator independent pentru datele introduse acolo (nume, telefon, oră aleasă). Vă rugăm să consultați <meroPriv>politica lor de confidențialitate</meroPriv>."
+    },
+    "s6": {
+      "h": "6. Procesatori și transfer",
+      "body": "Site-ul este găzduit de Vercel Inc. (SUA), care procesează date în calitate de persoană împuternicită. Transferurile către SUA sunt protejate prin EU-US Data Privacy Framework. Nu vindem și nu partajăm date cu terți în scopuri comerciale."
+    },
+    "s7": {
+      "h": "7. Securitate",
+      "body": "Site-ul este servit exclusiv prin HTTPS (TLS) și rulează pe infrastructura securizată a Vercel, cu certificate gestionate automat și protecție DDoS la nivel de rețea. Nu procesăm și nu stocăm date de plată pe acest domeniu — tranzacțiile pentru servicii se efectuează fizic, la sediul salonului. Aplicăm măsuri tehnice și organizatorice adecvate pentru a preveni accesul neautorizat, modificarea sau divulgarea datelor procesate."
+    },
+    "s8": {
+      "h": "8. Perioada de stocare",
+      "body": "Datele de trafic anonimizate sunt păstrate maximum 12 luni. Jurnalele tehnice se șterg automat după 30 de zile."
+    },
+    "s9": {
+      "h": "9. Drepturile dvs.",
+      "p1": "Conform GDPR aveți dreptul la acces, rectificare, ștergere, restricționarea prelucrării, portabilitate și opoziție. Pentru exercitarea acestora ne puteți contacta la <phone>{phoneDisplay}</phone>.",
+      "p2": "Aveți, de asemenea, dreptul de a depune plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP), <anspdcp>dataprotection.ro</anspdcp>."
+    },
+    "s10": {
+      "h": "10. Modificări",
+      "body": "Această politică poate fi actualizată. Versiunea curentă este întotdeauna disponibilă pe această pagină, cu data ultimei revizuiri afișată în partea de sus."
+    }
+  },
+  "legal": {
+    "metaTitle": "Mențiuni legale",
+    "metaDescription": "Informații legale despre operatorul site-ului The Men's Place, conform Legii 365/2002.",
+    "eyebrow": "Legal",
+    "titleLine1": "Mențiuni",
+    "titleEm": "legale",
+    "lastUpdatedLabel": "Ultima actualizare",
+    "lastUpdated": "12 mai 2026",
+    "intro": "Informații obligatorii conform Legii nr. 365/2002 privind comerțul electronic.",
+    "rows": {
+      "name": "Denumire",
+      "form": "Formă juridică",
+      "cui": "CUI / CIF",
+      "orc": "Nr. înreg. ORC",
+      "address": "Sediu social",
+      "phone": "Telefon",
+      "booking": "Programări",
+      "hosting": "Găzduire",
+      "supervisor": "Autoritate de supraveghere",
+      "online": "Soluționare online"
+    },
+    "values": {
+      "form": "SRL",
+      "cui": "49445451",
+      "orc": "J30/67/19.01.2024",
+      "hosting": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, SUA",
+      "online": "Platforma SOL a Comisiei Europene"
+    },
+    "footnote": "Contractul de prestare a serviciilor de frizerie se încheie la sediul fizic al salonului. Acest site are caracter informativ; nu se efectuează tranzacții online pe acest domeniu."
   }
 }

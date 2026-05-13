@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Nav from "@/components/Nav";
 import Footer from "@/components/sections/Footer";
 import { Container, Eyebrow, Section, SectionTitle } from "@/components/Primitives";
 import { BUSINESS } from "@/lib/site";
-
-export const metadata: Metadata = {
-  title: "Mențiuni legale",
-  description:
-    "Informații legale despre operatorul site-ului The Men's Place, conform Legii 365/2002.",
-  alternates: { canonical: "/mentiuni-legale" },
-};
-
-const LAST_UPDATED = "12 mai 2026";
 
 const linkCls = "text-gold underline-offset-4 hover:underline";
 
@@ -22,37 +14,55 @@ const Row = ({ label, children }: { label: string; children: React.ReactNode }) 
   </div>
 );
 
-export default function LegalPage() {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "legal" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
+
+export default async function LegalPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("legal");
+
   return (
     <>
       <Nav />
       <main className="pt-32">
         <Section tone="bg" className="py-20!">
           <Container className="max-w-190">
-            <Eyebrow>Legal</Eyebrow>
-            <SectionTitle line1="Mențiuni" em="legale" className="mb-10" />
+            <Eyebrow>{t("eyebrow")}</Eyebrow>
+            <SectionTitle line1={t("titleLine1")} em={t("titleEm")} className="mb-10" />
             <p className="text-ink-mute mb-6 font-mono text-[11px] tracking-[0.22em] uppercase">
-              Ultima actualizare · {LAST_UPDATED}
+              {t("lastUpdatedLabel")} · {t("lastUpdated")}
             </p>
-            <p className="text-ink-dim mb-12 text-[16px] leading-[1.7]">
-              Informații obligatorii conform Legii nr. 365/2002 privind comerțul electronic.
-            </p>
+            <p className="text-ink-dim mb-12 text-[16px] leading-[1.7]">{t("intro")}</p>
 
             <dl className="m-0">
-              <Row label="Denumire">{BUSINESS.legalName}</Row>
-              <Row label="Formă juridică">SRL</Row>
-              <Row label="CUI / CIF">49445451</Row>
-              <Row label="Nr. înreg. ORC">J30/67/19.01.2024</Row>
-              <Row label="Sediu social">
-                {BUSINESS.street}, {BUSINESS.postalCode} {BUSINESS.city},{" "}
-                {BUSINESS.countryName}
+              <Row label={t("rows.name")}>{BUSINESS.legalName}</Row>
+              <Row label={t("rows.form")}>{t("values.form")}</Row>
+              <Row label={t("rows.cui")}>{t("values.cui")}</Row>
+              <Row label={t("rows.orc")}>{t("values.orc")}</Row>
+              <Row label={t("rows.address")}>
+                {BUSINESS.street}, {BUSINESS.postalCode} {BUSINESS.city}, {BUSINESS.countryName}
               </Row>
-              <Row label="Telefon">
+              <Row label={t("rows.phone")}>
                 <a href={`tel:${BUSINESS.phone}`} className={linkCls}>
                   {BUSINESS.phoneDisplay}
                 </a>
               </Row>
-              <Row label="Programări">
+              <Row label={t("rows.booking")}>
                 <a
                   href="https://mero.ro/p/the-mens-place"
                   target="_blank"
@@ -62,14 +72,9 @@ export default function LegalPage() {
                   mero.ro/p/the-mens-place
                 </a>
               </Row>
-              <Row label="Găzduire">Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, SUA</Row>
-              <Row label="Autoritate de supraveghere">
-                <a
-                  href="https://anpc.ro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={linkCls}
-                >
+              <Row label={t("rows.hosting")}>{t("values.hosting")}</Row>
+              <Row label={t("rows.supervisor")}>
+                <a href="https://anpc.ro" target="_blank" rel="noopener noreferrer" className={linkCls}>
                   ANPC — anpc.ro
                 </a>{" "}
                 ·{" "}
@@ -82,23 +87,19 @@ export default function LegalPage() {
                   ANSPDCP — dataprotection.ro
                 </a>
               </Row>
-              <Row label="Soluționare online">
+              <Row label={t("rows.online")}>
                 <a
                   href="https://ec.europa.eu/consumers/odr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={linkCls}
                 >
-                  Platforma SOL a Comisiei Europene
+                  {t("values.online")}
                 </a>
               </Row>
             </dl>
 
-            <p className="text-ink-mute mt-10 text-[14px] leading-[1.7]">
-              Contractul de prestare a serviciilor de frizerie se încheie la sediul fizic al
-              salonului. Acest site are caracter informativ; nu se efectuează tranzacții online pe
-              acest domeniu.
-            </p>
+            <p className="text-ink-mute mt-10 text-[14px] leading-[1.7]">{t("footnote")}</p>
           </Container>
         </Section>
       </main>

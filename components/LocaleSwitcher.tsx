@@ -1,22 +1,27 @@
 "use client";
 import { useLocale } from "next-intl";
 import { useTransition } from "react";
-import { setLocale } from "@/app/actions/locale";
+import { useParams } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { routing, type Locale } from "@/i18n/routing";
 
-const OPTIONS = [
-  { code: "ro", label: "RO" },
-  { code: "hu", label: "HU" },
-  { code: "en", label: "EN" },
-] as const;
+const LABEL: Record<Locale, string> = { ro: "RO", hu: "HU", en: "EN" };
 
 export default function LocaleSwitcher({ className = "" }: { className?: string }) {
   const current = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
   const [pending, startTransition] = useTransition();
 
-  const onPick = (code: string) => {
-    if (code === current || pending) return;
+  const onPick = (next: Locale) => {
+    if (next === current || pending) return;
     startTransition(() => {
-      setLocale(code);
+      router.replace(
+        // @ts-expect-error -- params from useParams are valid for the current route
+        { pathname, params },
+        { locale: next },
+      );
     });
   };
 
@@ -26,13 +31,13 @@ export default function LocaleSwitcher({ className = "" }: { className?: string 
       role="group"
       aria-label="Language"
     >
-      {OPTIONS.map((opt, i) => {
-        const active = opt.code === current;
+      {routing.locales.map((code, i) => {
+        const active = code === current;
         return (
           <button
-            key={opt.code}
+            key={code}
             type="button"
-            onClick={() => onPick(opt.code)}
+            onClick={() => onPick(code)}
             aria-pressed={active}
             disabled={pending}
             className={`px-2.5 py-1.5 transition-colors ${
@@ -41,7 +46,7 @@ export default function LocaleSwitcher({ className = "" }: { className?: string 
               pending ? "cursor-wait opacity-60" : ""
             }`}
           >
-            {opt.label}
+            {LABEL[code]}
           </button>
         );
       })}

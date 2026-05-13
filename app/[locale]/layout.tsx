@@ -1,15 +1,53 @@
 import type { Metadata, Viewport } from "next";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
 import FloatingBook from "@/components/FloatingBook";
 import { BUSINESS, SITE_URL } from "@/lib/site";
-import "./globals.css";
+import { routing, type Locale } from "@/i18n/routing";
+import "../globals.css";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("metadata");
+type LayoutParams = { locale: string };
+
+const OG_LOCALES: Record<Locale, string> = {
+  ro: "ro_RO",
+  hu: "hu_HU",
+  en: "en_US",
+};
+
+const HREFLANG: Record<Locale, string> = {
+  ro: "ro-RO",
+  hu: "hu-HU",
+  en: "en",
+};
+
+function localePath(locale: Locale, suffix = "") {
+  const base = locale === routing.defaultLocale ? "" : `/${locale}`;
+  return `${base}${suffix}` || "/";
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<LayoutParams>;
+}): Promise<Metadata> {
+  const { locale: raw } = await params;
+  if (!hasLocale(routing.locales, raw)) return {};
+  const locale = raw as Locale;
+
+  const t = await getTranslations({ locale, namespace: "metadata" });
   const title = t("title");
   const description = t("description");
+
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [HREFLANG[l], localePath(l)]),
+  ) as Record<string, string>;
+  languages["x-default"] = localePath(routing.defaultLocale);
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -34,13 +72,14 @@ export async function generateMetadata(): Promise<Metadata> {
     creator: BUSINESS.name,
     publisher: BUSINESS.name,
     alternates: {
-      canonical: "/",
-      languages: { "ro-RO": "/" },
+      canonical: localePath(locale),
+      languages,
     },
     openGraph: {
       type: "website",
-      locale: "ro_RO",
-      url: SITE_URL,
+      locale: OG_LOCALES[locale],
+      alternateLocale: routing.locales.filter((l) => l !== locale).map((l) => OG_LOCALES[l]),
+      url: `${SITE_URL}${localePath(locale)}`,
       siteName: BUSINESS.name,
       title,
       description,
@@ -86,9 +125,17 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const locale = await getLocale();
-  const messages = await getMessages();
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<LayoutParams>;
+}) {
+  const { locale: raw } = await params;
+  if (!hasLocale(routing.locales, raw)) notFound();
+  const locale = raw as Locale;
+  setRequestLocale(locale);
 
   return (
     <html lang={locale} data-gold="warm">
@@ -101,7 +148,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider>
           {children}
           <FloatingBook />
         </NextIntlClientProvider>

@@ -244,5 +244,89 @@
   "metadata": {
     "title": "The Men's Place · Klasszikus borbélyműhely Szatmárnémetiben",
     "description": "Klasszikus borbélyműhely Szatmárnémetiben — férfi hajvágás, borotválás, szakállformázás és rituálék úriembereknek. Online foglalás Meron. Aleea Tărnavei 2/A."
+  },
+  "privacy": {
+    "metaTitle": "Adatvédelmi szabályzat",
+    "metaDescription": "Hogyan kezeli a The Men's Place a látogatók adatait a GDPR előírásai szerint.",
+    "eyebrow": "Jogi",
+    "titleLine1": "Adatvédelmi",
+    "titleEm": "szabályzat",
+    "lastUpdatedLabel": "Utolsó frissítés",
+    "lastUpdated": "2026. május 12.",
+    "s1": {
+      "h": "1. Adatkezelő",
+      "body": "{name}, székhelye {street}, {postal} {city}, {country}, telefonszám <phone>{phoneDisplay}</phone>, az ezen az oldalon gyűjtött személyes adatok adatkezelője."
+    },
+    "s2": {
+      "h": "2. Milyen adatokat gyűjtünk",
+      "p1": "Oldalunk nem kér közvetlenül személyes adatokat. Nincs kapcsolatfelvételi űrlap, fiók vagy bevásárlókosár. A foglalások kizárólag a külső Mero platformon keresztül történnek.",
+      "p2": "Ez az oldal <b>nem használ sütiket</b> — sem nyomon követésre, sem analitikára, sem reklámra. Nem alkalmazunk más helyi tárolási technológiát sem (localStorage, pixelek, fingerprinting) profilalkotási céllal.",
+      "p3": "Közvetve azonban a következőket kezeljük:",
+      "li1": "<b>Anonim forgalmi adatok</b> a Vercel Analyticsen keresztül: meglátogatott oldal, ország, eszköz típusa, böngésző, hivatkozó. Az IP-cím anonimizált a tárolás előtt; nem állítunk be sütiket.",
+      "li2": "<b>Szigorúan szükséges technikai adatok</b> (szervernaplók) az oldal kiszolgálásához és a visszaélések megelőzéséhez."
+    },
+    "s3": {
+      "h": "3. Kiskorúak adatai",
+      "body": "Szolgáltatásaink között gyerekeknek szóló csomagok is szerepelnek („A kis úriember”, „Családi hagyomány — Apa & Fia”). A kiskorúak foglalásait kizárólag szülő vagy törvényes gyám kezdeményezheti. Nem gyűjtünk szándékosan személyes adatokat 16 év alatti gyermekektől ezen az oldalon keresztül (GDPR 8. cikk). Ha tudomásukra jut, hogy egy kiskorú adatokat adott meg számunkra, kérjük, vegyék fel velünk a kapcsolatot a törlés érdekében."
+    },
+    "s4": {
+      "h": "4. Jogalap és cél",
+      "body": "Az adatokat jogos érdekünk alapján kezeljük (az EU 2016/679 rendelet — GDPR — 6. cikk (1) bekezdés f) pontja), hogy megértsük, hogyan használják az oldalt, és fejleszthessük azt. Az adatokat nem használjuk profilalkotásra, viselkedés alapú reklámra vagy automatizált döntéshozatalra."
+    },
+    "s5": {
+      "h": "5. Foglalás a Meron keresztül",
+      "body": "A „Foglalás” gombra kattintva átirányítjuk a <mero>mero.ro</mero> oldalra. A Mero ott megadott adatok (név, telefonszám, választott időpont) esetén önálló adatkezelővé válik. Kérjük, olvassa el a <meroPriv>saját adatvédelmi szabályzatukat</meroPriv>."
+    },
+    "s6": {
+      "h": "6. Adatfeldolgozók és továbbítás",
+      "body": "Az oldalt a Vercel Inc. (USA) szolgálja ki, amely adatfeldolgozóként jár el. Az USA-ba történő adattovábbítást az EU-US Data Privacy Framework védi. Nem értékesítünk és nem osztunk meg adatokat harmadik felekkel kereskedelmi célból."
+    },
+    "s7": {
+      "h": "7. Biztonság",
+      "body": "Az oldal kizárólag HTTPS (TLS) protokollon keresztül érhető el, és a Vercel biztonságos infrastruktúráján fut, automatikusan kezelt tanúsítványokkal és hálózati szintű DDoS-védelemmel. Ezen a tartományon nem dolgozunk fel és nem tárolunk fizetési adatokat — a szolgáltatások ellenértékét fizikailag a szalonban egyenlítik ki. Megfelelő technikai és szervezeti intézkedéseket alkalmazunk a jogosulatlan hozzáférés, módosítás vagy nyilvánosságra hozatal megelőzésére."
+    },
+    "s8": {
+      "h": "8. Megőrzési idő",
+      "body": "Az anonimizált forgalmi adatokat legfeljebb 12 hónapig őrizzük meg. A technikai naplók 30 nap után automatikusan törlődnek."
+    },
+    "s9": {
+      "h": "9. Az Ön jogai",
+      "p1": "A GDPR alapján joga van a hozzáféréshez, helyesbítéshez, törléshez, az adatkezelés korlátozásához, az adathordozhatósághoz és a tiltakozáshoz. Ezeket a <phone>{phoneDisplay}</phone> telefonszámon gyakorolhatja.",
+      "p2": "Joga van továbbá panaszt benyújtani a Személyes Adatok Védelmét Felügyelő Hatósághoz (ANSPDCP): <anspdcp>dataprotection.ro</anspdcp>."
+    },
+    "s10": {
+      "h": "10. Módosítások",
+      "body": "Jelen szabályzat módosítható. A jelenlegi változat mindig elérhető ezen az oldalon, az utolsó frissítés dátuma a tetején látható."
+    }
+  },
+  "legal": {
+    "metaTitle": "Jogi nyilatkozat",
+    "metaDescription": "Jogi információk a The Men's Place oldal üzemeltetőjéről a 365/2002. számú törvény szerint.",
+    "eyebrow": "Jogi",
+    "titleLine1": "Jogi",
+    "titleEm": "nyilatkozat",
+    "lastUpdatedLabel": "Utolsó frissítés",
+    "lastUpdated": "2026. május 12.",
+    "intro": "Az elektronikus kereskedelemről szóló 365/2002. számú román törvény szerinti kötelező információk.",
+    "rows": {
+      "name": "Cégnév",
+      "form": "Jogi forma",
+      "cui": "Adószám (CUI / CIF)",
+      "orc": "Cégjegyzékszám",
+      "address": "Székhely",
+      "phone": "Telefon",
+      "booking": "Foglalás",
+      "hosting": "Tárhely",
+      "supervisor": "Felügyeleti hatóság",
+      "online": "Online vitarendezés"
+    },
+    "values": {
+      "form": "SRL (Kft.)",
+      "cui": "49445451",
+      "orc": "J30/67/19.01.2024",
+      "hosting": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA",
+      "online": "Európai Bizottság SOL platformja"
+    },
+    "footnote": "A borbélyszolgáltatásokra vonatkozó szerződés a szalon fizikai székhelyén jön létre. Ez az oldal tájékoztató jellegű; ezen a tartományon online tranzakciók nem zajlanak."
   }
 }

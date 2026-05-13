@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Brand, Container } from "@/components/Primitives";
+import { Link } from "@/i18n/navigation";
 
 const NAV_KEYS = ["services", "about", "team", "gallery"] as const;
 
@@ -95,12 +96,12 @@ export default async function Footer() {
         <div className="border-rule text-ink-mute flex flex-wrap items-center justify-between gap-4 border-t pt-8 font-mono text-[10px] tracking-[0.22em] uppercase">
           <span>{tFooter("copyright")}</span>
           <div className="flex gap-6">
-            <a href="/confidentialitate" className="hover:text-gold transition-colors">
+            <Link href="/confidentialitate" className="hover:text-gold transition-colors">
               {tFooter("privacy")}
-            </a>
-            <a href="/mentiuni-legale" className="hover:text-gold transition-colors">
+            </Link>
+            <Link href="/mentiuni-legale" className="hover:text-gold transition-colors">
               {tFooter("legal")}
-            </a>
+            </Link>
           </div>
           <span>{tFooter("madeWith")}</span>
         </div>

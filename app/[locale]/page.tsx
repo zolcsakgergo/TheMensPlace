@@ -13,7 +13,7 @@ import Location from "@/components/sections/Location";
 import Footer from "@/components/sections/Footer";
 import JsonLd, { type ServiceItem } from "@/components/JsonLd";
 import { getSiteSettings, type SanityImage } from "@/sanity/lib/queries";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Barber } from "@/components/cards/BarberCard";
 import type { HourEntry } from "@/components/cards/HoursList";
 
@@ -75,7 +75,13 @@ async function loadContent() {
   return { settings, team, gallery, hours, services };
 }
 
-export default async function Page() {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const { settings, team, gallery, hours, services } = await loadContent();
 
   return (

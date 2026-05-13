@@ -244,5 +244,89 @@
   "metadata": {
     "title": "The Men's Place · Classic barbershop in Satu Mare",
     "description": "A barbershop of honour in Satu Mare — men's cuts, straight-razor shaves, beard trims and rituals for gentlemen. Online booking via Mero. Aleea Tărnavei 2/A."
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "How The Men's Place processes visitor data in line with the GDPR.",
+    "eyebrow": "Legal",
+    "titleLine1": "Privacy",
+    "titleEm": "policy",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "12 May 2026",
+    "s1": {
+      "h": "1. Data controller",
+      "body": "{name}, with its registered office at {street}, {postal} {city}, {country}, phone <phone>{phoneDisplay}</phone>, is the controller of the personal data collected through this site."
+    },
+    "s2": {
+      "h": "2. What data we collect",
+      "p1": "Our site does not request personal data directly. There are no contact forms, accounts or shopping carts. Bookings are made exclusively through the external Mero platform.",
+      "p2": "This site <b>does not use cookies</b> — no tracking, analytics or advertising cookies. We do not use other local storage technologies (localStorage, pixels, fingerprinting) for profiling.",
+      "p3": "We do, however, indirectly process:",
+      "li1": "<b>Anonymised traffic data</b> via Vercel Analytics: page visited, country, device type, browser, referrer. The IP address is anonymised before storage; no cookies are set.",
+      "li2": "<b>Strictly necessary technical data</b> (server logs) to deliver the site and prevent abuse."
+    },
+    "s3": {
+      "h": "3. Data concerning minors",
+      "body": "Our services include packages for children (“The Young Gentleman”, “Family Tradition — Father & Son”). Bookings for minors are made exclusively by parents or legal guardians. We do not knowingly collect personal data from children under 16 through this site (Art. 8 GDPR). If you become aware that a minor has provided us with such data, please contact us so we can delete it."
+    },
+    "s4": {
+      "h": "4. Legal basis and purpose",
+      "body": "We process this data on the basis of our legitimate interest (Art. 6(1)(f) of EU Regulation 2016/679 — GDPR), in order to understand how the site is used and to improve it. We do not use the data for profiling, behavioural advertising or automated decision-making."
+    },
+    "s5": {
+      "h": "5. Bookings via Mero",
+      "body": "When you click the “Book” button you are redirected to <mero>mero.ro</mero>. Mero becomes an independent controller for the data you enter there (name, phone, chosen time). Please consult <meroPriv>their privacy policy</meroPriv>."
+    },
+    "s6": {
+      "h": "6. Processors and transfers",
+      "body": "The site is hosted by Vercel Inc. (USA), acting as a processor on our behalf. Transfers to the USA are protected by the EU-US Data Privacy Framework. We do not sell or share data with third parties for commercial purposes."
+    },
+    "s7": {
+      "h": "7. Security",
+      "body": "The site is served exclusively over HTTPS (TLS) and runs on Vercel's secure infrastructure, with automatically managed certificates and network-level DDoS protection. We do not process or store payment data on this domain — transactions for services are settled physically at the salon. We apply appropriate technical and organisational measures to prevent unauthorised access, alteration or disclosure of the data processed."
+    },
+    "s8": {
+      "h": "8. Retention period",
+      "body": "Anonymised traffic data is kept for a maximum of 12 months. Technical logs are automatically deleted after 30 days."
+    },
+    "s9": {
+      "h": "9. Your rights",
+      "p1": "Under the GDPR you have the right to access, rectification, erasure, restriction of processing, portability and objection. To exercise these rights you can contact us at <phone>{phoneDisplay}</phone>.",
+      "p2": "You also have the right to lodge a complaint with the Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP), <anspdcp>dataprotection.ro</anspdcp>."
+    },
+    "s10": {
+      "h": "10. Changes",
+      "body": "This policy may be updated. The current version is always available on this page, with the date of the last revision shown at the top."
+    }
+  },
+  "legal": {
+    "metaTitle": "Legal notice",
+    "metaDescription": "Legal information about the operator of The Men's Place website, under Romanian Law 365/2002.",
+    "eyebrow": "Legal",
+    "titleLine1": "Legal",
+    "titleEm": "notice",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "12 May 2026",
+    "intro": "Mandatory information under Romanian Law No. 365/2002 on electronic commerce.",
+    "rows": {
+      "name": "Company name",
+      "form": "Legal form",
+      "cui": "Tax ID (CUI / CIF)",
+      "orc": "Trade Register no.",
+      "address": "Registered office",
+      "phone": "Phone",
+      "booking": "Bookings",
+      "hosting": "Hosting",
+      "supervisor": "Supervisory authority",
+      "online": "Online dispute resolution"
+    },
+    "values": {
+      "form": "SRL (Ltd.)",
+      "cui": "49445451",
+      "orc": "J30/67/19.01.2024",
+      "hosting": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA",
+      "online": "European Commission ODR platform"
+    },
+    "footnote": "The contract for barbering services is concluded at the salon's physical premises. This site is for information purposes only; no online transactions take place on this domain."
   }
 }
