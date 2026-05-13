@@ -40,9 +40,9 @@ export default function LegalPage() {
 
             <dl className="m-0">
               <Row label="Denumire">{BUSINESS.legalName}</Row>
-              <Row label="Formă juridică">[A SE COMPLETA — ex: SRL, PFA, II]</Row>
-              <Row label="CUI / CIF">[A SE COMPLETA]</Row>
-              <Row label="Nr. înreg. ORC">[A SE COMPLETA — ex: J30/.../....]</Row>
+              <Row label="Formă juridică">SRL</Row>
+              <Row label="CUI / CIF">49445451</Row>
+              <Row label="Nr. înreg. ORC">J30/67/19.01.2024</Row>
               <Row label="Sediu social">
                 {BUSINESS.street}, {BUSINESS.postalCode} {BUSINESS.city},{" "}
                 {BUSINESS.countryName}

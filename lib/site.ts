@@ -12,7 +12,7 @@ export const SITE_URL = (
 
 export const BUSINESS = {
   name: "The Men's Place",
-  legalName: "The Men's Place",
+  legalName: "L&B IDEAL SRL",
   description:
     "Frizerie clasică în Satu Mare — tuns bărbați, bărbierit cu briciul, aranjat barbă, ritualuri pentru domni. Programări online prin Mero.",
   phone: "+40745319957",

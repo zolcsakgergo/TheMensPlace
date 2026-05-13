@@ -18,29 +18,30 @@
     "titleLine2Pre": "făcut cu",
     "titleEm": "răbdare",
     "titleSmall": "Nu doar un tuns, ci un sfert de oră de liniște.",
-    "lede": "Nouă ani la același scaun. Tuns clasic, bărbierit cu prosop fierbinte și o conversație care nu se grăbește nicăieri. Whisky-ul e din partea casei, după ora cinci.",
+    "lede": "Fade-uri fresh. Linii geometrice. Încredere curată. Nu doar tund, îți dau un upgrade de stil. Intri obișnuit, ieși de neuitat.",
     "ctaPrimary": "Ocupă scaunul",
     "ctaGhost": "Vezi ritualurile",
     "meta": {
-      "yearsValue": "9",
+      "yearsValue": "10",
       "yearsLabel": "Ani de meserie",
       "clientsValue": "12k+",
       "clientsLabel": "Domni serviți",
       "ratingValue": "5.0",
-      "ratingLabel": "Pe Mero · 1142 recenzii"
+      "ratingLabel": "Pe Mero · 1151 recenzii"
     },
     "photoLabel": "Foto · Hero",
     "photoDim": "Recomandat: portret barber la scaun · 3:4",
     "photoAlt": "Portret barber"
   },
   "marquee": {
-    "items": [
+"items": [
       "Tuns Clasic",
-      "Bărbierit cu Briciul",
-      "Aranjat Barbă",
-      "Hot Towel",
-      "Styling",
-      "Whisky after Five"
+      "Tuns Fade / Skin Fade",
+      "Arhitectură Barbă",
+      "Contur & Fresh Up",
+      "Tratament Capilar / Masaj",
+      "Pachet Full Custom (Tuns + Barbă)",
+      "Styling & Consiliere Look"
     ]
   },
   "video": {
@@ -59,7 +60,7 @@
     "titleEm": "a te simți domn.",
     "p": "Prețuri cinstite, timpi realiști, fără surprize. Toate serviciile includ curățare facială și produse premium.",
     "numPrefix": "№",
-    "lei": "LEI",
+    "lei": "LEI",   
     "featuredBadge": "semnătura casei",
     "items": [
       {
@@ -85,14 +86,14 @@
       },
       {
         "n": "IV",
-        "title": "Contur & Mentenanță",
+        "title": "Tuns Simplu (Refresh)",
         "duration": "15 min",
         "price": "60",
-        "desc": "Tuns rapid din mașină (minim 3 mm). Pentru momentele când ai nevoie de un refresh curat și esențial."
+        "desc": "Tuns din mașină (minim 3 mm). Pentru momentele când ai nevoie de un refresh curat și esențial."
       },
       {
         "n": "V",
-        "title": "Mentenanță & Barbă",
+        "title": "Tuns Simplu & Barbă",
         "duration": "30 min",
         "price": "90",
         "desc": "Tuns scurt din mașină combinat cu aranjat de barbă și produse de hidratare."
@@ -124,16 +125,15 @@
         "featured": true,
         "duration": "60 min",
         "price": "140",
-        "desc": "Cel mai înalt standard: Masaj capilar 10 min, tuns, ritual de barbă cu prosop fierbinte și produse de îngrijire de top."
+        "desc": "Măiestrie fără compromis: Masaj capilar revitalizant, tuns de precizie și arhitectura bărbii, totul acompaniat de produse de îngrijire premium."
       }
     ]
   },
   "about": {
     "eyebrow": "Povestea noastră",
-    "titleLine1": "O frizerie ca pe vremuri,",
-    "titleEm": "fără compromisuri moderne.",
-    "p1": "The Men's Place s-a deschis în 2010, într-un salon  de pe strada Aleea Tărnavei, cu doua scaune, două brice nemțești și o ambiție: să readucă ritualul bărbieritului în viața bărbatului contemporan.",
-    "pull": "„Un tuns bun nu e o tranzacție, e o pauză. Un sfert de oră în care nimeni nu-ți cere nimic.”",
+    "titleLine1": "Un sanctuar al domnilor,",
+    "titleEm": "unde caracterul întâlnește tradiția.",
+    "p1": "The Men's Place s-a deschis în 2016 ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",    "pull": "„Un tuns bun nu e o tranzacție, e o pauză. Un sfert de oră în care nimeni nu-ți cere nimic.”",
     "photoLabel": "Foto · interior",
     "photoDim": "Recomandat: scaun vintage + oglindă",
     "photoAlt": "Interior frizerie"
@@ -148,7 +148,7 @@
       {
         "name": "Levente Ninacs",
         "role": "Master Barber · Fondator",
-        "bio": "16 ani la scaun. Tuns clasic, foarfecă peste pieptene și o pasiune pentru bărbieritul cu briciul."
+        "bio": "10 ani de măiestrie. De la rigoarea tunsului clasic la precizia stilului modern, transformăm barba într-o piesă de arhitectură facială. Totul din foarfecă, pasiune și atenție absolută la detalii."
       }
     ]
   },
