@@ -101,10 +101,6 @@ export async function generateMetadata({
         "max-video-preview": -1,
       },
     },
-    icons: {
-      icon: "/icon.png",
-      apple: "/icon.png",
-    },
     category: "barber",
     formatDetection: { telephone: true, email: true, address: true },
   };
