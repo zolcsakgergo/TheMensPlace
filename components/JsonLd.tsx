@@ -129,7 +129,7 @@ export default async function JsonLd({
     legalName: BUSINESS.legalName,
     description,
     url: SITE_URL,
-    image: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/og-image.png`,
     logo: `${SITE_URL}/logo.png`,
     telephone: BUSINESS.phone,
     priceRange: BUSINESS.priceRange,
@@ -176,7 +176,7 @@ export default async function JsonLd({
     inLanguage: HREFLANG[locale],
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#salon` },
-    primaryImageOfPage: `${SITE_URL}/logo.png`,
+    primaryImageOfPage: `${SITE_URL}/og-image.png`,
   };
 
   const faqData = {

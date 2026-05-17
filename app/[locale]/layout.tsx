@@ -77,9 +77,9 @@ export async function generateMetadata({
       description,
       images: [
         {
-          url: "/logo.png",
-          width: 1200,
-          height: 630,
+          url: "/og-image.png",
+          width: 512,
+          height: 512,
           alt: `${BUSINESS.name} — ${BUSINESS.city}`,
         },
       ],
@@ -88,7 +88,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: ["/logo.png"],
+      images: ["/og-image.png"],
     },
     robots: {
       index: true,
