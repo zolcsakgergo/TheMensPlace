@@ -210,10 +210,10 @@
     "addressLine1": "Aleea Tărnavei 2, A, 440207 Satu Mare",
     "addressCity": "Satu Mare · Romania",
     "mapLabel": "Map",
-    "mapDim": "Pin: Aleea Tărnavei 2/A",
+    "mapDim": "Pin: Aleea Tărnavei 2, A",
     "mapAlt": "Location map",
     "mapPopupTitle": "The Men's Place",
-    "mapPopupAddress": "Aleea Tărnavei 2/A · Satu Mare",
+    "mapPopupAddress": "Aleea Tărnavei 2, A · Satu Mare",
     "closed": "Closed",
     "hours": [
       { "day": "Monday", "time": "11:00 — 19:00", "closed": false },
@@ -243,13 +243,12 @@
   },
   "metadata": {
     "title": "Barbershop & Men's Grooming in Satu Mare · The Men's Place",
-    "description": "Men's haircuts, straight-razor shaves, beard trims and father-son cuts in Satu Mare. Classic barbershop with online booking via Mero. Aleea Tărnavei 2/A.",
+    "description": "Men's haircuts, beard trims and father-son cuts in Satu Mare. Classic barbershop with online booking via Mero. Aleea Tărnavei 2, A.",
     "keywords": [
       "barbershop Satu Mare",
       "barber Satu Mare",
       "men's haircut Satu Mare",
       "men's barber Satu Mare",
-      "straight razor shave Satu Mare",
       "beard trim Satu Mare",
       "beard grooming Satu Mare",
       "classic haircut Satu Mare",
@@ -266,7 +265,7 @@
     "items": [
       {
         "q": "Where is The Men's Place located?",
-        "a": "Aleea Tărnavei 2/A, 440207 Satu Mare, Romania."
+        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, Romania."
       },
       {
         "q": "How can I book an appointment?",
@@ -274,7 +273,7 @@
       },
       {
         "q": "What services do you offer?",
-        "a": "Classic cuts, straight-razor shaves, beard grooming, kids' cuts, father-and-son package, and a premium package with scalp massage and full grooming ritual."
+        "a": "Classic cuts, beard grooming, kids' cuts, father-and-son package, and a premium package with scalp massage and full grooming ritual."
       },
       {
         "q": "What are your opening hours?",

@@ -14,7 +14,7 @@ export const BUSINESS = {
   name: "The Men's Place",
   legalName: "L&B IDEAL SRL",
   description:
-    "Frizerie clasică în Satu Mare — tuns bărbați, bărbierit cu briciul, aranjat barbă, ritualuri pentru domni. Programări online prin Mero.",
+    "Frizerie clasică în Satu Mare — tuns bărbați, aranjat barbă, ritualuri pentru domni. Programări online prin Mero.",
   phone: "+40745319957",
   phoneDisplay: "0745 319 957",
   email: "",
@@ -24,7 +24,7 @@ export const BUSINESS = {
   region: "Satu Mare",
   country: "RO",
   countryName: "România",
-  geo: { latitude: 47.7836, longitude: 22.8755 },
+  geo: { latitude: 47.780561, longitude: 22.8700419 },
   priceRange: "RON 50–160",
   social: [
     "https://www.instagram.com/levente.ninacs/",

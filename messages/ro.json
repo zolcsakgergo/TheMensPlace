@@ -209,10 +209,10 @@
     "addressLine1": "Aleea Tărnavei 2, A, 440207 Satu Mare",
     "addressCity": "Satu Mare · România",
     "mapLabel": "Hartă",
-    "mapDim": "Pin: Aleea Tărnavei 2/A",
+    "mapDim": "Pin: Aleea Tărnavei 2, A",
     "mapAlt": "Hartă locație",
     "mapPopupTitle": "The Men's Place",
-    "mapPopupAddress": "Aleea Tărnavei 2/A · Satu Mare",
+    "mapPopupAddress": "Aleea Tărnavei 2, A · Satu Mare",
     "closed": "Închis",
     "hours": [
       { "day": "Luni", "time": "11:00 — 19:00", "closed": false },
@@ -242,12 +242,11 @@
   },
   "metadata": {
     "title": "Frizerie & Barbershop în Satu Mare · The Men's Place",
-    "description": "Tuns bărbați, bărbierit cu briciul, aranjat barbă și tuns tată-fiu în Satu Mare. Frizerie clasică, programări online pe Mero. Aleea Tărnavei 2/A.",
+    "description": "Tuns bărbați, aranjat barbă și tuns tată-fiu în Satu Mare. Frizerie clasică, programări online pe Mero. Aleea Tărnavei 2, A.",
     "keywords": [
       "frizerie Satu Mare",
       "barbershop Satu Mare",
       "tuns bărbați Satu Mare",
-      "bărbierit cu briciul Satu Mare",
       "aranjat barbă Satu Mare",
       "frizer Satu Mare",
       "salon bărbați Satu Mare",
@@ -265,7 +264,7 @@
     "items": [
       {
         "q": "Unde se află The Men's Place?",
-        "a": "Aleea Tărnavei 2/A, 440207 Satu Mare, România."
+        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, România."
       },
       {
         "q": "Cum pot face o programare?",
@@ -273,7 +272,7 @@
       },
       {
         "q": "Ce servicii oferiți?",
-        "a": "Tuns clasic, bărbierit cu briciul, aranjat barbă, tuns băieți, pachet tată-fiu și pachetul premium cu masaj capilar și ritual complet."
+        "a": "Tuns clasic, aranjat barbă, tuns băieți, pachet tată-fiu și pachetul premium cu masaj capilar și ritual complet."
       },
       {
         "q": "Care este programul?",

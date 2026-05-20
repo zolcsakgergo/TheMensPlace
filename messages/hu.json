@@ -210,10 +210,10 @@
     "addressLine1": "Aleea Tărnavei 2, A, 440207 Szatmárnémeti",
     "addressCity": "Szatmárnémeti · Románia",
     "mapLabel": "Térkép",
-    "mapDim": "Pin: Aleea Tărnavei 2/A",
+    "mapDim": "Pin: Aleea Tărnavei 2, A",
     "mapAlt": "Helyszín térképen",
     "mapPopupTitle": "The Men's Place",
-    "mapPopupAddress": "Aleea Tărnavei 2/A · Szatmárnémeti",
+    "mapPopupAddress": "Aleea Tărnavei 2, A · Szatmárnémeti",
     "closed": "Zárva",
     "hours": [
       { "day": "Hétfő", "time": "11:00 — 19:00", "closed": false },
@@ -243,13 +243,12 @@
   },
   "metadata": {
     "title": "Borbély és férfi fodrász Szatmárnémetiben · The Men's Place",
-    "description": "Férfi hajvágás, borotválás, szakállformázás és apa-fia hajvágás Szatmárnémetiben. Klasszikus borbélyműhely, online foglalás a Meron. Aleea Tărnavei 2/A.",
+    "description": "Férfi hajvágás, szakállformázás és apa-fia hajvágás Szatmárnémetiben. Klasszikus borbélyműhely, online foglalás a Meron. Aleea Tărnavei 2, A.",
     "keywords": [
       "borbély Szatmárnémeti",
       "fodrász Szatmárnémeti",
       "férfi hajvágás Szatmárnémeti",
       "férfi fodrász Szatmárnémeti",
-      "borotválás Szatmárnémeti",
       "szakállformázás Szatmárnémeti",
       "barbershop Szatmárnémeti",
       "klasszikus hajvágás Szatmárnémeti",
@@ -266,7 +265,7 @@
     "items": [
       {
         "q": "Hol található a The Men's Place?",
-        "a": "Aleea Tărnavei 2/A, 440207 Szatmárnémeti, Románia."
+        "a": "Aleea Tărnavei 2, A, 440207 Szatmárnémeti, Románia."
       },
       {
         "q": "Hogyan tudok időpontot foglalni?",
@@ -274,7 +273,7 @@
       },
       {
         "q": "Milyen szolgáltatásokat kínálnak?",
-        "a": "Klasszikus hajvágás, borotválás, szakállformázás, gyermek hajvágás, apa-fia csomag, valamint prémium fejmasszázzsal és teljes rituáléval bővített csomag."
+        "a": "Klasszikus hajvágás, szakállformázás, gyermek hajvágás, apa-fia csomag, valamint prémium fejmasszázzsal és teljes rituáléval bővített csomag."
       },
       {
         "q": "Mi a nyitvatartás?",
