@@ -78,8 +78,8 @@ export async function generateMetadata({
       images: [
         {
           url: "/og-image.png",
-          width: 512,
-          height: 512,
+          width: 1200,
+          height: 630,
           alt: `${BUSINESS.name} — ${BUSINESS.city}`,
         },
       ],
