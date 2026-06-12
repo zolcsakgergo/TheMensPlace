@@ -13,13 +13,13 @@
     "name": "The Men's Place"
   },
   "hero": {
-    "est": "Est. MMXIV · Satu Mare",
+    "est": "Est. MMXVI · Satu Mare",
     "titleLine1": "Meșteșug",
     "titleLine2Pre": "făcut cu",
     "titleEm": "răbdare",
     "titleSmall": "Nu doar un tuns, ci o jumătate de oră de liniște.",
-    "lede": "Fade-uri fresh. Linii geometrice. Încredere curată. Nu doar tund, îți dau un upgrade de stil. Intri obișnuit, ieși de neuitat.",
-    "ctaPrimary": "Ocupă scaunul",
+    "lede": "Fade-uri impecabile. Linii precise. Încredere care se vede. Nu e doar un tuns — e un upgrade de stil. Intri obișnuit, ieși de neuitat.",
+    "ctaPrimary": "Rezervă-ți scaunul",
     "ctaGhost": "Vezi ritualurile",
     "meta": {
       "yearsValue": "10",
@@ -34,7 +34,7 @@
     "photoAlt": "Portret barber"
   },
   "marquee": {
-"items": [
+    "items": [
       "Tuns Clasic",
       "Tuns Fade / Skin Fade",
       "Arhitectură Barbă",
@@ -46,7 +46,7 @@
   },
   "video": {
     "eyebrow": "Meșteșug · de aproape",
-    "titleLine1": "Foarfeca, briciul,",
+    "titleLine1": "Foarfeca, briciul",
     "titleLine2Pre": "și",
     "titleEm": "răbdarea",
     "p": "Nu ne grăbim. Fiecare tăietură e gândită, fiecare contur e desenat, fiecare client pleacă mai bine decât a venit.",
@@ -58,9 +58,9 @@
     "eyebrow": "Servicii & Ritualuri",
     "titleLine1": "Nouă moduri de",
     "titleEm": "a te simți domn.",
-    "p": "Prețuri cinstite, timpi realiști, fără surprize. Toate serviciile includ curățare facială și produse premium.",
+    "p": "Prețuri corecte, durate reale, zero surprize. Toate serviciile includ curățare facială și produse premium.",
     "numPrefix": "№",
-    "lei": "LEI",   
+    "lei": "LEI",
     "featuredBadge": "semnătura casei",
     "items": [
       {
@@ -133,7 +133,8 @@
     "eyebrow": "Povestea noastră",
     "titleLine1": "Un sanctuar al domnilor,",
     "titleEm": "unde caracterul întâlnește tradiția.",
-    "p1": "The Men's Place s-a deschis în 2016 ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",    "pull": "„Un tuns bun nu e o tranzacție, e o pauză. O jumătate de oră în care nimeni nu-ți cere nimic.”",
+    "p1": "The Men's Place s-a deschis în 2016 ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",
+    "pull": "„Un tuns bun nu e o tranzacție, e o pauză. O jumătate de oră în care nimeni nu-ți cere nimic.”",
     "photoLabel": "Foto · interior",
     "photoDim": "Recomandat: scaun vintage + oglindă",
     "photoAlt": "Interior frizerie"
@@ -148,7 +149,7 @@
       {
         "name": "Levente Ninacs",
         "role": "Master Barber · Fondator",
-        "bio": "10 ani de măiestrie. De la rigoarea tunsului clasic la precizia stilului modern, transformăm barba într-o piesă de arhitectură facială. Totul din foarfecă, pasiune și atenție absolută la detalii."
+        "bio": "10 ani de măiestrie. Stăpânim deopotrivă tunsul clasic și stilul modern — iar barba o croim pe măsura feței, linie cu linie. Precizie în fiecare mișcare, pasiune în fiecare detaliu."
       }
     ]
   },
@@ -170,7 +171,7 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "Cuvinte de la clienți",
+    "eyebrow": "Direct din scaun",
     "titleLine1": "Ce spun",
     "titleEm": "domnii noștri.",
     "items": [
@@ -195,7 +196,7 @@
     "eyebrow": "Rezervare",
     "titleLine1": "Scaunul tău",
     "titleEm": "te așteaptă.",
-    "p": "Scaunul se ocupă repede. Folosește aplicația Mero pentru a vedea disponibilitatea și rezervă-ți timpul tău de răsfăț.",
+    "p": "Scaunele se ocupă repede. Vezi disponibilitatea în aplicația Mero și rezervă-ți jumătatea de oră de liniște.",
     "ctaPrimary": "Sună acum · 0745319957",
     "ctaGhost": "Rezervare online prin Mero",
     "floating": "Programează"

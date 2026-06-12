@@ -13,12 +13,12 @@
     "name": "The Men's Place"
   },
   "hero": {
-    "est": "Est. MMXIV · Satu Mare",
+    "est": "Est. MMXVI · Satu Mare",
     "titleLine1": "Craft",
     "titleLine2Pre": "made with",
     "titleEm": "patience",
     "titleSmall": "Not just a haircut, half an hour of quiet.",
-    "lede": "Fresh fades. Clean lines. Quiet confidence. We don't just cut your hair, we upgrade your style. Walk in ordinary, walk out unforgettable.",
+    "lede": "Fresh fades. Clean lines. Quiet confidence. This isn't just a haircut — it's a style upgrade. Walk in ordinary, walk out unforgettable.",
     "ctaPrimary": "Take a seat",
     "ctaGhost": "See the rituals",
     "meta": {
@@ -60,7 +60,7 @@
     "titleEm": "feel like a gentleman.",
     "p": "Honest prices, realistic timing, no surprises. Every service includes a facial cleanse and premium products.",
     "numPrefix": "№",
-    "lei": "LEI",
+    "lei": "RON",
     "featuredBadge": "house signature",
     "items": [
       {
@@ -133,7 +133,7 @@
     "eyebrow": "Our story",
     "titleLine1": "A sanctuary for gentlemen,",
     "titleEm": "where character meets tradition.",
-    "p1": "The Men's Place opened in 2016 as an intimate workshop with just two chairs and a clear vision: absolute quality before volume. We chose not to rush time, but to turn every visit into a ritual of craft, giving today's man the distinction of times past.",
+    "p1": "The Men's Place opened in 2016 as an intimate workshop with just two chairs and a clear vision: quality over quantity, always. We chose not to rush time, but to turn every visit into a ritual of craft, giving today's man the distinction of times past.",
     "pull": "“A good haircut isn't a transaction, it's a pause. Half an hour when no one asks anything of you.”",
     "photoLabel": "Photo · interior",
     "photoDim": "Recommended: vintage chair + mirror",
@@ -149,7 +149,7 @@
       {
         "name": "Levente Ninacs",
         "role": "Master Barber · Founder",
-        "bio": "10 years of craft. From the rigour of the classic cut to the precision of modern style, we turn the beard into a piece of facial architecture. All scissors, passion and absolute attention to detail."
+        "bio": "10 years of craft. At home in classic cuts and modern style alike — and we tailor the beard to the face, line by line. Precision in every move, passion in every detail."
       }
     ]
   },
@@ -171,7 +171,7 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "Words from clients",
+    "eyebrow": "Straight from the chair",
     "titleLine1": "What our",
     "titleEm": "gentlemen say.",
     "items": [
@@ -196,7 +196,7 @@
     "eyebrow": "Booking",
     "titleLine1": "Your chair",
     "titleEm": "is waiting.",
-    "p": "Chairs fill up fast. Use the Mero app to check availability and book your moment.",
+    "p": "Chairs fill up fast. Check availability in the Mero app and claim your half hour of quiet.",
     "ctaPrimary": "Call now · 0745319957",
     "ctaGhost": "Book online via Mero",
     "floating": "Book"

@@ -13,13 +13,13 @@
     "name": "The Men's Place"
   },
   "hero": {
-    "est": "Est. MMXIV · Szatmárnémeti",
+    "est": "Est. MMXVI · Szatmárnémeti",
     "titleLine1": "Mesterség",
     "titleLine2Pre": "türelemmel",
-    "titleEm": "kifinomítva",
+    "titleEm": "csiszolva",
     "titleSmall": "Nem csak egy hajvágás, hanem egy fél óra nyugalom.",
-    "lede": "Friss fade-ek. Tiszta vonalak. Magabiztos megjelenés. Nem csak vágunk, stílust adunk. Belépsz hétköznapian, kilépsz emlékezetesen.",
-    "ctaPrimary": "Foglalj széket",
+    "lede": "Friss fade-ek. Tiszta vonalak. Magabiztosság, ami látszik. Nem csak hajat vágunk — stílust adunk. Hétköznapian érkezel, emlékezetesen távozol.",
+    "ctaPrimary": "Foglald el a széked",
     "ctaGhost": "Nézd meg a rituálékat",
     "meta": {
       "yearsValue": "10",
@@ -27,7 +27,7 @@
       "clientsValue": "12k+",
       "clientsLabel": "Kiszolgált úriember",
       "ratingValue": "5.0",
-      "ratingLabel": "Mero · 1151 értékelés"
+      "ratingLabel": "A Merón · 1151 értékelés"
     },
     "photoLabel": "Fotó · Hero",
     "photoDim": "Ajánlott: borbély portré a széken · 3:4",
@@ -46,7 +46,7 @@
   },
   "video": {
     "eyebrow": "Mesterség · közelről",
-    "titleLine1": "Az olló, a borotva,",
+    "titleLine1": "Az olló, a borotva",
     "titleLine2Pre": "és a",
     "titleEm": "türelem",
     "p": "Nem sietünk. Minden vágás átgondolt, minden kontúr megrajzolt, minden vendég jobban távozik, mint ahogy érkezett.",
@@ -56,9 +56,9 @@
   },
   "services": {
     "eyebrow": "Szolgáltatások & Rituálék",
-    "titleLine1": "Kilencféleképp",
-    "titleEm": "úriembernek lenni.",
-    "p": "Tisztességes árak, valós időtartam, meglepetések nélkül. Minden szolgáltatás tartalmaz arctisztítást és prémium termékeket.",
+    "titleLine1": "Kilenc módja annak,",
+    "titleEm": "hogy úriembernek érezd magad.",
+    "p": "Korrekt árak, valós időtartamok, semmi meglepetés. Minden szolgáltatás tartalmaz arctisztítást és prémium termékeket.",
     "numPrefix": "№",
     "lei": "LEJ",
     "featuredBadge": "a ház védjegye",
@@ -149,7 +149,7 @@
       {
         "name": "Ninacs Levente",
         "role": "Master Barber · Alapító",
-        "bio": "10 év mesterség. A klasszikus hajvágás szigorától a modern stílus precizitásáig, a szakállat arc-architektúrává formáljuk. Mind olló, szenvedély és tökéletes figyelem a részletek iránt."
+        "bio": "10 év mesterség. Otthon vagyunk a klasszikus hajvágásban és a modern stílusban egyaránt — a szakállt pedig az archoz szabjuk, vonalról vonalra. Precizitás minden mozdulatban, szenvedély minden részletben."
       }
     ]
   },
@@ -171,7 +171,7 @@
     ]
   },
   "testimonials": {
-    "eyebrow": "Vendégeink szavai",
+    "eyebrow": "Egyenesen a székből",
     "titleLine1": "Mit mondanak",
     "titleEm": "az úriembereink.",
     "items": [
@@ -196,13 +196,13 @@
     "eyebrow": "Foglalás",
     "titleLine1": "A széked",
     "titleEm": "vár rád.",
-    "p": "A szék gyorsan elkel. Használd a Mero alkalmazást, hogy lásd a szabad időpontokat, és foglald le a magad pillanatát.",
+    "p": "A székek gyorsan betelnek. Nézd meg a szabad időpontokat a Mero appban, és foglald le a neked járó fél óra nyugalmat.",
     "ctaPrimary": "Hívj most · 0745319957",
-    "ctaGhost": "Online foglalás Meron",
+    "ctaGhost": "Online foglalás a Merón",
     "floating": "Foglalás"
   },
   "location": {
-    "eyebrow": "Látogass meg",
+    "eyebrow": "Gyere el hozzánk",
     "titleLine1": "A helyszín",
     "titleEm": "és a nyitvatartás.",
     "scheduleHeading": "Nyitvatartás",

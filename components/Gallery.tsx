@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { MdArrowBack, MdArrowForward, MdClose } from "react-icons/md";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
@@ -54,6 +54,21 @@ export default function Gallery({ items }: { items: Item[] }) {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [activeIndex, navigate]);
+
+  // Swipe left/right between images on touch devices.
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (!touchStart.current) return;
+    const dx = e.changedTouches[0].clientX - touchStart.current.x;
+    const dy = e.changedTouches[0].clientY - touchStart.current.y;
+    touchStart.current = null;
+    if (items.length > 1 && Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy)) {
+      navigate(dx < 0 ? 1 : -1);
+    }
+  };
 
   const active = activeIndex !== null ? items[activeIndex] : null;
 
@@ -129,7 +144,7 @@ export default function Gallery({ items }: { items: Item[] }) {
 
       <Dialog open={activeIndex !== null} onOpenChange={(open) => !open && closeModal()}>
         {active && activeIndex !== null && (
-          <DialogContent>
+          <DialogContent onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
             <DialogTitle className="sr-only">
               {active.label || `Foto ${activeIndex + 1}`}
             </DialogTitle>

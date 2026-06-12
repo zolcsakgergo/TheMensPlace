@@ -20,7 +20,7 @@ export default function LocaleSwitcher({ className = "" }: { className?: string 
       router.replace(
         // @ts-expect-error -- params from useParams are valid for the current route
         { pathname, params },
-        { locale: next },
+        { locale: next, scroll: false },
       );
     });
   };
