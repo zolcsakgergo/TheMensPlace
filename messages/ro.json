@@ -133,7 +133,7 @@
     "eyebrow": "Povestea noastră",
     "titleLine1": "Un sanctuar al domnilor,",
     "titleEm": "unde caracterul întâlnește tradiția.",
-    "p1": "The Men's Place s-a deschis în 2016 ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",
+    "p1": "The Men's Place s-a deschis în 2016, în Satu Mare, ca un atelier intim, cu doar două scaune și o viziune clară: calitatea absolută înaintea volumului. Am ales să nu grăbim timpul, ci să transformăm fiecare vizită într-un ritual de măiestrie, redând bărbatului contemporan distincția de altădată.",
     "pull": "„Un tuns bun nu e o tranzacție, e o pauză. O jumătate de oră în care nimeni nu-ți cere nimic.”",
     "photoLabel": "Foto · interior",
     "photoDim": "Recomandat: scaun vintage + oglindă",
@@ -216,9 +216,9 @@
     "mapPopupAddress": "Aleea Tărnavei 2, A · Satu Mare",
     "closed": "Închis",
     "hours": [
-      { "day": "Luni", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Marți", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Miercuri", "time": "11:00 — 19:00", "closed": false },
+      { "day": "Luni", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Marți", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Miercuri", "time": "10:00 — 19:00", "closed": false },
       { "day": "Joi", "time": "10:00 — 20:00", "closed": false },
       { "day": "Vineri", "time": "10:00 — 20:00", "closed": false },
       { "day": "Sâmbătă", "time": "Închis", "closed": true },
@@ -226,7 +226,7 @@
     ]
   },
   "footer": {
-    "tagline": "O frizerie clasică pentru domnii care apreciază meșteșugul, timpul bine petrecut și un tuns făcut cum trebuie.",
+    "tagline": "O frizerie clasică în Satu Mare, pentru domnii care apreciază meșteșugul, timpul bine petrecut și un tuns făcut cum trebuie.",
     "navHeading": "Navigare",
     "contactHeading": "Contact",
     "followHeading": "Urmărește",
@@ -262,6 +262,9 @@
     ]
   },
   "faq": {
+    "eyebrow": "Întrebări frecvente",
+    "titleLine1": "Bine de",
+    "titleEm": "știut.",
     "items": [
       {
         "q": "Unde se află The Men's Place?",
@@ -269,7 +272,7 @@
       },
       {
         "q": "Cum pot face o programare?",
-        "a": "Online prin Mero la https://mero.ro/p/the-mens-place sau telefonic la 0745 319 957."
+        "a": "Online prin aplicația Mero (mero.ro/p/the-mens-place) sau telefonic la 0745 319 957."
       },
       {
         "q": "Ce servicii oferiți?",
@@ -277,7 +280,7 @@
       },
       {
         "q": "Care este programul?",
-        "a": "Luni, marți, miercuri 11:00–19:00. Joi, vineri 10:00–20:00. Sâmbătă, duminică închis."
+        "a": "Luni, marți, miercuri 10:00–19:00. Joi, vineri 10:00–20:00. Sâmbătă, duminică închis."
       },
       {
         "q": "Cât costă un tuns?",

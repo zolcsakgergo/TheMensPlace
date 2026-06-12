@@ -133,7 +133,7 @@
     "eyebrow": "A történetünk",
     "titleLine1": "Egy úri menedék,",
     "titleEm": "ahol a karakter találkozik a hagyománnyal.",
-    "p1": "A The Men's Place 2016-ban nyílt meg egy intim, mindössze két székes műhelyként, tiszta vízióval: a minőség mindig a mennyiség előtt. Nem siettetjük az időt, minden látogatást a mesterség rituáléjává alakítunk, visszaadva a mai férfinak a régi idők eleganciáját.",
+    "p1": "A The Men's Place 2016-ban nyílt meg Szatmárnémetiben, egy intim, mindössze két székes műhelyként, tiszta vízióval: a minőség mindig a mennyiség előtt. Nem siettetjük az időt, minden látogatást a mesterség rituáléjává alakítunk, visszaadva a mai férfinak a régi idők eleganciáját.",
     "pull": "„Egy jó hajvágás nem tranzakció, hanem szünet. Egy fél óra, amikor senki sem kér tőled semmit.”",
     "photoLabel": "Fotó · belső tér",
     "photoDim": "Ajánlott: vintage szék + tükör",
@@ -216,9 +216,9 @@
     "mapPopupAddress": "Aleea Tărnavei 2, A · Szatmárnémeti",
     "closed": "Zárva",
     "hours": [
-      { "day": "Hétfő", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Kedd", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Szerda", "time": "11:00 — 19:00", "closed": false },
+      { "day": "Hétfő", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Kedd", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Szerda", "time": "10:00 — 19:00", "closed": false },
       { "day": "Csütörtök", "time": "10:00 — 20:00", "closed": false },
       { "day": "Péntek", "time": "10:00 — 20:00", "closed": false },
       { "day": "Szombat", "time": "Zárva", "closed": true },
@@ -226,7 +226,7 @@
     ]
   },
   "footer": {
-    "tagline": "Klasszikus borbélyműhely azoknak az úriembereknek, akik értékelik a mesterséget, a jól eltöltött időt és a rendesen elvégzett hajvágást.",
+    "tagline": "Klasszikus borbélyműhely Szatmárnémetiben, azoknak az úriembereknek, akik értékelik a mesterséget, a jól eltöltött időt és a rendesen elvégzett hajvágást.",
     "navHeading": "Navigáció",
     "contactHeading": "Kapcsolat",
     "followHeading": "Kövess minket",
@@ -262,6 +262,9 @@
     ]
   },
   "faq": {
+    "eyebrow": "Gyakori kérdések",
+    "titleLine1": "Jó, ha",
+    "titleEm": "tudod.",
     "items": [
       {
         "q": "Hol található a The Men's Place?",
@@ -269,7 +272,7 @@
       },
       {
         "q": "Hogyan tudok időpontot foglalni?",
-        "a": "Online a Meron keresztül: https://mero.ro/p/the-mens-place, vagy telefonon: 0745 319 957."
+        "a": "Online a Mero alkalmazásban (mero.ro/p/the-mens-place), vagy telefonon: 0745 319 957."
       },
       {
         "q": "Milyen szolgáltatásokat kínálnak?",
@@ -277,7 +280,7 @@
       },
       {
         "q": "Mi a nyitvatartás?",
-        "a": "Hétfő, kedd, szerda 11:00–19:00. Csütörtök, péntek 10:00–20:00. Szombat, vasárnap zárva."
+        "a": "Hétfő, kedd, szerda 10:00–19:00. Csütörtök, péntek 10:00–20:00. Szombat, vasárnap zárva."
       },
       {
         "q": "Mennyibe kerül egy hajvágás?",

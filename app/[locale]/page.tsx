@@ -10,6 +10,7 @@ import GallerySection from "@/components/sections/GallerySection";
 import Testimonials from "@/components/sections/Testimonials";
 import Booking from "@/components/sections/Booking";
 import Location from "@/components/sections/Location";
+import Faq from "@/components/sections/Faq";
 import Footer from "@/components/sections/Footer";
 import JsonLd, { type ServiceItem } from "@/components/JsonLd";
 import { getSiteSettings, type SanityImage } from "@/sanity/lib/queries";
@@ -101,6 +102,7 @@ export default async function Page({
       <Testimonials />
       <Booking />
       <Location position={SHOP_COORDS} hours={hours} />
+      <Faq />
       <Footer />
       <Reveal />
     </>

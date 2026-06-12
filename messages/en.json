@@ -133,7 +133,7 @@
     "eyebrow": "Our story",
     "titleLine1": "A sanctuary for gentlemen,",
     "titleEm": "where character meets tradition.",
-    "p1": "The Men's Place opened in 2016 as an intimate workshop with just two chairs and a clear vision: quality over quantity, always. We chose not to rush time, but to turn every visit into a ritual of craft, giving today's man the distinction of times past.",
+    "p1": "The Men's Place opened in 2016 in Satu Mare as an intimate workshop with just two chairs and a clear vision: quality over quantity, always. We chose not to rush time, but to turn every visit into a ritual of craft, giving today's man the distinction of times past.",
     "pull": "“A good haircut isn't a transaction, it's a pause. Half an hour when no one asks anything of you.”",
     "photoLabel": "Photo · interior",
     "photoDim": "Recommended: vintage chair + mirror",
@@ -216,9 +216,9 @@
     "mapPopupAddress": "Aleea Tărnavei 2, A · Satu Mare",
     "closed": "Closed",
     "hours": [
-      { "day": "Monday", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Tuesday", "time": "11:00 — 19:00", "closed": false },
-      { "day": "Wednesday", "time": "11:00 — 19:00", "closed": false },
+      { "day": "Monday", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Tuesday", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Wednesday", "time": "10:00 — 19:00", "closed": false },
       { "day": "Thursday", "time": "10:00 — 20:00", "closed": false },
       { "day": "Friday", "time": "10:00 — 20:00", "closed": false },
       { "day": "Saturday", "time": "Closed", "closed": true },
@@ -226,7 +226,7 @@
     ]
   },
   "footer": {
-    "tagline": "A classic barbershop for gentlemen who appreciate craft, time well spent and a haircut done right.",
+    "tagline": "A classic barbershop in Satu Mare for gentlemen who appreciate craft, time well spent and a haircut done right.",
     "navHeading": "Navigation",
     "contactHeading": "Contact",
     "followHeading": "Follow",
@@ -262,6 +262,9 @@
     ]
   },
   "faq": {
+    "eyebrow": "Frequently asked",
+    "titleLine1": "Good to",
+    "titleEm": "know.",
     "items": [
       {
         "q": "Where is The Men's Place located?",
@@ -269,7 +272,7 @@
       },
       {
         "q": "How can I book an appointment?",
-        "a": "Online via Mero at https://mero.ro/p/the-mens-place, or by phone at +40 745 319 957."
+        "a": "Online via the Mero app (mero.ro/p/the-mens-place), or by phone at +40 745 319 957."
       },
       {
         "q": "What services do you offer?",
@@ -277,7 +280,7 @@
       },
       {
         "q": "What are your opening hours?",
-        "a": "Monday to Wednesday 11:00–19:00. Thursday and Friday 10:00–20:00. Saturday and Sunday closed."
+        "a": "Monday to Wednesday 10:00–19:00. Thursday and Friday 10:00–20:00. Saturday and Sunday closed."
       },
       {
         "q": "How much does a haircut cost?",

@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next";
 import FloatingBook from "@/components/FloatingBook";
 import ScrollToTop from "@/components/ScrollToTop";
 import { BUSINESS, SITE_URL } from "@/lib/site";
+import { localizedAlternates } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -15,12 +16,6 @@ const OG_LOCALES: Record<Locale, string> = {
   ro: "ro_RO",
   hu: "hu_HU",
   en: "en_US",
-};
-
-const HREFLANG: Record<Locale, string> = {
-  ro: "ro-RO",
-  hu: "hu-HU",
-  en: "en",
 };
 
 function localePath(locale: Locale, suffix = "") {
@@ -46,11 +41,6 @@ export async function generateMetadata({
   const description = t("description");
   const keywords = t.raw("keywords") as string[];
 
-  const languages = Object.fromEntries(
-    routing.locales.map((l) => [HREFLANG[l], localePath(l)]),
-  ) as Record<string, string>;
-  languages["x-default"] = localePath(routing.defaultLocale);
-
   return {
     metadataBase: new URL(SITE_URL),
     title: {
@@ -63,10 +53,7 @@ export async function generateMetadata({
     authors: [{ name: BUSINESS.name, url: SITE_URL }],
     creator: BUSINESS.name,
     publisher: BUSINESS.name,
-    alternates: {
-      canonical: localePath(locale),
-      languages,
-    },
+    alternates: localizedAlternates(locale, "/"),
     openGraph: {
       type: "website",
       locale: OG_LOCALES[locale],

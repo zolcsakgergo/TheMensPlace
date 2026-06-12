@@ -4,6 +4,8 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/sections/Footer";
 import { Container, Eyebrow, Section, SectionTitle } from "@/components/Primitives";
 import { BUSINESS } from "@/lib/site";
+import { localizedAlternates } from "@/lib/seo";
+import type { Locale } from "@/i18n/routing";
 
 const linkCls = "text-gold underline-offset-4 hover:underline";
 
@@ -24,6 +26,7 @@ export async function generateMetadata({
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
+    alternates: localizedAlternates(locale as Locale, "/mentiuni-legale"),
   };
 }
 
