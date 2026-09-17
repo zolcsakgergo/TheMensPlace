@@ -88,7 +88,7 @@
         "n": "IV",
         "title": "Simple Cut (Refresh)",
         "duration": "15 min",
-        "price": "60",
+        "price": "70",
         "desc": "Clipper cut (minimum 3 mm). For the moments when you need a clean, essential refresh."
       },
       {
@@ -102,7 +102,7 @@
         "n": "VI",
         "title": "The Young Gentleman",
         "duration": "30 min",
-        "price": "60 – 70",
+        "price": "70",
         "desc": "For our youngest clients. Patience, attention and a style cut to fit."
       },
       {
@@ -124,7 +124,7 @@
         "title": "House Indulgence (Full Experience)",
         "featured": true,
         "duration": "60 min",
-        "price": "140",
+        "price": "150",
         "desc": "Craft without compromise: revitalising scalp massage, precision cut and beard architecture, accompanied by premium grooming products."
       }
     ]
@@ -284,7 +284,7 @@
       },
       {
         "q": "How much does a haircut cost?",
-        "a": "Prices start at 50 RON for a refresh and go up to 140 RON for the premium package. A simple cut from 60 RON."
+        "a": "Prices start at 50 RON for a refresh and go up to 150 RON for the premium package. A simple cut from 70 RON."
       },
       {
         "q": "Do you accept card payments?",

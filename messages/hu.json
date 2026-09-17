@@ -88,7 +88,7 @@
         "n": "IV",
         "title": "Egyszerű hajvágás (Refresh)",
         "duration": "15 perc",
-        "price": "60",
+        "price": "70",
         "desc": "Gépi hajvágás (minimum 3 mm). Amikor csak egy tiszta, lényegre törő frissítésre van szükséged."
       },
       {
@@ -102,7 +102,7 @@
         "n": "VI",
         "title": "A kis úriember",
         "duration": "30 perc",
-        "price": "60 – 70",
+        "price": "70",
         "desc": "Legfiatalabb vendégeinknek. Türelem, figyelem és személyre szabott stílus."
       },
       {
@@ -124,7 +124,7 @@
         "title": "A ház kényeztetése (Full Experience)",
         "featured": true,
         "duration": "60 perc",
-        "price": "140",
+        "price": "150",
         "desc": "Mesterség kompromisszumok nélkül: revitalizáló fejmasszázs, precíziós vágás és szakállformázás, prémium ápolószerekkel."
       }
     ]
@@ -284,7 +284,7 @@
       },
       {
         "q": "Mennyibe kerül egy hajvágás?",
-        "a": "Az árak 50 lejtől indulnak a frissítésért, és 140 lejig terjednek a prémium csomagért. Egyszerű hajvágás 60 lejtől."
+        "a": "Az árak 50 lejtől indulnak a frissítésért, és 150 lejig terjednek a prémium csomagért. Egyszerű hajvágás 70 lejtől."
       },
       {
         "q": "Elfogadnak bankkártyát?",
