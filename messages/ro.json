@@ -218,7 +218,7 @@
     "hours": [
       { "day": "Luni", "time": "10:00 — 19:00", "closed": false },
       { "day": "Marți", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Miercuri", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Miercuri", "time": "10:00 — 20:00", "closed": false },
       { "day": "Joi", "time": "10:00 — 20:00", "closed": false },
       { "day": "Vineri", "time": "10:00 — 20:00", "closed": false },
       { "day": "Sâmbătă", "time": "Închis", "closed": true },
@@ -280,7 +280,7 @@
       },
       {
         "q": "Care este programul?",
-        "a": "Luni, marți, miercuri 10:00–19:00. Joi, vineri 10:00–20:00. Sâmbătă, duminică închis."
+        "a": "Luni, marți 10:00–19:00. Miercuri, joi, vineri 10:00–20:00. Sâmbătă, duminică închis."
       },
       {
         "q": "Cât costă un tuns?",

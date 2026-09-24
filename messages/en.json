@@ -218,7 +218,7 @@
     "hours": [
       { "day": "Monday", "time": "10:00 — 19:00", "closed": false },
       { "day": "Tuesday", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Wednesday", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Wednesday", "time": "10:00 — 20:00", "closed": false },
       { "day": "Thursday", "time": "10:00 — 20:00", "closed": false },
       { "day": "Friday", "time": "10:00 — 20:00", "closed": false },
       { "day": "Saturday", "time": "Closed", "closed": true },
@@ -280,7 +280,7 @@
       },
       {
         "q": "What are your opening hours?",
-        "a": "Monday to Wednesday 10:00–19:00. Thursday and Friday 10:00–20:00. Saturday and Sunday closed."
+        "a": "Monday and Tuesday 10:00–19:00. Wednesday to Friday 10:00–20:00. Saturday and Sunday closed."
       },
       {
         "q": "How much does a haircut cost?",

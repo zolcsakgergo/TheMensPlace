@@ -218,7 +218,7 @@
     "hours": [
       { "day": "Hétfő", "time": "10:00 — 19:00", "closed": false },
       { "day": "Kedd", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Szerda", "time": "10:00 — 19:00", "closed": false },
+      { "day": "Szerda", "time": "10:00 — 20:00", "closed": false },
       { "day": "Csütörtök", "time": "10:00 — 20:00", "closed": false },
       { "day": "Péntek", "time": "10:00 — 20:00", "closed": false },
       { "day": "Szombat", "time": "Zárva", "closed": true },
@@ -280,7 +280,7 @@
       },
       {
         "q": "Mi a nyitvatartás?",
-        "a": "Hétfő, kedd, szerda 10:00–19:00. Csütörtök, péntek 10:00–20:00. Szombat, vasárnap zárva."
+        "a": "Hétfő, kedd 10:00–19:00. Szerda, csütörtök, péntek 10:00–20:00. Szombat, vasárnap zárva."
       },
       {
         "q": "Mennyibe kerül egy hajvágás?",
