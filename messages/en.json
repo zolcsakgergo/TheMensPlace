@@ -65,67 +65,67 @@
     "items": [
       {
         "n": "I",
-        "title": "Signature Cut",
+        "title": "Men's Haircut Package",
         "duration": "30 min",
-        "price": "80 – 90",
-        "desc": "Scissor and clipper cut, refreshing wash, facial cleanse and personalised styling."
+        "price": "80",
+        "desc": "Fade haircut from 0, adapted to the shape of your head, with a shaver for a clean effect, precise transitions and a flawless finish. Includes a hair wash before and/or after the cut, as the client prefers, professional styling for a modern, well-defined look, and a facial cleanse."
       },
       {
         "n": "II",
-        "title": "Full Ritual (Hair & Beard)",
+        "title": "Haircut + Beard Trim Package",
         "duration": "40 min",
-        "price": "100 – 110",
-        "desc": "The essential package for gentlemen. Includes haircut, beard trim, facial cleanse and finish with premium products."
+        "price": "100",
+        "desc": "Fade haircut built up progressively from 0 with the clippers, with clean transitions and precise finishing. Wash before and/or after the cut. The beard trim includes a personalised fade in the beard, precise contours done with the razor, a finish with premium hydrating products and a facial cleanse for a well-groomed look."
       },
       {
         "n": "III",
-        "title": "Family Tradition (Father & Son)",
-        "duration": "60 min",
-        "price": "140 – 160",
-        "desc": "A shared experience on side-by-side chairs. Full haircut and a style lesson for the next generation."
+        "title": "Dad & Son Haircut Package",
+        "duration": "1 h",
+        "price": "140 - 160",
+        "desc": "A shared experience on side-by-side chairs."
       },
       {
         "n": "IV",
-        "title": "Simple Cut (Refresh)",
+        "title": "Classic Cut",
         "duration": "20 min",
         "price": "70",
-        "desc": "Clipper cut (minimum 3 mm). For the moments when you need a clean, essential refresh."
+        "desc": "A cut done exclusively with the clippers, using a single length, with no fade or transition down to 0. The length is uniform across the whole head, with clean contours and a tidy look. For the moments when you need a clean, essential refresh."
       },
       {
         "n": "V",
-        "title": "Simple Cut & Beard",
+        "title": "Classic Cut + Beard Trim",
         "duration": "30 min",
         "price": "90",
-        "desc": "Short clipper cut paired with beard trim and hydrating products."
+        "desc": "A cut done exclusively with the clippers, using a single length. The length is uniform across the whole head, with clean contours and a tidy look, combined with a beard trim – premium hydrating products and a facial cleanse."
       },
       {
         "n": "VI",
-        "title": "The Young Gentleman",
+        "title": "Kids' Haircut Package",
         "duration": "30 min",
         "price": "70",
         "desc": "For our youngest clients. Patience, attention and a style cut to fit."
       },
       {
         "n": "VII",
-        "title": "Beard Architecture",
+        "title": "Beard Trim",
         "duration": "20 min",
         "price": "50",
-        "desc": "Shape sculpting, razor contour, hydration and facial cleanse."
+        "desc": "A beard trim including a personalised fade in the beard, precise contours done with the razor, a finish with premium hydrating products and a facial cleanse for a well-groomed look."
       },
       {
         "n": "VIII",
-        "title": "Refresh & Styling",
+        "title": "Men's Styling",
         "duration": "15 min",
         "price": "50",
-        "desc": "Wash, dry and professional styling. Ideal before an event or an important meeting."
+        "desc": "Wash – professional styling with premium products. Ideal before an event or an important meeting."
       },
       {
         "n": "IX",
-        "title": "House Indulgence (Full Experience)",
+        "title": "Premium Package",
         "featured": true,
-        "duration": "60 min",
+        "duration": "1 h",
         "price": "150",
-        "desc": "Craft without compromise: revitalising scalp massage, precision cut and beard architecture, accompanied by premium grooming products."
+        "desc": "A complete grooming experience including a precision cut, beard trim, a wash before and after, a revitalising scalp massage, styling with premium products and beard hydration. All for a flawless look and a professional experience."
       }
     ]
   },
@@ -162,12 +162,30 @@
     "close": "Close",
     "pageOf": "{current} / {total}",
     "items": [
-      { "label": "Classic cut", "size": "tall" },
-      { "label": "Razor detail", "size": "normal" },
-      { "label": "Workshop", "size": "wide" },
-      { "label": "Shave", "size": "normal" },
-      { "label": "Products", "size": "normal" },
-      { "label": "Vintage chair", "size": "normal" }
+      {
+        "label": "Classic cut",
+        "size": "tall"
+      },
+      {
+        "label": "Razor detail",
+        "size": "normal"
+      },
+      {
+        "label": "Workshop",
+        "size": "wide"
+      },
+      {
+        "label": "Shave",
+        "size": "normal"
+      },
+      {
+        "label": "Products",
+        "size": "normal"
+      },
+      {
+        "label": "Vintage chair",
+        "size": "normal"
+      }
     ]
   },
   "testimonials": {
@@ -216,13 +234,41 @@
     "mapPopupAddress": "Aleea Tărnavei 2, A · Satu Mare",
     "closed": "Closed",
     "hours": [
-      { "day": "Monday", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Tuesday", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Wednesday", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Thursday", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Friday", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Saturday", "time": "Closed", "closed": true },
-      { "day": "Sunday", "time": "Closed", "closed": true }
+      {
+        "day": "Monday",
+        "time": "10:00 — 19:00",
+        "closed": false
+      },
+      {
+        "day": "Tuesday",
+        "time": "10:00 — 19:00",
+        "closed": false
+      },
+      {
+        "day": "Wednesday",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Thursday",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Friday",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Saturday",
+        "time": "Closed",
+        "closed": true
+      },
+      {
+        "day": "Sunday",
+        "time": "Closed",
+        "closed": true
+      }
     ]
   },
   "footer": {

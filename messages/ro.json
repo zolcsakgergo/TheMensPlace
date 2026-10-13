@@ -65,67 +65,67 @@
     "items": [
       {
         "n": "I",
-        "title": "Tuns Semnătură",
+        "title": "Pachet Tuns Bărbați",
         "duration": "30 min",
-        "price": "80 – 90",
-        "desc": "Tuns din foarfecă și mașină, spălat revigorant, curățare facială și styling personalizat."
+        "price": "80",
+        "desc": "Tuns fade de la 0, adaptat formei capului, cu shaver pentru un efect curat, treceri precise și finisaj impecabil. Include spălarea părului înainte și/sau după tunsoare, la cererea clientului, styling profesional pentru un look modern – bine definit și curățare facială."
       },
       {
         "n": "II",
-        "title": "Ritual Complet (Tuns & Barbă)",
+        "title": "Pachet Tuns + Aranjat Barbă",
         "duration": "40 min",
-        "price": "100 – 110",
-        "desc": "Pachetul esențial pentru domni. Include tuns, aranjat barbă, curățare facială și finisare cu produse premium."
+        "price": "100",
+        "desc": "Tunsoare fade realizată progresiv, pornind de la 0 cu mașina de tuns, cu treceri curate și finisaje precise. Spălat înainte și/sau după tunsoare. Aranjat barbă ce include fade personalizat în barbă, contururi precise realizate cu briciul, finisare cu produse de hidratare premium și curățare facială pentru un aspect îngrijit."
       },
       {
         "n": "III",
-        "title": "Tradiție în Familie (Tată & Fiu)",
-        "duration": "60 min",
-        "price": "140 – 160",
-        "desc": "O experiență împărtășită pe scaune alăturate. Tuns complet și lecții de stil pentru generația următoare."
+        "title": "Pachet Tuns Dad & Son",
+        "duration": "1 h",
+        "price": "140 - 160",
+        "desc": "O experiență împărtășită pe scaune alăturate."
       },
       {
         "n": "IV",
-        "title": "Tuns Simplu (Refresh)",
+        "title": "Tuns Classic",
         "duration": "20 min",
         "price": "70",
-        "desc": "Tuns din mașină (minim 3 mm). Pentru momentele când ai nevoie de un refresh curat și esențial."
+        "desc": "Tuns realizat exclusiv cu mașina de tuns, folosind o singură dimensiune, fără realizarea fade-ului sau a trecerii la 0. Lungimea este uniformă pe toată suprafața capului, cu contururi curate și aspect îngrijit. Pentru momentele când ai nevoie de un refresh curat și esențial."
       },
       {
         "n": "V",
-        "title": "Tuns Simplu & Barbă",
+        "title": "Tuns Classic + Aranjat Barbă",
         "duration": "30 min",
         "price": "90",
-        "desc": "Tuns scurt din mașină combinat cu aranjat de barbă și produse de hidratare."
+        "desc": "Tuns realizat exclusiv cu mașina de tuns, folosind o singură dimensiune. Lungimea este uniformă pe toată suprafața capului, cu contururi curate și aspect îngrijit, combinat cu aranjat de barbă – produse de hidratare premium și curățare facială."
       },
       {
         "n": "VI",
-        "title": "Micul Domn",
+        "title": "Pachet tuns copii",
         "duration": "30 min",
         "price": "70",
         "desc": "Pentru cei mai tineri clienți ai noștri. Răbdare, atenție și un stil pe măsură."
       },
       {
         "n": "VII",
-        "title": "Arhitectură Barbă",
+        "title": "Aranjat Barbă",
         "duration": "20 min",
         "price": "50",
-        "desc": "Sculptarea formei, contur cu briciul, hidratare și curățare facială."
+        "desc": "Aranjat barbă ce include fade personalizat în barbă, contururi precise realizate cu briciul, finisare cu produse de hidratare premium și curățare facială pentru un aspect îngrijit."
       },
       {
         "n": "VIII",
-        "title": "Refresh & Styling",
+        "title": "Aranjat Bărbați",
         "duration": "15 min",
         "price": "50",
-        "desc": "Spălat, uscat și aranjat profesional. Ideal înainte de un eveniment sau o întâlnire importantă."
+        "desc": "Spălat – aranjat profesional cu produse premium. Ideal înainte de un eveniment sau o întâlnire importantă."
       },
       {
         "n": "IX",
-        "title": "Răsfățul Casei (Full Experience)",
+        "title": "Pachet Premium",
         "featured": true,
-        "duration": "60 min",
+        "duration": "1 h",
         "price": "150",
-        "desc": "Măiestrie fără compromis: Masaj capilar revitalizant, tuns de precizie și arhitectura bărbii, totul acompaniat de produse de îngrijire premium."
+        "desc": "O experiență completă de îngrijire, ce include tuns de precizie, aranjat barbă, spălare înainte și după, masaj capilar revitalizant, styling cu produse premium și hidratarea bărbii. Totul pentru un look impecabil și o experiență profesională."
       }
     ]
   },
@@ -162,12 +162,30 @@
     "close": "Închide",
     "pageOf": "{current} / {total}",
     "items": [
-      { "label": "Tuns clasic", "size": "tall" },
-      { "label": "Detaliu briciu", "size": "normal" },
-      { "label": "Atelier", "size": "wide" },
-      { "label": "Bărbierit", "size": "normal" },
-      { "label": "Produse", "size": "normal" },
-      { "label": "Scaun vintage", "size": "normal" }
+      {
+        "label": "Tuns clasic",
+        "size": "tall"
+      },
+      {
+        "label": "Detaliu briciu",
+        "size": "normal"
+      },
+      {
+        "label": "Atelier",
+        "size": "wide"
+      },
+      {
+        "label": "Bărbierit",
+        "size": "normal"
+      },
+      {
+        "label": "Produse",
+        "size": "normal"
+      },
+      {
+        "label": "Scaun vintage",
+        "size": "normal"
+      }
     ]
   },
   "testimonials": {
@@ -216,13 +234,41 @@
     "mapPopupAddress": "Aleea Tărnavei 2, A · Satu Mare",
     "closed": "Închis",
     "hours": [
-      { "day": "Luni", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Marți", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Miercuri", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Joi", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Vineri", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Sâmbătă", "time": "Închis", "closed": true },
-      { "day": "Duminică", "time": "Închis", "closed": true }
+      {
+        "day": "Luni",
+        "time": "10:00 — 19:00",
+        "closed": false
+      },
+      {
+        "day": "Marți",
+        "time": "10:00 — 19:00",
+        "closed": false
+      },
+      {
+        "day": "Miercuri",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Joi",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Vineri",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Sâmbătă",
+        "time": "Închis",
+        "closed": true
+      },
+      {
+        "day": "Duminică",
+        "time": "Închis",
+        "closed": true
+      }
     ]
   },
   "footer": {

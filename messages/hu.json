@@ -65,67 +65,67 @@
     "items": [
       {
         "n": "I",
-        "title": "Signature hajvágás",
+        "title": "Férfi hajvágás csomag",
         "duration": "30 perc",
-        "price": "80 – 90",
-        "desc": "Olló és gép kombináció, frissítő mosás, arctisztítás és személyre szabott styling."
+        "price": "80",
+        "desc": "Fade hajvágás 0-tól, a fejformához igazítva, shaverrel a tiszta hatásért, precíz átmenetekkel és kifogástalan finisheléssel. Tartalmazza a hajmosást a vágás előtt és/vagy után, a vendég kérése szerint, professzionális stylingot a modern, jól definiált lookért, valamint arctisztítást."
       },
       {
         "n": "II",
-        "title": "Teljes rituálé (Haj & Szakáll)",
+        "title": "Hajvágás + Szakállformázás csomag",
         "duration": "40 perc",
-        "price": "100 – 110",
-        "desc": "Az úriemberek alapcsomagja. Hajvágás, szakállformázás, arctisztítás és prémium befejezés."
+        "price": "100",
+        "desc": "Fokozatosan, 0-tól felépített fade hajvágás hajvágógéppel, tiszta átmenetekkel és precíz finisheléssel. Mosás a vágás előtt és/vagy után. A szakállformázás tartalmaz személyre szabott fade-et a szakállban, precíz kontúrokat borotvával, prémium hidratáló termékekkel történő befejezést és arctisztítást az ápolt megjelenésért."
       },
       {
         "n": "III",
-        "title": "Családi hagyomány (Apa & Fia)",
-        "duration": "60 perc",
-        "price": "140 – 160",
-        "desc": "Közös élmény egymás melletti székeken. Teljes hajvágás és stílusleckék a következő generációnak."
+        "title": "Dad & Son hajvágás csomag",
+        "duration": "1 óra",
+        "price": "140 - 160",
+        "desc": "Közös élmény egymás melletti székeken."
       },
       {
         "n": "IV",
-        "title": "Egyszerű hajvágás (Refresh)",
+        "title": "Classic hajvágás",
         "duration": "20 perc",
         "price": "70",
-        "desc": "Gépi hajvágás (minimum 3 mm). Amikor csak egy tiszta, lényegre törő frissítésre van szükséged."
+        "desc": "Kizárólag hajvágógéppel, egyetlen méretet használva készült hajvágás, fade és 0-ra való átmenet nélkül. A hossz a fej teljes felületén egyenletes, tiszta kontúrokkal és ápolt megjelenéssel. Amikor csak egy tiszta, lényegre törő frissítésre van szükséged."
       },
       {
         "n": "V",
-        "title": "Egyszerű hajvágás & Szakáll",
+        "title": "Classic hajvágás + Szakállformázás",
         "duration": "30 perc",
         "price": "90",
-        "desc": "Rövid gépi hajvágás szakállformázással és hidratáló termékekkel."
+        "desc": "Kizárólag hajvágógéppel, egyetlen méretet használva készült hajvágás. A hossz a fej teljes felületén egyenletes, tiszta kontúrokkal és ápolt megjelenéssel, szakállformázással kombinálva – prémium hidratáló termékek és arctisztítás."
       },
       {
         "n": "VI",
-        "title": "A kis úriember",
+        "title": "Gyermek hajvágás csomag",
         "duration": "30 perc",
         "price": "70",
         "desc": "Legfiatalabb vendégeinknek. Türelem, figyelem és személyre szabott stílus."
       },
       {
         "n": "VII",
-        "title": "Szakáll-architektúra",
+        "title": "Szakállformázás",
         "duration": "20 perc",
         "price": "50",
-        "desc": "Forma kialakítása, borotva-kontúr, hidratálás és arctisztítás."
+        "desc": "Szakállformázás, amely tartalmaz személyre szabott fade-et a szakállban, precíz kontúrokat borotvával, prémium hidratáló termékekkel történő befejezést és arctisztítást az ápolt megjelenésért."
       },
       {
         "n": "VIII",
-        "title": "Frissítés & Styling",
+        "title": "Férfi hajbeállítás",
         "duration": "15 perc",
         "price": "50",
-        "desc": "Mosás, szárítás és professzionális beállítás. Tökéletes egy fontos esemény vagy találkozó előtt."
+        "desc": "Mosás – professzionális beállítás prémium termékekkel. Tökéletes egy fontos esemény vagy találkozó előtt."
       },
       {
         "n": "IX",
-        "title": "A ház kényeztetése (Full Experience)",
+        "title": "Premium csomag",
         "featured": true,
-        "duration": "60 perc",
+        "duration": "1 óra",
         "price": "150",
-        "desc": "Mesterség kompromisszumok nélkül: revitalizáló fejmasszázs, precíziós vágás és szakállformázás, prémium ápolószerekkel."
+        "desc": "Teljes ápolási élmény, amely tartalmaz precíziós hajvágást, szakállformázást, mosást a vágás előtt és után, revitalizáló fejmasszázst, stylingot prémium termékekkel és a szakáll hidratálását. Minden a kifogástalan lookért és a professzionális élményért."
       }
     ]
   },
@@ -162,12 +162,30 @@
     "close": "Bezárás",
     "pageOf": "{current} / {total}",
     "items": [
-      { "label": "Klasszikus hajvágás", "size": "tall" },
-      { "label": "Borotva részlet", "size": "normal" },
-      { "label": "Műhely", "size": "wide" },
-      { "label": "Borotválás", "size": "normal" },
-      { "label": "Termékek", "size": "normal" },
-      { "label": "Vintage szék", "size": "normal" }
+      {
+        "label": "Klasszikus hajvágás",
+        "size": "tall"
+      },
+      {
+        "label": "Borotva részlet",
+        "size": "normal"
+      },
+      {
+        "label": "Műhely",
+        "size": "wide"
+      },
+      {
+        "label": "Borotválás",
+        "size": "normal"
+      },
+      {
+        "label": "Termékek",
+        "size": "normal"
+      },
+      {
+        "label": "Vintage szék",
+        "size": "normal"
+      }
     ]
   },
   "testimonials": {
@@ -216,13 +234,41 @@
     "mapPopupAddress": "Aleea Tărnavei 2, A · Szatmárnémeti",
     "closed": "Zárva",
     "hours": [
-      { "day": "Hétfő", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Kedd", "time": "10:00 — 19:00", "closed": false },
-      { "day": "Szerda", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Csütörtök", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Péntek", "time": "10:00 — 20:00", "closed": false },
-      { "day": "Szombat", "time": "Zárva", "closed": true },
-      { "day": "Vasárnap", "time": "Zárva", "closed": true }
+      {
+        "day": "Hétfő",
+        "time": "10:00 — 19:00",
+        "closed": false
+      },
+      {
+        "day": "Kedd",
+        "time": "10:00 — 19:00",
+        "closed": false
+      },
+      {
+        "day": "Szerda",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Csütörtök",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Péntek",
+        "time": "10:00 — 20:00",
+        "closed": false
+      },
+      {
+        "day": "Szombat",
+        "time": "Zárva",
+        "closed": true
+      },
+      {
+        "day": "Vasárnap",
+        "time": "Zárva",
+        "closed": true
+      }
     ]
   },
   "footer": {
