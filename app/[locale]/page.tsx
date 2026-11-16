@@ -76,11 +76,7 @@ async function loadContent() {
   return { settings, team, gallery, hours, services };
 }
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const { settings, team, gallery, hours, services } = await loadContent();
@@ -89,20 +85,22 @@ export default async function Page({
     <>
       <JsonLd locale={locale as "ro" | "hu" | "en"} hours={hours} services={services} />
       <Nav />
-      <Hero heroImage={settings?.heroImage} />
-      <MarqueeBar />
-      <VideoReveal
-        videoSrc={settings?.heroVideo?.asset?.url}
-        videoMimeType={settings?.heroVideo?.asset?.mimeType}
-      />
-      <Services />
-      <About aboutImage={settings?.aboutImage} />
-      <Team team={team} />
-      <GallerySection items={gallery} />
-      <Testimonials />
-      <Booking />
-      <Location position={SHOP_COORDS} hours={hours} />
-      <Faq />
+      <main>
+        <Hero heroImage={settings?.heroImage} />
+        <MarqueeBar />
+        <VideoReveal
+          videoSrc={settings?.heroVideo?.asset?.url}
+          videoMimeType={settings?.heroVideo?.asset?.mimeType}
+        />
+        <Services />
+        <About aboutImage={settings?.aboutImage} />
+        <Team team={team} />
+        <GallerySection items={gallery} />
+        <Testimonials />
+        <Booking />
+        <Location position={SHOP_COORDS} hours={hours} />
+        <Faq />
+      </main>
       <Footer />
       <Reveal />
     </>

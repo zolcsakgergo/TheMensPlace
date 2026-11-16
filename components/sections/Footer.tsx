@@ -5,7 +5,14 @@ import { Link } from "@/i18n/navigation";
 const NAV_KEYS = ["services", "about", "team", "gallery"] as const;
 
 const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden {...props}>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    aria-hidden
+    {...props}
+  >
     <rect x="3" y="3" width="18" height="18" rx="5" />
     <circle cx="12" cy="12" r="4" />
     <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
@@ -13,7 +20,14 @@ const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden {...props}>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    aria-hidden
+    {...props}
+  >
     <path d="M14.5 8.5h2.25V5.5h-2.25c-1.8 0-3.25 1.45-3.25 3.25V11H9v3h2.25v6.5h3V14H17l.5-3h-3.25V9c0-.28.22-.5.5-.5Z" />
   </svg>
 );
@@ -26,9 +40,9 @@ const SOCIALS = [
 const linkCls = "text-ink-dim text-[14px] no-underline hover:text-gold transition-colors";
 
 const ColumnHeading = ({ children }: { children: React.ReactNode }) => (
-  <h4 className="text-gold mb-5 font-mono text-[11px] font-medium tracking-[0.22em] uppercase">
+  <h3 className="text-gold mb-5 font-mono text-[11px] font-medium tracking-[0.22em] uppercase">
     {children}
-  </h4>
+  </h3>
 );
 
 export default async function Footer() {

@@ -50,12 +50,7 @@ export default function Nav() {
           scrolled ? "bg-bg/90 px-12 py-[14px]" : "bg-bg/60 px-12 py-[22px]"
         }`}
       >
-        <Link
-          href="/"
-          onClick={onBrandClick}
-          aria-label="The Men's Place"
-          className="no-underline"
-        >
+        <Link href="/" onClick={onBrandClick} aria-label="The Men's Place" className="no-underline">
           <Brand />
         </Link>
         <ul className="m-0 flex list-none gap-9 p-0 max-[980px]:hidden">
@@ -97,6 +92,7 @@ export default function Nav() {
         role="dialog"
         aria-modal="true"
         aria-hidden={!open}
+        inert={!open}
         className={`bg-bg/95 fixed inset-0 z-[90] flex flex-col items-center justify-center gap-8 backdrop-blur-md transition-opacity duration-200 min-[980px]:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
@@ -122,7 +118,6 @@ export default function Nav() {
           {t("cta")}
         </a>
         <LocaleSwitcher />
-
       </div>
     </>
   );

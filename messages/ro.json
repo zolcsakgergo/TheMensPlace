@@ -31,7 +31,7 @@
     },
     "photoLabel": "Foto · Hero",
     "photoDim": "Recomandat: portret barber la scaun · 3:4",
-    "photoAlt": "Levente Ninacs, frizer la The Men's Place Satu Mare",
+    "photoAlt": "Levente Ninacs, barber la The Men's Place Satu Mare",
     "h1": "Frizerie & barbershop în Satu Mare"
   },
   "marquee": {
@@ -164,7 +164,7 @@
       {
         "name": "Levente Ninacs",
         "role": "Master Barber · Fondator",
-        "bio": "10 ani de măiestrie. Stăpânim deopotrivă tunsul clasic și stilul modern — iar barba o croim pe măsura feței, linie cu linie. Precizie în fiecare mișcare, pasiune în fiecare detaliu."
+        "bio": "Levente Ninacs, barber în Satu Mare din 2016. 10 ani de măiestrie. Stăpânim deopotrivă tunsul clasic și stilul modern — iar barba o croim pe măsura feței, linie cu linie. Precizie în fiecare mișcare, pasiune în fiecare detaliu."
       }
     ]
   },
@@ -242,7 +242,7 @@
     "scheduleHeading": "Program",
     "addressHeading": "Adresă",
     "addressLine1": "Aleea Tărnavei 2, A, 440207 Satu Mare",
-    "addressCity": "Satu Mare · România",
+    "addressCity": "Micro 14 · Satu Mare · România",
     "mapLabel": "Hartă",
     "mapDim": "Pin: Aleea Tărnavei 2, A",
     "mapAlt": "Hartă locație",
@@ -330,11 +330,11 @@
     "items": [
       {
         "q": "Ce este The Men's Place?",
-        "a": "The Men's Place este o frizerie (barbershop) din Satu Mare, deschisă în 2016, pe Aleea Tărnavei 2, A, lângă Biserica Romano-Catolică Sf. Petru și Pavel (Bd. Cloșca 1A). Oferim tuns fade, tuns clasic, aranjat barbă, tuns copii și pachetul Dad & Son, cu prețuri între 50 și 160 lei."
+        "a": "The Men's Place este o frizerie (barbershop) din Satu Mare, deschisă în 2016, pe Aleea Tărnavei 2, A, cartierul Micro 14, lângă Biserica Romano-Catolică Sf. Petru și Pavel (Bd. Cloșca 1A). Oferim tuns fade, tuns clasic, aranjat barbă, tuns copii și pachetul Dad & Son, cu prețuri între 50 și 160 lei."
       },
       {
         "q": "Unde se află The Men's Place?",
-        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, România, lângă Biserica Romano-Catolică Sf. Petru și Pavel (Bd. Cloșca 1A)."
+        "a": "Aleea Tărnavei 2, A, cartierul Micro 14, 440207 Satu Mare, România, lângă Biserica Romano-Catolică Sf. Petru și Pavel (Bd. Cloșca 1A)."
       },
       {
         "q": "Cum pot face o programare?",

@@ -56,7 +56,7 @@ export default function LocationMapInner({
         subdomains="abcd"
         maxZoom={20}
       />
-      <Marker position={position} icon={goldPinIcon}>
+      <Marker position={position} icon={goldPinIcon} title={popupTitle} alt={popupTitle}>
         {(popupTitle || popupAddress) && (
           <Popup>
             <div className="tmp-popup">

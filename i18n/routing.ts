@@ -4,6 +4,9 @@ export const routing = defineRouting({
   locales: ["ro", "hu", "en"],
   defaultLocale: "ro",
   localePrefix: "as-needed",
+  // No Accept-Language redirect: every visitor and crawler gets the URL they
+  // asked for; hreflang + the language switcher handle language choice.
+  localeDetection: false,
   pathnames: {
     "/": "/",
     "/confidentialitate": {

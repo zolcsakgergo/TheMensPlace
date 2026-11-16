@@ -40,9 +40,9 @@ async function localeBlock(locale: Locale) {
 
 ${tMetadata("description")}
 
-- Home: ${home}
-- Privacy: ${privacy}
-- Legal notice: ${legal}
+- [Home](${home}): services, prices, hours, FAQ
+- [Privacy](${privacy})
+- [Legal notice](${legal})
 
 ### About
 
@@ -79,17 +79,15 @@ export async function GET() {
 - **Phone**: ${BUSINESS.phoneDisplay} (${BUSINESS.phone})
 - **Address**: ${BUSINESS.street}, ${BUSINESS.postalCode} ${BUSINESS.city}, ${BUSINESS.countryName}
 - **Coordinates**: ${BUSINESS.geo.latitude}, ${BUSINESS.geo.longitude}
-- **Online booking**: https://mero.ro/p/the-mens-place
-- **Instagram**: https://www.instagram.com/levente.ninacs/
-- **Facebook**: https://www.facebook.com/NinacsLevente22/
+- [Online booking (Mero)](https://mero.ro/p/the-mens-place)
+- [Google Maps](${BUSINESS.googleMaps})
+- [Instagram](https://www.instagram.com/levente.ninacs/)
+- [Facebook](https://www.facebook.com/NinacsLevente22/)
 
 ## Available languages
 
 ${routing.locales
-  .map(
-    (l) =>
-      `- ${LOCALE_NAME[l]} (${l}): ${SITE_URL}${getPathname({ locale: l, href: "/" })}`,
-  )
+  .map((l) => `- [${LOCALE_NAME[l]} (${l})](${SITE_URL}${getPathname({ locale: l, href: "/" })})`)
   .join("\n")}
 
 ---

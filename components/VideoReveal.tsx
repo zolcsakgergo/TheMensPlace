@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Frame } from "./Primitives";
 
@@ -11,17 +11,41 @@ type Props = {
 export default function VideoReveal({ videoSrc, videoMimeType }: Props) {
   const t = useTranslations("video");
   const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  // The video is several MB and sits below the fold: only fetch it once the
+  // section is about to scroll into view, so it doesn't weigh on first load.
+  const [nearView, setNearView] = useState(false);
 
   const src = videoSrc;
   const type =
     videoMimeType || (src?.endsWith(".webm") ? "video/webm" : src ? "video/mp4" : undefined);
 
   useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setNearView(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "200px 0px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
     videoRef.current?.play().catch(() => {});
-  }, [src]);
+  }, [src, nearView]);
 
   return (
-    <section className="bg-bg relative h-screen" data-screen-label="02 Video Reveal">
+    <section
+      ref={sectionRef}
+      className="bg-bg relative h-screen"
+      data-screen-label="02 Video Reveal"
+    >
       <div className="relative h-screen overflow-hidden">
         {/* Frame corners — the visible inset frame */}
         <Frame size={48} offset={32} />
@@ -33,7 +57,7 @@ export default function VideoReveal({ videoSrc, videoMimeType }: Props) {
               {t("fallbackLabel")} · {t("fallbackDim")}
             </div>
           </div>
-          {src && (
+          {src && nearView && (
             <video
               key={src}
               ref={videoRef}
@@ -41,6 +65,7 @@ export default function VideoReveal({ videoSrc, videoMimeType }: Props) {
               muted
               loop
               playsInline
+              preload="none"
               className="absolute inset-0 h-full w-full object-cover"
               onError={(e) => {
                 (e.currentTarget as HTMLVideoElement).style.display = "none";
