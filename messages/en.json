@@ -56,7 +56,7 @@
   },
   "services": {
     "eyebrow": "Services & Rituals",
-    "titleLine1": "Nine ways to",
+    "titleLine1": "Eleven ways to",
     "titleEm": "feel like a gentleman.",
     "p": "Honest prices, realistic timing, no surprises. Every service includes a facial cleanse and premium products.",
     "numPrefix": "№",
@@ -65,62 +65,76 @@
     "items": [
       {
         "n": "I",
-        "title": "Men's Haircut Package",
+        "title": "Fade Haircut + Wash",
         "duration": "30 min",
         "price": "80",
-        "desc": "Fade haircut from 0, adapted to the shape of your head, with a shaver for a clean effect, precise transitions and a flawless finish. Includes a hair wash before and/or after the cut, as the client prefers, professional styling for a modern, well-defined look, and a facial cleanse."
+        "desc": "Fade haircut from 0, adapted to the shape of your head, with a shaver for a clean effect, precise transitions and a flawless finish. Includes a hair wash before the cut, professional styling for a modern, well-defined look, and a facial cleanse."
       },
       {
         "n": "II",
-        "title": "Haircut + Beard Trim Package",
+        "title": "Fade Haircut + Beard Trim",
         "duration": "40 min",
         "price": "100",
-        "desc": "Fade haircut built up progressively from 0 with the clippers, with clean transitions and precise finishing. Wash before and/or after the cut. The beard trim includes a personalised fade in the beard, precise contours done with the razor, a finish with premium hydrating products and a facial cleanse for a well-groomed look."
+        "desc": "Fade haircut built up progressively from 0 with the clippers, with clean transitions and precise finishing. Wash before the cut. The beard trim includes a personalised fade in the beard, precise contours done with the razor, a finish with premium hydrating products and a facial cleanse for a well-groomed look."
       },
       {
         "n": "III",
-        "title": "Dad & Son Haircut Package",
-        "duration": "1 h",
-        "price": "140 - 160",
-        "desc": "A shared experience on side-by-side chairs."
+        "title": "Fade Haircut + Wash 2x",
+        "duration": "30 min",
+        "price": "90",
+        "desc": "Includes a hair wash before and after the cut for a flawless, long-lasting look."
       },
       {
         "n": "IV",
+        "title": "Fade Haircut + Beard Trim + Wash 2x",
+        "duration": "40 min",
+        "price": "110",
+        "desc": "Includes a hair wash before and after the cut for a flawless, long-lasting look."
+      },
+      {
+        "n": "V",
         "title": "Classic Cut",
         "duration": "20 min",
         "price": "70",
         "desc": "A cut done exclusively with the clippers, using a single length, with no fade or transition down to 0. The length is uniform across the whole head, with clean contours and a tidy look. For the moments when you need a clean, essential refresh."
       },
       {
-        "n": "V",
+        "n": "VI",
         "title": "Classic Cut + Beard Trim",
         "duration": "30 min",
         "price": "90",
         "desc": "A cut done exclusively with the clippers, using a single length. The length is uniform across the whole head, with clean contours and a tidy look, combined with a beard trim – premium hydrating products and a facial cleanse."
       },
       {
-        "n": "VI",
-        "title": "Kids' Haircut Package",
+        "n": "VII",
+        "title": "Kids' Haircut",
         "duration": "30 min",
         "price": "70",
         "desc": "For our youngest clients. Patience, attention and a style cut to fit."
       },
       {
-        "n": "VII",
+        "n": "VIII",
+        "title": "Dad & Son Haircut Package",
+        "duration": "1 h",
+        "price": "140 - 160",
+        "desc": "A shared experience on side-by-side chairs."
+      },
+      {
+        "n": "IX",
         "title": "Beard Trim",
         "duration": "20 min",
         "price": "50",
         "desc": "A beard trim including a personalised fade in the beard, precise contours done with the razor, a finish with premium hydrating products and a facial cleanse for a well-groomed look."
       },
       {
-        "n": "VIII",
+        "n": "X",
         "title": "Men's Styling",
         "duration": "15 min",
         "price": "50",
         "desc": "Wash – professional styling with premium products. Ideal before an event or an important meeting."
       },
       {
-        "n": "IX",
+        "n": "XI",
         "title": "Premium Package",
         "featured": true,
         "duration": "1 h",

@@ -56,7 +56,7 @@
   },
   "services": {
     "eyebrow": "Szolgáltatások & Rituálék",
-    "titleLine1": "Kilenc módja annak,",
+    "titleLine1": "Tizenegy módja annak,",
     "titleEm": "hogy úriembernek érezd magad.",
     "p": "Korrekt árak, valós időtartamok, semmi meglepetés. Minden szolgáltatás tartalmaz arctisztítást és prémium termékeket.",
     "numPrefix": "№",
@@ -65,62 +65,76 @@
     "items": [
       {
         "n": "I",
-        "title": "Férfi hajvágás csomag",
+        "title": "Fade hajvágás + Mosás",
         "duration": "30 perc",
         "price": "80",
-        "desc": "Fade hajvágás 0-tól, a fejformához igazítva, shaverrel a tiszta hatásért, precíz átmenetekkel és kifogástalan finisheléssel. Tartalmazza a hajmosást a vágás előtt és/vagy után, a vendég kérése szerint, professzionális stylingot a modern, jól definiált lookért, valamint arctisztítást."
+        "desc": "Fade hajvágás 0-tól, a fejformához igazítva, shaverrel a tiszta hatásért, precíz átmenetekkel és kifogástalan finisheléssel. Tartalmazza a hajmosást a vágás előtt, professzionális stylingot a modern, jól definiált lookért, valamint arctisztítást."
       },
       {
         "n": "II",
-        "title": "Hajvágás + Szakállformázás csomag",
+        "title": "Fade hajvágás + Szakállformázás",
         "duration": "40 perc",
         "price": "100",
-        "desc": "Fokozatosan, 0-tól felépített fade hajvágás hajvágógéppel, tiszta átmenetekkel és precíz finisheléssel. Mosás a vágás előtt és/vagy után. A szakállformázás tartalmaz személyre szabott fade-et a szakállban, precíz kontúrokat borotvával, prémium hidratáló termékekkel történő befejezést és arctisztítást az ápolt megjelenésért."
+        "desc": "Fokozatosan, 0-tól felépített fade hajvágás hajvágógéppel, tiszta átmenetekkel és precíz finisheléssel. Mosás a vágás előtt. A szakállformázás tartalmaz személyre szabott fade-et a szakállban, precíz kontúrokat borotvával, prémium hidratáló termékekkel történő befejezést és arctisztítást az ápolt megjelenésért."
       },
       {
         "n": "III",
-        "title": "Dad & Son hajvágás csomag",
-        "duration": "1 óra",
-        "price": "140 - 160",
-        "desc": "Közös élmény egymás melletti székeken."
+        "title": "Fade hajvágás + Mosás 2x",
+        "duration": "30 perc",
+        "price": "90",
+        "desc": "Tartalmazza a hajmosást a vágás előtt és után a kifogástalan és tartós lookért."
       },
       {
         "n": "IV",
+        "title": "Fade hajvágás + Szakállformázás + Mosás 2x",
+        "duration": "40 perc",
+        "price": "110",
+        "desc": "Tartalmazza a hajmosást a vágás előtt és után a kifogástalan és tartós lookért."
+      },
+      {
+        "n": "V",
         "title": "Classic hajvágás",
         "duration": "20 perc",
         "price": "70",
         "desc": "Kizárólag hajvágógéppel, egyetlen méretet használva készült hajvágás, fade és 0-ra való átmenet nélkül. A hossz a fej teljes felületén egyenletes, tiszta kontúrokkal és ápolt megjelenéssel. Amikor csak egy tiszta, lényegre törő frissítésre van szükséged."
       },
       {
-        "n": "V",
+        "n": "VI",
         "title": "Classic hajvágás + Szakállformázás",
         "duration": "30 perc",
         "price": "90",
         "desc": "Kizárólag hajvágógéppel, egyetlen méretet használva készült hajvágás. A hossz a fej teljes felületén egyenletes, tiszta kontúrokkal és ápolt megjelenéssel, szakállformázással kombinálva – prémium hidratáló termékek és arctisztítás."
       },
       {
-        "n": "VI",
-        "title": "Gyermek hajvágás csomag",
+        "n": "VII",
+        "title": "Gyermek hajvágás",
         "duration": "30 perc",
         "price": "70",
         "desc": "Legfiatalabb vendégeinknek. Türelem, figyelem és személyre szabott stílus."
       },
       {
-        "n": "VII",
+        "n": "VIII",
+        "title": "Dad & Son hajvágás csomag",
+        "duration": "1 óra",
+        "price": "140 - 160",
+        "desc": "Közös élmény egymás melletti székeken."
+      },
+      {
+        "n": "IX",
         "title": "Szakállformázás",
         "duration": "20 perc",
         "price": "50",
         "desc": "Szakállformázás, amely tartalmaz személyre szabott fade-et a szakállban, precíz kontúrokat borotvával, prémium hidratáló termékekkel történő befejezést és arctisztítást az ápolt megjelenésért."
       },
       {
-        "n": "VIII",
+        "n": "X",
         "title": "Férfi hajbeállítás",
         "duration": "15 perc",
         "price": "50",
         "desc": "Mosás – professzionális beállítás prémium termékekkel. Tökéletes egy fontos esemény vagy találkozó előtt."
       },
       {
-        "n": "IX",
+        "n": "XI",
         "title": "Premium csomag",
         "featured": true,
         "duration": "1 óra",

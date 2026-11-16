@@ -56,7 +56,7 @@
   },
   "services": {
     "eyebrow": "Servicii & Ritualuri",
-    "titleLine1": "Nouă moduri de",
+    "titleLine1": "Unsprezece moduri de",
     "titleEm": "a te simți domn.",
     "p": "Prețuri corecte, durate reale, zero surprize. Toate serviciile includ curățare facială și produse premium.",
     "numPrefix": "№",
@@ -65,62 +65,76 @@
     "items": [
       {
         "n": "I",
-        "title": "Pachet Tuns Bărbați",
+        "title": "Tuns fade + Spălat",
         "duration": "30 min",
         "price": "80",
-        "desc": "Tuns fade de la 0, adaptat formei capului, cu shaver pentru un efect curat, treceri precise și finisaj impecabil. Include spălarea părului înainte și/sau după tunsoare, la cererea clientului, styling profesional pentru un look modern – bine definit și curățare facială."
+        "desc": "Tuns fade de la 0, adaptat formei capului, cu shaver pentru un efect curat, treceri precise și finisaj impecabil. Include spălarea părului înainte de tunsoare, styling profesional pentru un look modern – bine definit și curățare facială."
       },
       {
         "n": "II",
-        "title": "Pachet Tuns + Aranjat Barbă",
+        "title": "Tuns Fade + Aranjat Barbă",
         "duration": "40 min",
         "price": "100",
-        "desc": "Tunsoare fade realizată progresiv, pornind de la 0 cu mașina de tuns, cu treceri curate și finisaje precise. Spălat înainte și/sau după tunsoare. Aranjat barbă ce include fade personalizat în barbă, contururi precise realizate cu briciul, finisare cu produse de hidratare premium și curățare facială pentru un aspect îngrijit."
+        "desc": "Tunsoare fade realizată progresiv, pornind de la 0 cu mașina de tuns, cu treceri curate și finisaje precise. Spălat înainte de tunsoare. Aranjat barbă ce include fade personalizat în barbă, contururi precise realizate cu briciul, finisare cu produse de hidratare premium și curățare facială pentru un aspect îngrijit."
       },
       {
         "n": "III",
-        "title": "Pachet Tuns Dad & Son",
-        "duration": "1 h",
-        "price": "140 - 160",
-        "desc": "O experiență împărtășită pe scaune alăturate."
+        "title": "Tuns fade + Spălat 2x",
+        "duration": "30 min",
+        "price": "90",
+        "desc": "Include spălarea părului înainte și după tunsoare pentru un look impecabil și de durată."
       },
       {
         "n": "IV",
+        "title": "Tuns Fade + Aranjat Barbă + Spălat 2x",
+        "duration": "40 min",
+        "price": "110",
+        "desc": "Include spălarea părului înainte și după tunsoare pentru un look impecabil și de durată."
+      },
+      {
+        "n": "V",
         "title": "Tuns Classic",
         "duration": "20 min",
         "price": "70",
         "desc": "Tuns realizat exclusiv cu mașina de tuns, folosind o singură dimensiune, fără realizarea fade-ului sau a trecerii la 0. Lungimea este uniformă pe toată suprafața capului, cu contururi curate și aspect îngrijit. Pentru momentele când ai nevoie de un refresh curat și esențial."
       },
       {
-        "n": "V",
+        "n": "VI",
         "title": "Tuns Classic + Aranjat Barbă",
         "duration": "30 min",
         "price": "90",
         "desc": "Tuns realizat exclusiv cu mașina de tuns, folosind o singură dimensiune. Lungimea este uniformă pe toată suprafața capului, cu contururi curate și aspect îngrijit, combinat cu aranjat de barbă – produse de hidratare premium și curățare facială."
       },
       {
-        "n": "VI",
-        "title": "Pachet tuns copii",
+        "n": "VII",
+        "title": "Tuns copii",
         "duration": "30 min",
         "price": "70",
         "desc": "Pentru cei mai tineri clienți ai noștri. Răbdare, atenție și un stil pe măsură."
       },
       {
-        "n": "VII",
+        "n": "VIII",
+        "title": "Pachet Tuns Dad & Son",
+        "duration": "1 h",
+        "price": "140 - 160",
+        "desc": "O experiență împărtășită pe scaune alăturate."
+      },
+      {
+        "n": "IX",
         "title": "Aranjat Barbă",
         "duration": "20 min",
         "price": "50",
         "desc": "Aranjat barbă ce include fade personalizat în barbă, contururi precise realizate cu briciul, finisare cu produse de hidratare premium și curățare facială pentru un aspect îngrijit."
       },
       {
-        "n": "VIII",
+        "n": "X",
         "title": "Aranjat Bărbați",
         "duration": "15 min",
         "price": "50",
         "desc": "Spălat – aranjat profesional cu produse premium. Ideal înainte de un eveniment sau o întâlnire importantă."
       },
       {
-        "n": "IX",
+        "n": "XI",
         "title": "Pachet Premium",
         "featured": true,
         "duration": "1 h",
