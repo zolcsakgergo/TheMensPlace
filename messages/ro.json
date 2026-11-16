@@ -13,7 +13,7 @@
     "name": "The Men's Place"
   },
   "hero": {
-    "est": "Est. MMXVI · Satu Mare",
+    "est": "Est. MMXVI",
     "titleLine1": "Meșteșug",
     "titleLine2Pre": "făcut cu",
     "titleEm": "răbdare",
@@ -27,21 +27,22 @@
       "clientsValue": "12k+",
       "clientsLabel": "Domni serviți",
       "ratingValue": "5.0",
-      "ratingLabel": "Pe Mero · 1151 recenzii"
+      "ratingLabel": "Pe Mero · 1537 recenzii"
     },
     "photoLabel": "Foto · Hero",
     "photoDim": "Recomandat: portret barber la scaun · 3:4",
-    "photoAlt": "Portret barber"
+    "photoAlt": "Levente Ninacs, frizer la The Men's Place Satu Mare",
+    "h1": "Frizerie & barbershop în Satu Mare"
   },
   "marquee": {
     "items": [
-      "Tuns Clasic",
-      "Tuns Fade / Skin Fade",
-      "Arhitectură Barbă",
-      "Contur & Fresh Up",
-      "Tratament Capilar / Masaj",
-      "Pachet Full Custom (Tuns + Barbă)",
-      "Styling & Consiliere Look"
+      "Tuns Fade + Spălat",
+      "Tuns Classic",
+      "Aranjat Barbă",
+      "Tuns Copii",
+      "Pachet Dad & Son",
+      "Aranjat Bărbați",
+      "Pachet Premium"
     ]
   },
   "video": {
@@ -200,7 +201,8 @@
         "label": "Scaun vintage",
         "size": "normal"
       }
-    ]
+    ],
+    "altFallback": "Tunsoare realizată la The Men's Place, frizerie Satu Mare – foto {n}"
   },
   "testimonials": {
     "eyebrow": "Direct din scaun",
@@ -303,7 +305,7 @@
   },
   "metadata": {
     "title": "Frizerie & Barbershop în Satu Mare · The Men's Place",
-    "description": "Tuns bărbați, aranjat barbă și tuns tată-fiu în Satu Mare. Frizerie clasică, programări online pe Mero. Aleea Tărnavei 2, A.",
+    "description": "Frizerie în Satu Mare: tuns fade de la 80 lei, aranjat barbă, tuns copii. 5.0★ din 1537 recenzii pe Mero. Programează online sau la 0745 319 957.",
     "keywords": [
       "frizerie Satu Mare",
       "barbershop Satu Mare",
@@ -327,16 +329,24 @@
     "titleEm": "știut.",
     "items": [
       {
+        "q": "Ce este The Men's Place?",
+        "a": "The Men's Place este o frizerie (barbershop) din Satu Mare, deschisă în 2016, pe Aleea Tărnavei 2, A, lângă Biserica Romano-Catolică Sf. Petru și Pavel (Bd. Cloșca 1A). Oferim tuns fade, tuns clasic, aranjat barbă, tuns copii și pachetul Dad & Son, cu prețuri între 50 și 160 lei."
+      },
+      {
         "q": "Unde se află The Men's Place?",
-        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, România."
+        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, România, lângă Biserica Romano-Catolică Sf. Petru și Pavel (Bd. Cloșca 1A)."
       },
       {
         "q": "Cum pot face o programare?",
         "a": "Online prin aplicația Mero (mero.ro/p/the-mens-place) sau telefonic la 0745 319 957."
       },
       {
+        "q": "Pot veni fără programare?",
+        "a": "Lucrăm pe bază de programare, ca să nu aștepți. Vezi locurile libere în aplicația Mero (mero.ro/p/the-mens-place) sau sună la 0745 319 957."
+      },
+      {
         "q": "Ce servicii oferiți?",
-        "a": "Tuns clasic, aranjat barbă, tuns băieți, pachet tată-fiu și pachetul premium cu masaj capilar și ritual complet."
+        "a": "Tuns fade (cu spălat o dată sau de două ori), tuns clasic, aranjat barbă, aranjat bărbați, tuns copii, pachetul Dad & Son și Pachetul Premium cu masaj capilar."
       },
       {
         "q": "Care este programul?",
@@ -374,7 +384,7 @@
     },
     "s3": {
       "h": "3. Date despre minori",
-      "body": "Serviciile noastre includ pachete pentru copii („Micul Domn”, „Tradiție în Familie, Tată & Fiu”). Programările pentru minori se fac exclusiv de către părinți sau tutori legali. Nu colectăm intenționat date cu caracter personal de la copii sub 16 ani prin acest site (art. 8 GDPR). Dacă luați cunoștință că un minor ne-a furnizat astfel de date, vă rugăm să ne contactați pentru a le șterge."
+      "body": "Serviciile noastre includ pachete pentru copii („Tuns copii”, „Pachet Tuns Dad & Son”). Programările pentru minori se fac exclusiv de către părinți sau tutori legali. Nu colectăm intenționat date cu caracter personal de la copii sub 16 ani prin acest site (art. 8 GDPR). Dacă luați cunoștință că un minor ne-a furnizat astfel de date, vă rugăm să ne contactați pentru a le șterge."
     },
     "s4": {
       "h": "4. Temei legal și scop",

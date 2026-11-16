@@ -1,9 +1,11 @@
 import { routing, type Locale, type AppPathname } from "@/i18n/routing";
 import { getPathname } from "@/i18n/navigation";
 
+// Hungarian is language-only: the audience is Hungarian speakers in Satu Mare,
+// not users in Hungary (which "hu-HU" would signal).
 export const HREFLANG: Record<Locale, string> = {
   ro: "ro-RO",
-  hu: "hu-HU",
+  hu: "hu",
   en: "en",
 };
 

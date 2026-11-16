@@ -13,7 +13,7 @@
     "name": "The Men's Place"
   },
   "hero": {
-    "est": "Est. MMXVI · Szatmárnémeti",
+    "est": "Est. MMXVI",
     "titleLine1": "Mesterség",
     "titleLine2Pre": "türelemmel",
     "titleEm": "csiszolva",
@@ -27,21 +27,22 @@
       "clientsValue": "12k+",
       "clientsLabel": "Kiszolgált úriember",
       "ratingValue": "5.0",
-      "ratingLabel": "A Merón · 1151 értékelés"
+      "ratingLabel": "A Merón · 1537 értékelés"
     },
     "photoLabel": "Fotó · Hero",
     "photoDim": "Ajánlott: borbély portré a széken · 3:4",
-    "photoAlt": "Borbély portré"
+    "photoAlt": "Ninacs Levente borbély, The Men's Place Szatmárnémeti",
+    "h1": "Borbély & barbershop Szatmárnémetiben"
   },
   "marquee": {
     "items": [
-      "Klasszikus hajvágás",
-      "Fade / Skin Fade",
+      "Fade hajvágás + Mosás",
+      "Classic hajvágás",
       "Szakállformázás",
-      "Kontúr & Frissítés",
-      "Hajkezelés / Masszázs",
-      "Teljes csomag (Haj + Szakáll)",
-      "Stílustanácsadás"
+      "Gyermek hajvágás",
+      "Dad & Son csomag",
+      "Férfi hajbeállítás",
+      "Premium csomag"
     ]
   },
   "video": {
@@ -200,7 +201,8 @@
         "label": "Vintage szék",
         "size": "normal"
       }
-    ]
+    ],
+    "altFallback": "Hajvágás a The Men's Place borbélyüzletben, Szatmárnémeti – {n}. fotó"
   },
   "testimonials": {
     "eyebrow": "Egyenesen a székből",
@@ -303,7 +305,7 @@
   },
   "metadata": {
     "title": "Borbély és férfi fodrász Szatmárnémetiben · The Men's Place",
-    "description": "Férfi hajvágás, szakállformázás és apa-fia hajvágás Szatmárnémetiben. Klasszikus borbélyműhely, online foglalás a Meron. Aleea Tărnavei 2, A.",
+    "description": "Borbély Szatmárnémetiben: fade hajvágás 80 lejtől, szakállformázás, gyermek hajvágás. 5.0★, 1537 értékelés a Merón. Foglalj online vagy hívj: 0745 319 957.",
     "keywords": [
       "borbély Szatmárnémeti",
       "fodrász Szatmárnémeti",
@@ -327,16 +329,24 @@
     "titleEm": "tudod.",
     "items": [
       {
+        "q": "Mi az a The Men's Place?",
+        "a": "A The Men's Place egy 2016-ban nyílt borbélyüzlet (barbershop) Szatmárnémetiben, az Aleea Tărnavei 2, A szám alatt, a Szent Péter és Pál római katolikus templom (Bd. Cloșca 1A) közelében. Fade és klasszikus hajvágást, szakállformázást, gyermek hajvágást és Dad & Son csomagot kínálunk, 50 és 160 lej közötti áron."
+      },
+      {
         "q": "Hol található a The Men's Place?",
-        "a": "Aleea Tărnavei 2, A, 440207 Szatmárnémeti, Románia."
+        "a": "Aleea Tărnavei 2, A, 440207 Szatmárnémeti, Románia, a Szent Péter és Pál római katolikus templom (Bd. Cloșca 1A) közelében."
       },
       {
         "q": "Hogyan tudok időpontot foglalni?",
         "a": "Online a Mero alkalmazásban (mero.ro/p/the-mens-place), vagy telefonon: 0745 319 957."
       },
       {
+        "q": "Lehet bejelentkezés nélkül jönni?",
+        "a": "Előzetes foglalással dolgozunk, hogy ne kelljen várnod. A szabad időpontokat a Mero alkalmazásban (mero.ro/p/the-mens-place) látod, vagy hívj a 0745 319 957-es számon."
+      },
+      {
         "q": "Milyen szolgáltatásokat kínálnak?",
-        "a": "Klasszikus hajvágás, szakállformázás, gyermek hajvágás, apa-fia csomag, valamint prémium fejmasszázzsal és teljes rituáléval bővített csomag."
+        "a": "Fade hajvágás (egyszeri vagy kétszeri mosással), klasszikus hajvágás, szakállformázás, férfi hajbeállítás, gyermek hajvágás, Dad & Son csomag és Premium csomag fejmasszázzsal."
       },
       {
         "q": "Mi a nyitvatartás?",
@@ -374,7 +384,7 @@
     },
     "s3": {
       "h": "3. Kiskorúak adatai",
-      "body": "Szolgáltatásaink között gyerekeknek szóló csomagok is szerepelnek („A kis úriember”, „Családi hagyomány, Apa & Fia”). A kiskorúak foglalásait kizárólag szülő vagy törvényes gyám kezdeményezheti. Nem gyűjtünk szándékosan személyes adatokat 16 év alatti gyermekektől ezen az oldalon keresztül (GDPR 8. cikk). Ha tudomásukra jut, hogy egy kiskorú adatokat adott meg számunkra, kérjük, vegyék fel velünk a kapcsolatot a törlés érdekében."
+      "body": "Szolgáltatásaink között gyerekeknek szóló csomagok is szerepelnek („Gyermek hajvágás”, „Dad & Son hajvágás csomag”). A kiskorúak foglalásait kizárólag szülő vagy törvényes gyám kezdeményezheti. Nem gyűjtünk szándékosan személyes adatokat 16 év alatti gyermekektől ezen az oldalon keresztül (GDPR 8. cikk). Ha tudomásukra jut, hogy egy kiskorú adatokat adott meg számunkra, kérjük, vegyék fel velünk a kapcsolatot a törlés érdekében."
     },
     "s4": {
       "h": "4. Jogalap és cél",

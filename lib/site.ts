@@ -6,9 +6,10 @@
  * Variables once the production domain is wired up. Falls back to the
  * placeholder for local dev.
  */
-export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://themensplace.ro"
-).replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://themensplace.ro").replace(
+  /\/$/,
+  "",
+);
 
 export const BUSINESS = {
   name: "The Men's Place",
@@ -26,7 +27,12 @@ export const BUSINESS = {
   countryName: "România",
   geo: { latitude: 47.780561, longitude: 22.8700419 },
   priceRange: "RON 50–160",
+  foundingYear: "2016",
+  founder: "Levente Ninacs",
+  // Google Business Profile listing (CID form is stable; the share link is not).
+  googleMaps: "https://www.google.com/maps?cid=5281369597111559747",
   social: [
+    "https://www.google.com/maps?cid=5281369597111559747",
     "https://www.instagram.com/levente.ninacs/",
     "https://www.facebook.com/NinacsLevente22/",
     "https://mero.ro/p/the-mens-place",

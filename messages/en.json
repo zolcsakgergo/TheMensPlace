@@ -13,7 +13,7 @@
     "name": "The Men's Place"
   },
   "hero": {
-    "est": "Est. MMXVI · Satu Mare",
+    "est": "Est. MMXVI",
     "titleLine1": "Craft",
     "titleLine2Pre": "made with",
     "titleEm": "patience",
@@ -27,21 +27,22 @@
       "clientsValue": "12k+",
       "clientsLabel": "Gentlemen served",
       "ratingValue": "5.0",
-      "ratingLabel": "On Mero · 1151 reviews"
+      "ratingLabel": "On Mero · 1537 reviews"
     },
     "photoLabel": "Photo · Hero",
     "photoDim": "Recommended: barber portrait at chair · 3:4",
-    "photoAlt": "Barber portrait"
+    "photoAlt": "Levente Ninacs, barber at The Men's Place Satu Mare",
+    "h1": "Barbershop in Satu Mare"
   },
   "marquee": {
     "items": [
+      "Fade Haircut + Wash",
       "Classic Cut",
-      "Fade / Skin Fade",
-      "Beard Architecture",
-      "Contour & Fresh Up",
-      "Scalp Treatment / Massage",
-      "Full Custom Package (Hair + Beard)",
-      "Styling & Look Consulting"
+      "Beard Trim",
+      "Kids' Haircut",
+      "Dad & Son Package",
+      "Men's Styling",
+      "Premium Package"
     ]
   },
   "video": {
@@ -200,7 +201,8 @@
         "label": "Vintage chair",
         "size": "normal"
       }
-    ]
+    ],
+    "altFallback": "Haircut by The Men's Place barbershop, Satu Mare – photo {n}"
   },
   "testimonials": {
     "eyebrow": "Straight from the chair",
@@ -303,7 +305,7 @@
   },
   "metadata": {
     "title": "Barbershop & Men's Grooming in Satu Mare · The Men's Place",
-    "description": "Men's haircuts, beard trims and father-son cuts in Satu Mare. Classic barbershop with online booking via Mero. Aleea Tărnavei 2, A.",
+    "description": "Barbershop in Satu Mare: fade haircuts from 80 RON, beard trims, kids' cuts. 5.0★ from 1537 reviews on Mero. Book online or call 0745 319 957.",
     "keywords": [
       "barbershop Satu Mare",
       "barber Satu Mare",
@@ -327,16 +329,24 @@
     "titleEm": "know.",
     "items": [
       {
+        "q": "What is The Men's Place?",
+        "a": "The Men's Place is a barbershop in Satu Mare, Romania, open since 2016, at Aleea Tărnavei 2, A, near the Catholic Church of Saints Peter and Paul (Bulevardul Cloșca 1A). We offer fade haircuts, classic cuts, beard trims, kids' haircuts and a Dad & Son package, priced from 50 to 160 RON."
+      },
+      {
         "q": "Where is The Men's Place located?",
-        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, Romania."
+        "a": "Aleea Tărnavei 2, A, 440207 Satu Mare, Romania, near the Catholic Church of Saints Peter and Paul (Bulevardul Cloșca 1A)."
       },
       {
         "q": "How can I book an appointment?",
         "a": "Online via the Mero app (mero.ro/p/the-mens-place), or by phone at +40 745 319 957."
       },
       {
+        "q": "Can I come in without an appointment?",
+        "a": "We work by appointment so you never have to wait. See free slots in the Mero app (mero.ro/p/the-mens-place) or call +40 745 319 957."
+      },
+      {
         "q": "What services do you offer?",
-        "a": "Classic cuts, beard grooming, kids' cuts, father-and-son package, and a premium package with scalp massage and full grooming ritual."
+        "a": "Fade haircuts (with one or two washes), classic cuts, beard trims, men's styling, kids' haircuts, the Dad & Son package and the Premium package with a scalp massage."
       },
       {
         "q": "What are your opening hours?",
@@ -374,7 +384,7 @@
     },
     "s3": {
       "h": "3. Data concerning minors",
-      "body": "Our services include packages for children (“The Young Gentleman”, “Family Tradition, Father & Son”). Bookings for minors are made exclusively by parents or legal guardians. We do not knowingly collect personal data from children under 16 through this site (Art. 8 GDPR). If you become aware that a minor has provided us with such data, please contact us so we can delete it."
+      "body": "Our services include packages for children (“Kids' Haircut”, “Dad & Son Haircut Package”). Bookings for minors are made exclusively by parents or legal guardians. We do not knowingly collect personal data from children under 16 through this site (Art. 8 GDPR). If you become aware that a minor has provided us with such data, please contact us so we can delete it."
     },
     "s4": {
       "h": "4. Legal basis and purpose",

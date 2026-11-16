@@ -12,9 +12,9 @@
   --color-rule: rgba(212, 175, 100, 0.18);
   --color-rule-strong: rgba(212, 175, 100, 0.45);
 
-  --font-serif: "Playfair Display", "Bodoni Moda", Georgia, serif;
-  --font-sans: Inter, system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --font-serif: var(--font-playfair, "Playfair Display"), "Bodoni Moda", Georgia, serif;
+  --font-sans: var(--font-inter, Inter), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono, "IBM Plex Mono"), "Courier New", monospace;
 
   --background-image-stripes: repeating-linear-gradient(
     45deg,

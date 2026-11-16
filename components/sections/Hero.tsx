@@ -22,15 +22,18 @@ export default async function Hero({ heroImage }: { heroImage?: SanityImage }) {
       <Container className="relative z-1">
         <div className="grid grid-cols-[1.1fr_0.9fr] items-center gap-20 max-[980px]:grid-cols-1 max-[980px]:gap-10">
           <div>
-            <div className="text-gold mb-8 font-mono text-[11px] tracking-[0.4em]">{t("est")}</div>
-            <h1 className="mb-8 font-serif text-[clamp(64px,8vw,124px)] leading-[0.95] font-normal tracking-[-0.02em]">
+            {/* The H1 names the business type + city for search; the display line below is brand voice. */}
+            <h1 className="text-gold mb-8 font-mono text-[11px] font-normal tracking-[0.4em]">
+              {t("h1")} · {t("est")}
+            </h1>
+            <p className="mb-8 font-serif text-[clamp(64px,8vw,124px)] leading-[0.95] font-normal tracking-[-0.02em]">
               {t("titleLine1")}
               <br />
               {t("titleLine2Pre")} <em className="text-gold italic">{t("titleEm")}</em>.
               <span className="text-ink-dim mt-2 block text-[0.4em] tracking-[0.02em] italic">
                 {t("titleSmall")}
               </span>
-            </h1>
+            </p>
             <p className="text-ink-dim mb-10 max-w-[460px] text-[18px] leading-[1.7]">
               {t("lede")}
             </p>
@@ -68,6 +71,8 @@ export default async function Hero({ heroImage }: { heroImage?: SanityImage }) {
               label={t("photoLabel")}
               dim={t("photoDim")}
               alt={t("photoAlt")}
+              sizes="(max-width: 980px) 100vw, 45vw"
+              priority
             />
           </div>
         </div>

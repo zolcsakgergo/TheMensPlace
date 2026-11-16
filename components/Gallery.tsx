@@ -95,7 +95,12 @@ export default function Gallery({ items }: { items: Item[] }) {
               <CmsImage
                 image={it.image}
                 label={it.label || `Foto ${globalIndex + 1}`}
-                alt={it.label}
+                alt={it.label || t("altFallback", { n: globalIndex + 1 })}
+                sizes={
+                  size === "wide"
+                    ? "(max-width: 980px) 100vw, 50vw"
+                    : "(max-width: 980px) 50vw, 25vw"
+                }
               />
               <div className="bg-bg/0 group-hover:bg-bg/25 absolute inset-0 transition-colors duration-300" />
               {it.label && (
@@ -187,8 +192,8 @@ export default function Gallery({ items }: { items: Item[] }) {
               {active.image?.asset?._ref ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
-                  src={urlFor(active.image).width(2200).url()}
-                  alt={active.label || ""}
+                  src={urlFor(active.image).width(2200).auto("format").url()}
+                  alt={active.label || t("altFallback", { n: activeIndex + 1 })}
                   className="block max-h-[82vh] max-w-[90vw] object-contain"
                 />
               ) : (

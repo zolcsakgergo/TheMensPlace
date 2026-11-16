@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import { routing, type Locale } from "@/i18n/routing";
 import type { HourEntry } from "./cards/HoursList";
+import { HREFLANG } from "@/lib/seo";
 
 export type ServiceItem = {
   title: string;
@@ -12,23 +13,17 @@ export type ServiceItem = {
 
 type FaqItem = { q: string; a: string };
 
-const HREFLANG: Record<Locale, string> = {
-  ro: "ro-RO",
-  hu: "hu-HU",
-  en: "en",
-};
-
 // Day names (RO / HU / EN) → schema.org day name (English).
 const DAY_MAP: Record<string, string> = {
   // RO
   Luni: "Monday",
   Marți: "Tuesday",
-  "Marţi": "Tuesday",
+  Marţi: "Tuesday",
   Miercuri: "Wednesday",
   Joi: "Thursday",
   Vineri: "Friday",
   Sâmbătă: "Saturday",
-  "Sambata": "Saturday",
+  Sambata: "Saturday",
   Duminică: "Sunday",
   // HU
   Hétfő: "Monday",
@@ -150,7 +145,9 @@ export default async function JsonLd({
     openingHoursSpecification,
     makesOffer: services.map((s) => buildOffer(s, locale)),
     sameAs: BUSINESS.social,
-    hasMap: `https://www.google.com/maps/search/?api=1&query=${BUSINESS.geo.latitude},${BUSINESS.geo.longitude}`,
+    hasMap: BUSINESS.googleMaps,
+    foundingDate: BUSINESS.foundingYear,
+    founder: { "@type": "Person", name: BUSINESS.founder, jobTitle: "Barber" },
     paymentAccepted: "Cash, Card",
     currenciesAccepted: "RON",
   };

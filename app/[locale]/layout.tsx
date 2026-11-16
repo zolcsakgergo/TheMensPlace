@@ -3,14 +3,37 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/next";
+import { IBM_Plex_Mono, Inter, Playfair_Display } from "next/font/google";
 import FloatingBook from "@/components/FloatingBook";
 import ScrollToTop from "@/components/ScrollToTop";
+import TrackOutbound from "@/components/TrackOutbound";
 import { BUSINESS, SITE_URL } from "@/lib/site";
 import { localizedAlternates } from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
 type LayoutParams = { locale: string };
+
+// Self-hosted via next/font: no render-blocking Google Fonts request, no layout shift.
+const serif = Playfair_Display({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+const sans = Inter({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
+const mono = IBM_Plex_Mono({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
+  display: "swap",
+});
 
 const OG_LOCALES: Record<Locale, string> = {
   ro: "ro_RO",
@@ -113,15 +136,11 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} data-gold="warm">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang={locale}
+      data-gold="warm"
+      className={`${serif.variable} ${sans.variable} ${mono.variable}`}
+    >
       <body>
         <NextIntlClientProvider>
           {children}
@@ -129,6 +148,7 @@ export default async function LocaleLayout({
           <ScrollToTop />
         </NextIntlClientProvider>
         <Analytics />
+        <TrackOutbound />
       </body>
     </html>
   );
