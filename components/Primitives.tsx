@@ -101,7 +101,8 @@ export const Brand = ({ size = "base" }: { size?: "base" | "lg" }) => {
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/logo.png"
+        // 80×120 copy of /logo.png (827 KB), sized for the ≤36px nav/footer mark.
+        src="/logo-mark.webp"
         alt={t("name")}
         width={markSize}
         height={markSize}

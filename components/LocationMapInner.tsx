@@ -51,10 +51,11 @@ export default function LocationMapInner({
       className="absolute inset-0 h-full w-full"
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        subdomains="abcd"
-        maxZoom={20}
+        // Standard OSM tiles: no API key. They are light-styled; globals.css
+        // darkens the tile pane to match the site (.leaflet-tile-pane filter).
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        maxZoom={19}
       />
       <Marker position={position} icon={goldPinIcon} title={popupTitle} alt={popupTitle}>
         {(popupTitle || popupAddress) && (

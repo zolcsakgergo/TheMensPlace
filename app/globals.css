@@ -106,8 +106,16 @@
 
 /* ── Leaflet — design-system overrides ─────────────────────── */
 .leaflet-container {
+  /* Leaflet panes/controls use z-index 400–1000; keep them inside the map so
+     they can't paint over the fixed navbar (z-100). */
+  isolation: isolate;
   background: var(--bg-3);
   font-family: var(--font-sans);
+}
+/* OSM tiles are light; invert to a dark, desaturated map. Only the tile pane
+   is filtered, so the gold marker, controls and popup keep their colours. */
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) grayscale(1) brightness(0.85) contrast(0.9);
 }
 .leaflet-container a {
   color: var(--gold);
